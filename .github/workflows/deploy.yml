@@ -31,9 +31,8 @@ jobs:
       - name: Build static site
         run: npm run build:pages
         env:
-          # Project pages are served from https://<user>.github.io/<repo>/.
-          # For a custom domain at the root, set this to "/" and add a CNAME.
-          BASE_PATH: /site/
+          # The custom domain is served at its root.
+          BASE_PATH: /
 
       # `enablement` lets the workflow turn Pages on itself, so nobody needs
       # to click through repo settings first.
