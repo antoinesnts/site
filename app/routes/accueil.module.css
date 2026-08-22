@@ -1,6 +1,7 @@
 .hero {
-  padding-block: 240px 200px;
-  align-content: start;
+  min-height: 100svh;
+  padding-block: var(--header-h) 40px;
+  align-content: center;
 }
 
 .reperes {
@@ -8,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 16px;
-  align-self: end;
+  align-self: center;
 }
 
 .bloc {

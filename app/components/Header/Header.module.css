@@ -47,6 +47,7 @@
 .link {
   position: relative;
   opacity: var(--muted-opacity);
+  text-transform: uppercase;
   transition: opacity 0.25s var(--ease);
 }
 .link:hover,

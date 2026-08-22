@@ -12,8 +12,10 @@ export const site = {
   role: "Journaliste reporter d'images",
   // Titre de la page d'accueil, révélé mot à mot. Chaque entrée est une ligne.
   accroche: [
-    "Journaliste reporter d'images et télépilote de drone.",
-    "Correspondant en Normandie pour TF1, des falaises du littoral à la forêt amazonienne.",
+    "Journaliste Reporter d’Images,",
+    "Télépilote de drone, monteur et vidéaste,",
+    "Formateur occasionnel en école de journalisme,",
+    "basé en Normandie, disponible partout en France.",
   ],
   ville: "Caen, FR",
   fuseau: "Europe/Paris",
@@ -29,14 +31,14 @@ export const site = {
 
 /** Blocs de repères affichés à gauche du titre, en page d'accueil. */
 export const reperes = [
-  { label: "Métier", lignes: ["JRI & monteur", "Télépilote de drone"] },
-  { label: "Base", lignes: ["Caen", "Normandie"] },
-  { label: "Antenne", lignes: ["TF1 · TF1 Info", "Le 13H · Le 20H"] },
-  { label: "Formation", lignes: ["EPJT Tours"] },
+  { label: "Réalisations", lignes: ["+900 Reportages", "+20 Productions"] },
+  { label: "Expérience", lignes: ["JRI Monteur depuis 2018", "Télépilote STS / A1-A2-A3"] },
+  { label: "Clients", lignes: ["+10 entreprises"] },
+  { label: "Médias", lignes: ["TF1 · Public Sénat · NOVO19 · Ici"] },
 ];
 
 export const navigation = [
-  { to: "/", label: "Index" },
+  { to: "/", label: "Accueil" },
   { to: "/reportages", label: "Reportages" },
   { to: "/a-propos", label: "À propos" },
 ];
