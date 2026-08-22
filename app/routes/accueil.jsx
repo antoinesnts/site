@@ -3,7 +3,6 @@ import Reveal from "../components/Reveal/Reveal.jsx";
 import SplitText from "../components/SplitText/SplitText.jsx";
 import ReportageCard from "../components/ReportageCard/ReportageCard.jsx";
 import { reperes, reportages, site } from "../data/content.js";
-import { pluriel } from "../lib/texte.js";
 import { useIntroReady } from "../lib/intro.js";
 import styles from "./accueil.module.css";
 
@@ -67,16 +66,8 @@ export default function Accueil() {
         </Reveal>
       </section>
 
-      <section className={`grid ${styles.section}`}>
-        <div className={styles.sectionEntete}>
-          <span className={styles.sectionTitre}>
-            {pluriel(reportages.length, "reportage")}
-          </span>
-        </div>
-      </section>
+      <section className={`grid ${styles.section}`} aria-label="Reportages" />
 
-      {/* Below three items the grid widens, so a young portfolio
-          does not read as a mostly empty row. */}
       <div className={styles.grille} data-peu={selection.length < 3 ? "true" : "false"}>
         {selection.map((reportage, i) => (
           <ReportageCard
@@ -86,7 +77,6 @@ export default function Accueil() {
             priority={i < 3}
           />
         ))}
-
       </div>
     </>
   );

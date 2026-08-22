@@ -10,6 +10,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 16px;
   align-self: center;
+  translate: 0 -12vh;
 }
 
 .bloc {
@@ -29,6 +30,7 @@
   line-height: var(--lh-display);
   letter-spacing: var(--ls-display);
   font-weight: 400;
+  translate: 0 -12vh;
 }
 
 .cta {
@@ -38,6 +40,7 @@
   white-space: nowrap;
   display: flex;
   gap: 6px;
+  translate: 0 -12vh;
 }
 
 .cta a {
@@ -67,24 +70,12 @@
   padding-block: 0 40px;
 }
 
-.sectionEntete {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  padding-bottom: 24px;
-}
-
-.sectionTitre {
-  opacity: var(--muted-opacity);
-}
-
 /* Uniform grid: every cell the same width and the same 16:9 frame. */
 .grille {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: var(--gutter);
-  row-gap: 64px;
+  row-gap: 32px;
   padding-inline: var(--page-x);
   padding-bottom: 40px;
 }
@@ -97,24 +88,6 @@
    moving the pointer across the grid never re-renders it. */
 .grille:has([data-carte]:hover) [data-carte]:not(:hover) {
   opacity: 0.25;
-}
-
-.tout {
-  grid-column: 1 / -1;
-  padding-top: 24px;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.toutLien {
-  position: relative;
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--hairline);
-  transition: border-color 0.3s var(--ease);
-}
-.toutLien:hover {
-  border-color: var(--fg);
 }
 
 @media (max-width: 1159px) {
@@ -140,14 +113,17 @@
   .reperes {
     grid-column: 1 / -1;
     order: 2;
+    translate: none;
   }
   .titre {
     grid-column: 1 / -1;
+    translate: none;
   }
   .cta {
     grid-column: 1 / -1;
     justify-self: start;
     order: 3;
+    translate: none;
   }
   .grille {
     grid-template-columns: minmax(0, 1fr);
