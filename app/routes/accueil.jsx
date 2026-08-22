@@ -17,12 +17,9 @@ export function meta() {
   ];
 }
 
-/** How many reportages the home grid shows before linking to the full index. */
-const SELECTION = 6;
-
 export default function Accueil() {
   const ready = useIntroReady();
-  const selection = reportages.slice(0, SELECTION);
+  const selection = reportages;
 
   return (
     <>
@@ -90,13 +87,6 @@ export default function Accueil() {
           />
         ))}
 
-        {reportages.length > SELECTION ? (
-          <div className={styles.tout}>
-            <Link to="/reportages" className={styles.toutLien}>
-              Voir tous les reportages
-            </Link>
-          </div>
-        ) : null}
       </div>
     </>
   );
