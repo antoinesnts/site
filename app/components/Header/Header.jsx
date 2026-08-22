@@ -59,9 +59,9 @@ export default function Header() {
           <span>{site.ville}</span>
         </div>
 
-        <a href={`mailto:${site.email}`} className={`${styles.link} ${styles.contact}`}>
+        <NavLink to="/contact" className={`${styles.link} ${styles.contact}`}>
           Contact
-        </a>
+        </NavLink>
 
         <button
           type="button"
@@ -94,9 +94,9 @@ export default function Header() {
             )}
           </NavLink>
         ))}
-        <a href={`mailto:${site.email}`} className={styles.panneauLien}>
+        <NavLink to="/contact" className={styles.panneauLien}>
           Contact
-        </a>
+        </NavLink>
         <div className={styles.panneauPied}>
           <Clock timeZone={site.fuseau} />
           <span>{site.ville}</span>

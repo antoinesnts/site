@@ -1,42 +1,20 @@
 import Reveal from "../Reveal/Reveal.jsx";
-import {
-  InstagramLogoIcon,
-  LinkedinLogoIcon,
-  TiktokLogoIcon,
-  YoutubeLogoIcon,
-} from "@phosphor-icons/react";
-import { liens, site } from "../../data/content.js";
+import { useLocation } from "react-router";
+import SocialLinks from "../SocialLinks/SocialLinks.jsx";
+import { site } from "../../data/content.js";
 import styles from "./Footer.module.css";
-
-const icones = {
-  youtube: YoutubeLogoIcon,
-  linkedin: LinkedinLogoIcon,
-  instagram: InstagramLogoIcon,
-  tiktok: TiktokLogoIcon,
-};
 
 export default function Footer() {
   const annee = new Date().getFullYear();
+  const { pathname } = useLocation();
+
+  if (pathname === "/contact") return null;
 
   return (
     <Reveal as="footer" className={`grid ${styles.root}`} delay={0.1}>
       <span className={styles.copyright}>© {annee} {site.nom}</span>
 
-      <nav className={styles.reseaux} aria-label="Réseaux sociaux">
-        {liens.map((item) => {
-          const Icone = icones[item.icone];
-          return <a
-            key={item.label}
-            href={item.href}
-            className={styles.reseau}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label={item.label}
-          >
-            <Icone weight="regular" aria-hidden="true" />
-          </a>
-        })}
-      </nav>
+      <SocialLinks className={styles.reseaux} linkClassName={styles.reseau} />
 
       <a className={styles.mail} href={`mailto:${site.emailPiedDePage}`}>
         {site.emailPiedDePage}

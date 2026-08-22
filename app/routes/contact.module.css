@@ -1,0 +1,101 @@
+.root {
+  min-height: 100svh;
+  padding-block: 31vh 13vh;
+  align-content: start;
+}
+
+.titre {
+  grid-column: 1 / -1;
+  font-size: clamp(56px, 6vw, 96px);
+  line-height: 1;
+  letter-spacing: var(--ls-display);
+  font-weight: 400;
+}
+
+.informations {
+  grid-column: 1 / -1;
+  margin-top: clamp(120px, 20vh, 270px);
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 96px;
+}
+
+.bloc {
+  grid-column: 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  font-size: 20px;
+}
+
+.label {
+  color: var(--fg);
+  opacity: var(--muted-opacity);
+}
+
+.email {
+  width: fit-content;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 12px;
+  transition: border-color 0.25s var(--ease);
+}
+
+.email:hover,
+.email:focus-visible {
+  border-color: currentColor;
+}
+
+.base,
+.disponible {
+  grid-column: 7 / span 6;
+}
+
+.reseaux {
+  display: flex;
+  gap: 32px;
+}
+
+.reseau {
+  width: 26px;
+  height: 26px;
+  color: var(--fg);
+  opacity: var(--muted-opacity);
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.reseau svg {
+  width: 100%;
+  height: 100%;
+}
+
+.reseau:hover,
+.reseau:focus-visible {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+  .root {
+    padding-block: 160px 64px;
+    row-gap: 88px;
+  }
+
+  .titre {
+    font-size: 56px;
+  }
+
+  .informations {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 0;
+    row-gap: 56px;
+  }
+
+  .bloc,
+  .base,
+  .disponible {
+    grid-column: 1 / -1;
+    gap: 16px;
+    font-size: 18px;
+  }
+}

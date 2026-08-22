@@ -13,6 +13,7 @@ export default {
       "/",
       "/reportages",
       "/a-propos",
+      "/contact",
       ...reportages.map((r) => `/reportages/${r.slug}`),
     ];
   },
