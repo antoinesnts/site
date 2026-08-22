@@ -20,6 +20,7 @@ export const site = {
   ville: "Caen, FR",
   fuseau: "Europe/Paris",
   email: "antoine.santos.pro@gmail.com",
+  emailPiedDePage: "contact@antoinesantos.fr",
   description:
     "Antoine Santos, journaliste reporter d'images, monteur et télépilote de drone basé à Caen. Correspondant en Normandie pour TF1 et TF1 Info.",
   // ⚠️ Image d'attente sur la page « À propos » : un plan de ses reportages,

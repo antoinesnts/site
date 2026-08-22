@@ -59,7 +59,9 @@ export default function Footer() {
         ))}
       </nav>
 
-      <a className={styles.mail} href={`mailto:${site.email}`}>{site.email}</a>
+      <a className={styles.mail} href={`mailto:${site.emailPiedDePage}`}>
+        {site.emailPiedDePage}
+      </a>
     </Reveal>
   );
 }
