@@ -66,7 +66,7 @@ export default function Accueil() {
           immediate gate={ready}
         >
           <span aria-hidden="true">↳</span>
-          <a href={`mailto:${site.email}`}>Me contacter</a>
+          <Link to="/contact">Me contacter</Link>
         </Reveal>
       </section>
 
