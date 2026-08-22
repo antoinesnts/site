@@ -22,7 +22,7 @@
 }
 
 .bloc {
-  grid-column: 1 / span 4;
+  grid-column: 5 / span 3;
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -48,12 +48,13 @@
 
 .base,
 .disponible {
-  grid-column: 6 / span 3;
+  grid-column: 9 / span 4;
 }
 
 .portrait {
-  grid-column: 10 / span 3;
+  grid-column: 1 / span 3;
   grid-row: 1 / span 2;
+  width: 80%;
   margin: 0;
   align-self: start;
   overflow: hidden;
@@ -119,7 +120,7 @@
   .portrait {
     grid-column: 1 / -1;
     grid-row: auto;
-    width: min(100%, 360px);
+    width: min(80%, 288px);
     margin-top: -12px;
   }
 }
