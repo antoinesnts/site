@@ -72,7 +72,6 @@ export default function Accueil() {
 
       <section className={`grid ${styles.section}`}>
         <div className={styles.sectionEntete}>
-          <span className={styles.sectionTitre}>Sélection</span>
           <span className={styles.sectionTitre}>
             {pluriel(reportages.length, "reportage")}
           </span>

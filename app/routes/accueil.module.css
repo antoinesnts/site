@@ -63,13 +63,14 @@
 /* ---- index of reportages ---- */
 
 .section {
+  margin-top: -20vh;
   padding-block: 0 40px;
 }
 
 .sectionEntete {
   grid-column: 1 / -1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: baseline;
   padding-bottom: 24px;
 }
@@ -132,6 +133,9 @@
   .hero {
     padding-block: 128px 80px;
     row-gap: 56px;
+  }
+  .section {
+    margin-top: 0;
   }
   .reperes {
     grid-column: 1 / -1;
