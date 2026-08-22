@@ -1,4 +1,3 @@
-import Reveal from "../Reveal/Reveal.jsx";
 import { useLocation } from "react-router";
 import SocialLinks from "../SocialLinks/SocialLinks.jsx";
 import { site } from "../../data/content.js";
@@ -11,7 +10,7 @@ export default function Footer() {
   if (pathname === "/contact") return null;
 
   return (
-    <Reveal as="footer" className={`grid ${styles.root}`} delay={0.1}>
+    <footer className={`grid ${styles.root}`}>
       <span className={styles.copyright}>© {annee} {site.nom}</span>
 
       <SocialLinks className={styles.reseaux} linkClassName={styles.reseau} />
@@ -19,6 +18,6 @@ export default function Footer() {
       <a className={styles.mail} href={`mailto:${site.emailPiedDePage}`}>
         {site.emailPiedDePage}
       </a>
-    </Reveal>
+    </footer>
   );
 }
