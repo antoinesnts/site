@@ -33,7 +33,7 @@ export default function Footer() {
             rel="noreferrer noopener"
             aria-label={item.label}
           >
-            <Icone weight="fill" aria-hidden="true" />
+            <Icone weight="regular" aria-hidden="true" />
           </a>
         })}
       </nav>
