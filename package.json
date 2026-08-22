@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "@react-router/node": "^7.6.2",
     "@react-router/serve": "^7.6.2",
     "isbot": "^5.1.28",
