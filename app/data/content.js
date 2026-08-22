@@ -87,7 +87,7 @@ export const reportages = [
     cameras: ["Sony FX6", "DJI Mavic Pro 3"],
     client: "TF1 — Le 13H",
     image: "/photos/chausey.jpg",
-    embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7383499336590008320",
+    video: "/videos/chausey.mp4",
     source: "https://www.linkedin.com/posts/antoinesantos_normandie-grandesmaraezes-grandemaraeze-ugcPost-7383499336590008320-8TmO/",
     galerie: ["/photos/chausey.jpg"],
     resume:
