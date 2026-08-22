@@ -62,7 +62,7 @@ export const reportages = [
     // ⚠️ À CONFIRMER — c'est son métier, pas forcément son crédit exact ici.
     role: "JRI & télépilote de drone",
     image: "/photos/saul.jpg",
-    video: "/videos/saul.mp4",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/d_0IVb4CgsU?start=26&rel=0",
     galerie: [
       "/photos/saul-1.jpg",
       "/photos/saul-2.jpg",
@@ -70,7 +70,7 @@ export const reportages = [
       "/photos/saul-4.jpg",
       "/photos/saul-5.jpg",
     ],
-    youtube: "https://www.youtube.com/watch?v=d_0IVb4CgsU",
+    youtube: "https://www.youtube.com/watch?v=d_0IVb4CgsU&t=26s",
     chapeau:
       "Aucune route ne mène à Saül, au cœur de la forêt amazonienne guyanaise. Tout y arrive par avion depuis Cayenne, sur une piste taillée dans la canopée.",
     parution: "TF1 — Le 13H",

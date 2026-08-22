@@ -47,12 +47,17 @@
   background: #0a0a0a;
 }
 .couvertureCadre img,
-.couvertureCadre video {
+.couvertureCadre video,
+.youtube {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.youtube {
+  border: 0;
 }
 
 /* The clip fades over the still only once it is genuinely playing. */

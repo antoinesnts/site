@@ -104,7 +104,16 @@ export default function Reportage() {
             alt={`${reportage.titre} — ${reportage.lieu}`}
             fetchPriority="high"
           />
-          {reportage.video ? (
+          {reportage.youtubeEmbed ? (
+            <iframe
+              className={styles.youtube}
+              src={reportage.youtubeEmbed}
+              title={`Reportage : ${reportage.titre}`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          ) : reportage.video ? (
             <video
               ref={couvertureRef}
               src={asset(reportage.video)}
