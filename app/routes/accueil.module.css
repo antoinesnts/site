@@ -24,7 +24,8 @@
 
 .titre {
   grid-column: 5 / span 7;
-  font-size: var(--fs-display);
+  /* Preserve the four editorial lines from the reference at every desktop width. */
+  font-size: clamp(30px, 1.82vw, var(--fs-display));
   line-height: var(--lh-display);
   letter-spacing: var(--ls-display);
   font-weight: 400;
