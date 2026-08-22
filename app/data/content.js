@@ -54,13 +54,12 @@ export const reportages = [
     slug: "saul",
     titre: "Au cœur du village le plus isolé de France",
     lieu: "Saül, Guyane française",
-    // ⚠️ À CONFIRMER — déduit d'un horodatage de piège photographique vu à
-    // l'image (12/03/2025). Corriger avec la vraie date de diffusion.
-    date: "2025",
+    date: "janvier 2026",
     mois: "03/25",
     genre: "Reportage",
-    // ⚠️ À CONFIRMER — c'est son métier, pas forcément son crédit exact ici.
-    role: "JRI & télépilote de drone",
+    role: "JRI / Télépilote / Étalonneur / Monteur",
+    cameras: ["Sony FX6", "DJI Mavic Pro 3"],
+    client: "TF1",
     image: "/photos/saul.jpg",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/d_0IVb4CgsU?start=26&rel=0",
     galerie: [
@@ -71,8 +70,10 @@ export const reportages = [
       "/photos/saul-5.jpg",
     ],
     youtube: "https://www.youtube.com/watch?v=d_0IVb4CgsU&t=26s",
+    resume:
+      "Entouré de jaguars et de scorpions, vivre dans l’un des villages les plus isolés de l’Hexagone est une aventure. Saül est un trésor caché de Guyane, loin de tout, en pleine forêt amazonienne. Il compte à peine 50 maisons sur 4 475 km², 42 fois la superficie de Paris. Le quotidien est bien différent, à 7 000 kilomètres de nous. Pas de route, de fleuve à proximité… le seul moyen d’y accéder est un aérodrome. Depuis Cayenne, il faut 45 minutes de vol à bord d’un petit avion d’une capacité de 19 passagers. Reportage au cœur du village le plus isolé de France.",
     chapeau:
-      "Aucune route ne mène à Saül, au cœur de la forêt amazonienne guyanaise. Tout y arrive par avion depuis Cayenne, sur une piste taillée dans la canopée.",
+      "Entouré de jaguars et de scorpions, vivre dans l’un des villages les plus isolés de l’Hexagone est une aventure.",
     parution: "TF1 — Le 13H",
   },
 ];
