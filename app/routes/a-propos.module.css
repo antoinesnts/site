@@ -1,113 +1,194 @@
-.tete {
-  padding-block: 200px 96px;
+.entete {
+  padding-block: 144px 168px;
 }
 
 .titre {
-  grid-column: 1 / span 8;
-  font-size: var(--fs-display);
-  line-height: var(--lh-display);
+  grid-column: 1 / -1;
+  font-size: clamp(56px, 5vw, 80px);
+  line-height: 1;
   letter-spacing: var(--ls-display);
+  font-weight: 400;
+}
+
+.contenu {
+  align-items: start;
+}
+
+.bloc {
+  color: var(--fg);
+  font-size: 18px;
+  line-height: 1.42;
+}
+
+.bloc h2 {
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.bloc p,
+.bloc li {
+  opacity: var(--muted-opacity);
+}
+
+.profil {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+}
+
+.details {
+  grid-column: 1 / span 4;
+  grid-row: 3;
+}
+
+.competences {
+  grid-column: 9 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.colonneDroite {
+  grid-column: 11 / span 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.awards {
+  grid-column: 9 / -1;
+  grid-row: 2;
+}
+
+.awards ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.awards li {
+  display: grid;
+  grid-template-columns: 48px minmax(110px, 1fr) minmax(120px, 1fr) auto;
+  gap: 16px;
+}
+
+.awards li span:last-child {
+  justify-self: end;
+}
+
+.portraitSection {
+  padding-top: 160px;
+}
+
+.identite {
+  grid-column: 1 / span 4;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.identite span:last-child {
+  opacity: var(--muted-opacity);
 }
 
 .portrait {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 3;
+  margin: 0;
   aspect-ratio: 3 / 4;
   overflow: hidden;
   background: #0a0a0a;
 }
+
 .portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.bio {
-  grid-column: 6 / span 5;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.section {
-  padding-block: 128px 0;
-}
-
-.sectionTitre {
-  grid-column: 1 / span 2;
-  opacity: var(--muted-opacity);
-}
-
-.liste {
-  grid-column: 3 / span 8;
-  display: flex;
-  flex-direction: column;
-}
-
-.item {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 16px;
-  padding-block: 14px;
-  border-top: 1px solid var(--hairline);
-}
-.item:last-child {
-  border-bottom: 1px solid var(--hairline);
-}
-.annee {
-  opacity: var(--muted-opacity);
-  font-variant-numeric: tabular-nums;
-}
-
-.nuage {
-  grid-column: 3 / span 8;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 0;
-}
-.nuage span {
-  padding-right: 16px;
-  margin-right: 16px;
-  border-right: 1px solid var(--hairline);
-}
-.nuage span:last-child {
-  border-right: 0;
-}
-
 @media (max-width: 1159px) {
-  .tete {
-    padding-block: 160px 64px;
-  }
-  .titre,
-  .bio {
-    grid-column: 1 / -1;
-  }
-  .portrait {
+  .profil,
+  .details {
     grid-column: 1 / span 5;
   }
-  .bio {
-    grid-column: 7 / span 6;
+
+  .competences {
+    grid-column: 7 / span 3;
+  }
+
+  .colonneDroite {
+    grid-column: 10 / span 3;
+  }
+
+  .awards {
+    grid-column: 7 / -1;
   }
 }
 
 @media (max-width: 767px) {
-  .tete {
-    padding-block: 120px 48px;
+  .entete {
+    padding-block: 128px 80px;
   }
-  .portrait,
-  .bio,
-  .liste,
-  .nuage,
-  .sectionTitre {
+
+  .titre {
+    font-size: 56px;
+  }
+
+  .bloc,
+  .profil,
+  .details,
+  .competences,
+  .colonneDroite,
+  .awards,
+  .identite,
+  .portrait {
     grid-column: 1 / -1;
   }
-  .section {
-    padding-block: 72px 0;
+
+  .contenu {
+    row-gap: 48px;
   }
-  .sectionTitre {
-    margin-bottom: 12px;
+
+  .details,
+  .awards {
+    margin-top: 0;
   }
-  .item {
-    grid-template-columns: 96px 1fr;
+
+  .profil,
+  .details,
+  .competences,
+  .colonneDroite,
+  .awards {
+    grid-row: auto;
+  }
+
+  .colonneDroite {
+    gap: 48px;
+  }
+
+  .awards li {
+    grid-template-columns: 44px 1fr auto;
     gap: 8px;
+  }
+
+  .awards li span:nth-child(3) {
+    grid-column: 2;
+  }
+
+  .awards li span:last-child {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .portraitSection {
+    padding-top: 96px;
+  }
+
+  .identite {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .portrait {
+    max-width: 420px;
   }
 }

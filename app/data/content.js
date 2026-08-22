@@ -23,10 +23,8 @@ export const site = {
   emailPiedDePage: "contact@antoinesantos.fr",
   description:
     "Antoine Santos, journaliste reporter d'images, monteur et télépilote de drone basé à Caen. Correspondant en Normandie pour TF1 et TF1 Info.",
-  // ⚠️ Image d'attente sur la page « À propos » : un plan de ses reportages,
-  // à remplacer par un vrai portrait.
-  portrait: "/photos/saul.jpg",
-  portraitAlt: "Saül, Guyane française — vue aérienne extraite du reportage",
+  portrait: "/photos/antoine-santos-morzine.jpg",
+  portraitAlt: "Antoine Santos tenant un drone à Morzine au coucher du soleil — photo Corentin Gérard",
 };
 
 /** Blocs de repères affichés à gauche du titre, en page d'accueil. */
@@ -79,23 +77,31 @@ export const reportages = [
   },
 ];
 
-// ⚠️ Texte proposé à partir de sources publiques : à relire et corriger.
-export const bio = [
-  "Antoine Santos est journaliste reporter d'images, monteur et télépilote de drone. Il vit à Caen et couvre la Normandie pour TF1 et TF1 Info.",
-  "Ses sujets partent le plus souvent du terrain normand — le littoral et son érosion, le tourisme, la vie des communes — et l'emmènent parfois beaucoup plus loin, de la Polynésie française à la Guyane.",
-  "Le drone fait partie de son écriture. Il donne l'échelle d'un trait de côte, d'une forêt ou d'un village isolé, là où le sol ne raconte qu'une partie de l'histoire.",
+export const profil =
+  "Je conçois et réalise des reportages, magazines et je participe comme télépilote de drone à des films documentaires pour des médias nationaux, notamment TF1, France 3, NOVO19 ou encore Public Sénat. De la recherche de sujet au tournage, en passant par la réalisation, les prises de vues aériennes et le montage, j’interviens sur l’ensemble de la chaîne de production. Je suis basé sur Caen en Normandie et disponible sur toute la France. Mon expérience de terrain me permet de m’adapter sur des sujets très variés, en France comme à l’étranger, dans des contextes qui exigent réactivité, autonomie et capacité d’adaptation. Je porte une attention particulière à la qualité des images, à leur sens et au récit, avec la volonté de rendre chaque sujet à la fois rigoureux, tourné en séquences et visuellement fort. Habitué aux exigences des diffuseurs nationaux et aux délais contraints, je mets cette double expertise journalistique et audiovisuelle au service de projets éditoriaux ambitieux.";
+
+export const details = ["Basé à Caen, en Normandie", "Disponible partout en France et dans le monde"];
+
+export const competences = [
+  "Brand Films", "Commercial Films", "Music Videos", "Fashion & Editorial Films",
+  "Sports & Lifestyle Films", "Documentary & Short Films", "Creative Direction",
+  "Concept Development", "Storyboarding", "Production Planning", "Cinematography",
+  "Drone Videography", "Camera Operation", "Video Editing", "Color Grading",
+  "Motion Graphics", "Sound Design", "Post-Production",
 ];
 
-export const parcours = [
-  {
-    annee: "Aujourd'hui",
-    intitule:
-      "JRI, monteur et télépilote de drone — TF1 / TF1 Info, correspondant en Normandie",
-  },
-  { annee: "2018 — 2019", intitule: "Licence professionnelle télévision — IUT de Tours / EPJT" },
+export const clients = [
+  "Festival Beauregard", "UTOBI", "La Réserve Pêche lodé", "Kite-R Évolution",
+  "Le Sémaphore", "Normandie Pays d’Auge Tourisme", "Merville-Franceville",
 ];
 
-export const parutions = ["TF1", "TF1 Info", "Le 13H", "Le 20H"];
+export const equipement = ["Sony FX6", "ARRI Alexa Mini", "RED Komodo 6K", "DJI Ronin", "Zeiss Prime Lenses"];
+
+export const awards = [
+  { annee: "2026", prix: "Best Short Film", evenement: "Urban Frame" },
+  { annee: "2025", prix: "Best Cinematography", evenement: "Motion Awards" },
+  { annee: "2025", prix: "Official Selection", evenement: "Global Film Festival" },
+];
 
 export const liens = [
   { label: "YouTube", icone: "youtube", href: "https://www.youtube.com/c/AntoineSANTOS" },

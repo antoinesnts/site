@@ -1,7 +1,13 @@
 import Reveal from "../components/Reveal/Reveal.jsx";
-import SplitText from "../components/SplitText/SplitText.jsx";
-import { bio, parcours, parutions, site } from "../data/content.js";
-import { useIntroReady } from "../lib/intro.js";
+import {
+  awards,
+  clients,
+  competences,
+  details,
+  equipement,
+  profil,
+  site,
+} from "../data/content.js";
 import { asset } from "../lib/asset.js";
 import styles from "./a-propos.module.css";
 
@@ -12,52 +18,68 @@ export function meta() {
   ];
 }
 
-export default function APropos() {
-  const ready = useIntroReady();
+function Bloc({ titre, children, className = "", delay = 0 }) {
+  return (
+    <Reveal className={`${styles.bloc} ${className}`} y={20} delay={delay}>
+      <h2>{titre}</h2>
+      {children}
+    </Reveal>
+  );
+}
 
+export default function APropos() {
   return (
     <>
-      <section className={`grid ${styles.tete}`}>
-        <h1 className={styles.titre}>
-          <SplitText text={`${site.nom},`} delay={0.1} immediate gate={ready} />{" "}
-          <SplitText text="journaliste reporter d'images à Caen." delay={0.26} immediate gate={ready} />
-        </h1>
+      <section className={`grid ${styles.entete}`}>
+        <Reveal as="h1" className={styles.titre} y={32} immediate>
+          À propos
+        </Reveal>
       </section>
 
-      <section className="grid">
-        <Reveal className={styles.portrait} y={32}>
+      <section className={`grid ${styles.contenu}`}>
+        <Bloc titre="Profil" className={styles.profil} delay={0.1}>
+          <p>{profil}</p>
+        </Bloc>
+
+        <Bloc titre="Détails" className={styles.details} delay={0.16}>
+          <p>{details[0]}</p>
+          <p>{details[1]}</p>
+        </Bloc>
+
+        <Bloc titre="Compétences" className={styles.competences} delay={0.12}>
+          <ul>{competences.map((item) => <li key={item}>{item}</li>)}</ul>
+        </Bloc>
+
+        <div className={styles.colonneDroite}>
+          <Bloc titre="Clients" delay={0.18}>
+            <ul>{clients.map((item) => <li key={item}>{item}</li>)}</ul>
+          </Bloc>
+          <Bloc titre="Équipement" delay={0.24}>
+            <ul>{equipement.map((item) => <li key={item}>{item}</li>)}</ul>
+          </Bloc>
+        </div>
+
+        <Bloc titre="Awards" className={styles.awards} delay={0.3}>
+          <ul>
+            {awards.map((award) => (
+              <li key={`${award.annee}-${award.prix}`}>
+                <span>{award.annee}</span>
+                <span>{award.prix}</span>
+                <span>{award.evenement}</span>
+                <span aria-hidden="true">↗</span>
+              </li>
+            ))}
+          </ul>
+        </Bloc>
+      </section>
+
+      <section className={`grid ${styles.portraitSection}`}>
+        <Reveal className={styles.identite} y={20}>
+          <span>{site.nom}</span>
+          <span>{site.role}</span>
+        </Reveal>
+        <Reveal as="figure" className={styles.portrait} y={28} delay={0.08}>
           <img src={asset(site.portrait)} alt={site.portraitAlt} />
-        </Reveal>
-
-        <Reveal className={styles.bio} y={24} delay={0.1}>
-          {bio.map((paragraphe, i) => (
-            <p key={i}>{paragraphe}</p>
-          ))}
-        </Reveal>
-      </section>
-
-      <section className={`grid ${styles.section}`}>
-        <Reveal className={styles.sectionTitre} opacity={0.5}>
-          Parcours
-        </Reveal>
-        <Reveal className={styles.liste} y={24}>
-          {parcours.map((ligne) => (
-            <div key={ligne.intitule} className={styles.item}>
-              <span className={styles.annee}>{ligne.annee}</span>
-              <span>{ligne.intitule}</span>
-            </div>
-          ))}
-        </Reveal>
-      </section>
-
-      <section className={`grid ${styles.section}`}>
-        <Reveal className={styles.sectionTitre} opacity={0.5}>
-          Parutions
-        </Reveal>
-        <Reveal className={styles.nuage} y={24}>
-          {parutions.map((titre) => (
-            <span key={titre}>{titre}</span>
-          ))}
         </Reveal>
       </section>
     </>
