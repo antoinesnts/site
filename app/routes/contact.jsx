@@ -42,6 +42,13 @@ export default function Contact() {
           <span className={styles.label}>Disponible</span>
           <span>partout en France et dans le monde</span>
         </Reveal>
+
+        <Reveal as="figure" className={styles.portrait} y={24} delay={0.18} immediate gate={ready}>
+          <img
+            src="/photos/antoine-santos-contact.jpg"
+            alt="Antoine Santos au coucher du soleil — photo Corentin Gérard"
+          />
+        </Reveal>
       </div>
     </section>
   );

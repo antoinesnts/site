@@ -48,7 +48,24 @@
 
 .base,
 .disponible {
-  grid-column: 7 / span 6;
+  grid-column: 6 / span 3;
+}
+
+.portrait {
+  grid-column: 10 / span 3;
+  grid-row: 1 / span 2;
+  margin: 0;
+  align-self: start;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.portrait img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .reseaux {
@@ -97,5 +114,12 @@
     grid-column: 1 / -1;
     gap: 4px;
     font-size: 18px;
+  }
+
+  .portrait {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    width: min(100%, 360px);
+    margin-top: -12px;
   }
 }
