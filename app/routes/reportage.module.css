@@ -1,0 +1,210 @@
+.tete {
+  padding-block: 200px 40px;
+}
+
+.retour {
+  grid-column: 1 / span 2;
+  opacity: var(--muted-opacity);
+  transition: opacity 0.25s var(--ease);
+}
+.retour:hover {
+  opacity: 1;
+}
+
+.titre {
+  grid-column: 1 / span 8;
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  margin-top: 24px;
+}
+
+.fiche {
+  grid-column: 10 / span 3;
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 16px;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+}
+.champTitre {
+  opacity: var(--muted-opacity);
+  margin-bottom: 2px;
+}
+
+.couverture {
+  margin-top: 64px;
+  padding-inline: var(--page-x);
+}
+.couvertureCadre {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+.couvertureCadre img,
+.couvertureCadre video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The clip fades over the still only once it is genuinely playing. */
+.couvertureCadre video {
+  opacity: 0;
+  transition: opacity 0.6s var(--ease);
+}
+.couvertureCadre[data-joue="true"] video {
+  opacity: 1;
+}
+
+.corps {
+  padding-block: 96px 0;
+}
+
+.chapeau {
+  grid-column: 3 / span 6;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.regarder {
+  grid-column: 3 / span 6;
+  margin-top: 32px;
+}
+
+.regarderLien {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--hairline);
+  transition: border-color 0.3s var(--ease);
+}
+.regarderLien:hover,
+.regarderLien:focus-visible {
+  border-color: var(--fg);
+}
+
+.texte {
+  grid-column: 3 / span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.galerie {
+  padding-block: 96px 0;
+  row-gap: 4px;
+}
+.galerieLabel {
+  grid-column: 1 / -1;
+  opacity: var(--muted-opacity);
+  margin-bottom: 8px;
+}
+
+.gDemi {
+  grid-column: span 6;
+  aspect-ratio: 16 / 9;
+}
+.gPleine {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+.galerie figure {
+  margin: 0;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+.galerie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.suite {
+  padding-block: 128px 0;
+  border-top: 1px solid var(--hairline);
+  margin-top: 128px;
+}
+.suiteLabel {
+  grid-column: 1 / -1;
+  opacity: var(--muted-opacity);
+  margin-bottom: 16px;
+}
+.suiteLien {
+  grid-column: 1 / span 6;
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+}
+.suiteLienDroite {
+  grid-column: 7 / span 6;
+  text-align: right;
+}
+
+@media (max-width: 1159px) {
+  .tete {
+    padding-block: 160px 32px;
+  }
+  .titre {
+    grid-column: 1 / -1;
+  }
+  .fiche {
+    grid-column: 1 / span 8;
+    margin-top: 40px;
+  }
+  .chapeau,
+  .regarder,
+  .texte {
+    grid-column: 2 / span 9;
+  }
+}
+
+@media (max-width: 767px) {
+  .tete {
+    padding-block: 120px 24px;
+  }
+  .retour {
+    grid-column: 1 / -1;
+  }
+  .fiche {
+    grid-column: 1 / -1;
+  }
+  .couverture {
+    margin-top: 40px;
+  }
+  .corps,
+  .galerie {
+    padding-block: 56px 0;
+  }
+  .chapeau,
+  .regarder,
+  .texte {
+    grid-column: 1 / -1;
+  }
+  .chapeau {
+    font-size: 18px;
+  }
+  .gDemi,
+  .gPleine {
+    grid-column: 1 / -1;
+  }
+  .suite {
+    padding-block: 72px 0;
+    margin-top: 72px;
+  }
+  .suiteLien,
+  .suiteLienDroite {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+}

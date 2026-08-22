@@ -1,0 +1,150 @@
+.hero {
+  padding-block: 240px 200px;
+  align-content: start;
+}
+
+.reperes {
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 16px;
+  align-self: end;
+}
+
+.bloc {
+  display: flex;
+  flex-direction: column;
+}
+
+.blocTitre {
+  opacity: var(--muted-opacity);
+  margin-bottom: 4px;
+}
+
+.titre {
+  grid-column: 5 / span 7;
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  font-weight: 400;
+}
+
+.cta {
+  grid-column: 12 / span 1;
+  align-self: end;
+  justify-self: end;
+  white-space: nowrap;
+  display: flex;
+  gap: 6px;
+}
+
+.cta a {
+  position: relative;
+}
+.cta a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease);
+}
+.cta a:hover::after,
+.cta a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* ---- index of reportages ---- */
+
+.section {
+  padding-block: 0 40px;
+}
+
+.sectionEntete {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 24px;
+}
+
+.sectionTitre {
+  opacity: var(--muted-opacity);
+}
+
+/* Uniform grid: every cell the same width and the same 16:9 frame. */
+.grille {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 64px;
+  padding-inline: var(--page-x);
+  padding-bottom: 40px;
+}
+
+.grille[data-peu="true"] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Hovering one cell recedes the others. Done in CSS rather than React state so
+   moving the pointer across the grid never re-renders it. */
+.grille:has([data-carte]:hover) [data-carte]:not(:hover) {
+  opacity: 0.25;
+}
+
+.tout {
+  grid-column: 1 / -1;
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.toutLien {
+  position: relative;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--hairline);
+  transition: border-color 0.3s var(--ease);
+}
+.toutLien:hover {
+  border-color: var(--fg);
+}
+
+@media (max-width: 1159px) {
+  .hero {
+    padding-block: 180px 140px;
+  }
+  .grille {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .titre {
+    grid-column: 5 / span 8;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding-block: 128px 80px;
+    row-gap: 56px;
+  }
+  .reperes {
+    grid-column: 1 / -1;
+    order: 2;
+  }
+  .titre {
+    grid-column: 1 / -1;
+  }
+  .cta {
+    grid-column: 1 / -1;
+    justify-self: start;
+    order: 3;
+  }
+  .grille {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 48px;
+  }
+}

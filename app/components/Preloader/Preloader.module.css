@@ -1,0 +1,47 @@
+/* The curtain lifts on a CSS animation, not on a JS callback: if the bundle
+   is slow or fails, the page still opens. JS only drives the counter and,
+   on a repeat visit within the session, skips the whole thing. */
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--page-x);
+  background: var(--bg);
+  animation: rideau 0.7s var(--ease) 1.1s forwards;
+}
+
+@keyframes rideau {
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+/* Seen already this session — no curtain at all. */
+.root[data-skip="true"] {
+  display: none;
+  animation: none;
+}
+
+.label,
+.count {
+  font-size: var(--fs-body);
+  font-weight: 500;
+}
+
+.count {
+  font-variant-numeric: tabular-nums;
+  opacity: var(--muted-opacity);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root {
+    animation-delay: 0s;
+    animation-duration: 0.01ms;
+  }
+}

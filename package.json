@@ -1,0 +1,24 @@
+{
+  "name": "antoine",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "echo \"no typescript\""
+  },
+  "dependencies": {
+    "@react-router/node": "^7.6.2",
+    "@react-router/serve": "^7.6.2",
+    "isbot": "^5.1.28",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.2"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.6.2",
+    "vite": "^6.3.5"
+  }
+}

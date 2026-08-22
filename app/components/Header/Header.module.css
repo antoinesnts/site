@@ -1,0 +1,143 @@
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding-block: 24px;
+  align-items: baseline;
+  row-gap: 0;
+}
+
+/* Scrim so the header stays readable where it overlaps photographs. */
+.root::before {
+  content: "";
+  position: absolute;
+  inset: -24px 0 auto;
+  height: 140px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  z-index: -1;
+}
+
+.nom {
+  grid-column: 1 / span 4;
+  font-weight: 500;
+}
+
+.nav {
+  grid-column: 5 / span 4;
+  display: flex;
+  gap: 24px;
+}
+
+.lieu {
+  grid-column: 9 / span 3;
+  display: flex;
+  gap: 12px;
+}
+
+.contact {
+  grid-column: 12 / span 1;
+  justify-self: end;
+  white-space: nowrap;
+}
+
+/* Links dim to half strength, and the current page keeps a rule under it. */
+.link {
+  position: relative;
+  opacity: var(--muted-opacity);
+  transition: opacity 0.25s var(--ease);
+}
+.link:hover,
+.link:focus-visible {
+  opacity: 1;
+}
+.link[data-active="true"] {
+  opacity: 1;
+}
+.link[data-active="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 1px;
+  background: currentColor;
+}
+
+.time {
+  opacity: var(--muted-opacity);
+}
+
+/* The menu trigger and panel only exist below the tablet breakpoint. */
+.bascule {
+  display: none;
+  grid-column: 4 / span 1;
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.panneau {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .root {
+    padding-block: 16px;
+    --cols: 4;
+  }
+  .nom {
+    grid-column: 1 / span 3;
+  }
+  .nav,
+  .lieu,
+  .contact {
+    display: none;
+  }
+  .bascule {
+    display: block;
+  }
+
+  .panneau {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: var(--page-x);
+    background: var(--bg);
+    /* Kept in the DOM so the transition can play both ways. */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition:
+      opacity 0.35s var(--ease),
+      transform 0.45s var(--ease),
+      visibility 0s linear 0.35s;
+  }
+  .panneau[data-ouvert="true"] {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition-delay: 0s;
+  }
+
+  .panneauLien {
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: var(--ls-display);
+  }
+  .panneauLien[data-active="true"] {
+    opacity: var(--muted-opacity);
+  }
+
+  .panneauPied {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    opacity: var(--muted-opacity);
+  }
+}

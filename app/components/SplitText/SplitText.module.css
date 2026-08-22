@@ -1,0 +1,36 @@
+.root {
+  display: block;
+}
+
+.word {
+  display: inline-block;
+  /* The mask clips the rising word. Extra vertical room + matching negative
+     margin so French accents (É, À) and descenders (g, j, p) are never cut. */
+  overflow: hidden;
+  padding: 0.16em 0 0.2em;
+  margin: -0.16em 0 -0.2em;
+  vertical-align: top;
+}
+
+.inner {
+  display: inline-block;
+  opacity: 0.001;
+  transform: translateY(var(--split-y, 96px));
+  transition:
+    opacity var(--split-dur, 0.5s) var(--ease) var(--d),
+    transform var(--split-dur, 0.5s) var(--ease) var(--d);
+  will-change: transform, opacity;
+}
+
+.root[data-in="true"] .inner {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inner {
+    opacity: 1;
+    transform: none;
+  }
+}

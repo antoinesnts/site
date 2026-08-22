@@ -1,0 +1,72 @@
+.lien {
+  display: block;
+  /* Dimming (applied by the grid on hover of a sibling) rides on this
+     element, while the reveal animation owns the wrapper's opacity. */
+  transition: opacity 0.45s var(--ease);
+}
+
+.entete {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  align-items: baseline;
+  column-gap: 8px;
+  row-gap: 2px;
+  padding-bottom: 16px;
+}
+
+.date {
+  grid-column: 1;
+  opacity: var(--muted-opacity);
+  font-variant-numeric: tabular-nums;
+}
+
+.titre {
+  grid-column: 2;
+  font-weight: 500;
+}
+
+.sous {
+  grid-column: 2;
+  display: flex;
+  gap: 12px;
+  opacity: var(--muted-opacity);
+}
+
+.cadre {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #0a0a0a;
+}
+
+.media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The poster stays put; the clip fades over it once it is really playing,
+   which avoids a black frame while the first frame decodes. */
+.video {
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+}
+.lien[data-joue="true"] .video {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  /* No hover, no clip: never spend a touch visitor's data on it. */
+  .video {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .entete {
+    grid-template-columns: 56px 1fr;
+    padding-bottom: 12px;
+  }
+}

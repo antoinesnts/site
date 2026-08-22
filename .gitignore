@@ -1,0 +1,12 @@
+node_modules
+.react-router
+build
+.DS_Store
+*.local
+
+# Rushes déposés à la racine (jamais versionnés — seuls les dérivés
+# de public/photos et public/videos le sont)
+/*.webm
+/*.mp4
+/*.mov
+/*.mkv
