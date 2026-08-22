@@ -2,6 +2,7 @@ import Reveal from "../components/Reveal/Reveal.jsx";
 import SplitText from "../components/SplitText/SplitText.jsx";
 import { bio, parcours, parutions, site } from "../data/content.js";
 import { useIntroReady } from "../lib/intro.js";
+import { asset } from "../lib/asset.js";
 import styles from "./a-propos.module.css";
 
 export function meta() {
@@ -25,7 +26,7 @@ export default function APropos() {
 
       <section className="grid">
         <Reveal className={styles.portrait} y={32}>
-          <img src={site.portrait} alt={site.portraitAlt} />
+          <img src={asset(site.portrait)} alt={site.portraitAlt} />
         </Reveal>
 
         <Reveal className={styles.bio} y={24} delay={0.1}>

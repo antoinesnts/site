@@ -16,7 +16,7 @@ Normandie pour TF1 et TF1 Info.
 
 | | |
 |---|---|
-| Framework | React 19 + React Router 7 (framework mode, **SSR activé**) |
+| Framework | React 19 + React Router 7 (framework mode, **prérendu statique**) |
 | Build | Vite 6 |
 | Styles | CSS Modules + un fichier global de tokens — pas de framework CSS |
 | Langage | JavaScript uniquement, **pas de TypeScript** |
@@ -36,10 +36,49 @@ npm run dev
 ```
 
 ```bash
-npm run build && npm start
+npm run build && npm run preview
 ```
 
 Le serveur de dev respecte la variable `PORT`.
+
+## Déploiement — GitHub Pages
+
+Chaque push sur `main` déclenche `.github/workflows/deploy.yml`, qui construit
+le site et le publie. Rien d'autre à faire au quotidien.
+
+**Une seule manipulation, une fois :** dans *Settings → Pages* du dépôt, mettre
+**Source: GitHub Actions**. Sans ça le workflow échoue au moment de publier.
+
+Le site n'a pas besoin de serveur : toutes les routes sont rendues en HTML au
+moment du build (`ssr: false` + `prerender`), puisque tout le contenu vient de
+`content.js`. Le résultat tient dans `build/client`.
+
+### Le chemin de base
+
+Les pages de projet GitHub sont servies depuis `https://<compte>.github.io/<dépôt>/`
+et non depuis la racine du domaine. La variable `BASE_PATH` porte ce préfixe :
+
+- en local, elle n'est pas définie → le site tourne à la racine ;
+- dans le workflow, elle vaut `/site/`.
+
+Elle est répercutée sur Vite (`base`), sur React Router (`basename`) et sur les
+fichiers de `public/` via le petit utilitaire `app/lib/asset.js`. Les polices et
+le grain sont passés par le pipeline Vite (`app/styles/assets/`) : ils sont donc
+empreintés et préfixés automatiquement.
+
+`scripts/pages.mjs` termine le travail : React Router écrit le HTML sous le
+basename (`build/client/site/…`) alors que Vite pose les assets à la racine ; le
+script remonte le HTML d'un cran, copie le fallback en `404.html` et écrit un
+`.nojekyll`.
+
+### Passer à un nom de domaine
+
+1. Mettre `BASE_PATH: /` dans `.github/workflows/deploy.yml`.
+2. Ajouter un fichier `public/CNAME` contenant le domaine.
+3. Faire pointer le DNS sur GitHub Pages, puis renseigner le domaine dans
+   *Settings → Pages*.
+
+Rien d'autre : le code ne suppose jamais un chemin en particulier.
 
 ## Modifier le contenu
 
@@ -165,7 +204,7 @@ tiers, donc rien à déclarer côté RGPD.
 
 ## Accessibilité et robustesse
 
-- Le HTML est rendu côté serveur : le contenu est présent sans JavaScript.
+- Toutes les routes sont prérendues en HTML : le contenu est là sans JavaScript.
 - Sans JS, une feuille `<noscript>` annule les états de départ des animations et
   retire le voile de chargement — rien n'est masqué.
 - Le voile de chargement se lève sur une animation CSS : même si le bundle
@@ -181,7 +220,10 @@ app/
 ├── routes.js                déclaration des routes
 ├── data/content.js          ← tout le contenu éditable
 ├── lib/intro.js             synchronisation du voile de chargement
+├── lib/asset.js             préfixe de base pour les fichiers de public/
+├── lib/texte.js             accord au pluriel
 ├── styles/app.css           tokens, reset, grille, grain
+├── styles/assets/           polices + grain (empreintés par Vite)
 ├── components/
 │   ├── Reveal/              révélation au défilement
 │   ├── SplitText/           révélation mot à mot

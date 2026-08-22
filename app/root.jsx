@@ -12,24 +12,18 @@ import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Preloader from "./components/Preloader/Preloader.jsx";
 import { site } from "./data/content.js";
+import switzer400 from "./styles/assets/switzer-400.woff2?url";
+import switzer500 from "./styles/assets/switzer-500.woff2?url";
 import "./styles/app.css";
 
-export const links = () => [
-  {
+export const links = () =>
+  [switzer400, switzer500].map((href) => ({
     rel: "preload",
-    href: "/fonts/switzer-400.woff2",
+    href,
     as: "font",
     type: "font/woff2",
     crossOrigin: "anonymous",
-  },
-  {
-    rel: "preload",
-    href: "/fonts/switzer-500.woff2",
-    as: "font",
-    type: "font/woff2",
-    crossOrigin: "anonymous",
-  },
-];
+  }));
 
 /**
  * Applied only when scripting is unavailable: entrance animations start from a

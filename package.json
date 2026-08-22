@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "echo \"no typescript\""
+    "build:pages": "react-router build && node scripts/pages.mjs",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@react-router/node": "^7.6.2",

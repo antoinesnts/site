@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router";
 import Reveal from "../Reveal/Reveal.jsx";
+import { asset } from "../../lib/asset.js";
 import styles from "./ReportageCard.module.css";
 
 /**
@@ -60,7 +61,7 @@ export default function ReportageCard({ reportage, delay = 0, priority = false }
         <div className={styles.cadre}>
           <img
             className={styles.media}
-            src={image}
+            src={asset(image)}
             alt=""
             loading={priority ? "eager" : "lazy"}
             decoding="async"
@@ -69,8 +70,8 @@ export default function ReportageCard({ reportage, delay = 0, priority = false }
             <video
               ref={videoRef}
               className={`${styles.media} ${styles.video}`}
-              src={video}
-              poster={image}
+              src={asset(video)}
+              poster={asset(image)}
               muted
               loop
               playsInline

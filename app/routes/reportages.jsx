@@ -4,6 +4,7 @@ import Reveal from "../components/Reveal/Reveal.jsx";
 import SplitText from "../components/SplitText/SplitText.jsx";
 import { reportages, site } from "../data/content.js";
 import { pluriel } from "../lib/texte.js";
+import { asset } from "../lib/asset.js";
 import { useIntroReady } from "../lib/intro.js";
 import styles from "./reportages.module.css";
 
@@ -86,7 +87,7 @@ export default function Reportages() {
         data-visible={apercu ? "true" : "false"}
         aria-hidden="true"
       >
-        {apercu ? <img src={apercu.image} alt="" /> : null}
+        {apercu ? <img src={asset(apercu.image)} alt="" /> : null}
       </div>
     </>
   );

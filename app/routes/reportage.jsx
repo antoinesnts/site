@@ -4,6 +4,7 @@ import Reveal from "../components/Reveal/Reveal.jsx";
 import SplitText from "../components/SplitText/SplitText.jsx";
 import { reportages, site } from "../data/content.js";
 import { useIntroReady } from "../lib/intro.js";
+import { asset } from "../lib/asset.js";
 import styles from "./reportage.module.css";
 
 export async function loader({ params }) {
@@ -33,7 +34,7 @@ export function meta({ data }) {
     { name: "description", content: reportage.chapeau },
     { property: "og:title", content: `${reportage.titre} — ${site.nom}` },
     { property: "og:description", content: reportage.chapeau },
-    { property: "og:image", content: reportage.image },
+    { property: "og:image", content: asset(reportage.image) },
     { property: "og:type", content: "article" },
   ];
 }
@@ -99,15 +100,15 @@ export default function Reportage() {
       <Reveal className={styles.couverture} delay={0.4} y={32} immediate gate={ready}>
         <div className={styles.couvertureCadre} data-joue={joue ? "true" : "false"}>
           <img
-            src={reportage.image}
+            src={asset(reportage.image)}
             alt={`${reportage.titre} — ${reportage.lieu}`}
             fetchPriority="high"
           />
           {reportage.video ? (
             <video
               ref={couvertureRef}
-              src={reportage.video}
-              poster={reportage.image}
+              src={asset(reportage.video)}
+              poster={asset(reportage.image)}
               muted
               loop
               playsInline
@@ -172,7 +173,7 @@ export default function Reportage() {
             y={40}
             delay={(i % 2) * 0.06}
           >
-            <img src={src} alt="" loading="lazy" decoding="async" />
+            <img src={asset(src)} alt="" loading="lazy" decoding="async" />
           </Reveal>
         ))}
       </div>

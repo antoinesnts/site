@@ -1,24 +1,27 @@
 /* ==========================================================================
    Fonts — self-hosted Switzer (Fontshare, free licence). No CDN call, so no
    third-party request from visitors' browsers (RGPD-friendly).
+
+   Referenced relatively so Vite fingerprints them and rewrites the URL for
+   whatever base the site is deployed under (root, or /site/ on Pages).
    ========================================================================== */
 @font-face {
   font-family: "Switzer";
-  src: url("/fonts/switzer-400.woff2") format("woff2");
+  src: url("./assets/switzer-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Switzer";
-  src: url("/fonts/switzer-500.woff2") format("woff2");
+  src: url("./assets/switzer-500.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Switzer";
-  src: url("/fonts/switzer-700.woff2") format("woff2");
+  src: url("./assets/switzer-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -171,7 +174,7 @@ button {
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  background-image: url("/grain.png");
+  background-image: url("./assets/grain.png");
   background-size: 256px 256px;
   background-repeat: repeat;
   opacity: 0.07;
