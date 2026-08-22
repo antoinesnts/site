@@ -19,8 +19,7 @@ export const site = {
   ],
   ville: "Caen, FR",
   fuseau: "Europe/Paris",
-  // ⚠️ ADRESSE FICTIVE — à remplacer par la vraie avant mise en ligne.
-  email: "contact@antoinesantos.fr",
+  email: "antoine.santos.pro@gmail.com",
   description:
     "Antoine Santos, journaliste reporter d'images, monteur et télépilote de drone basé à Caen. Correspondant en Normandie pour TF1 et TF1 Info.",
   // ⚠️ Image d'attente sur la page « À propos » : un plan de ses reportages,
@@ -98,7 +97,8 @@ export const parcours = [
 export const parutions = ["TF1", "TF1 Info", "Le 13H", "Le 20H"];
 
 export const liens = [
-  { label: "Instagram", href: "https://www.instagram.com/antoinesnts/" },
-  { label: "X", href: "https://x.com/AntoineSnts" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/antoinesantos/" },
+  { label: "YouTube", icone: "youtube", href: "https://www.youtube.com/c/AntoineSANTOS" },
+  { label: "LinkedIn", icone: "linkedin", href: "https://www.linkedin.com/in/antoinesantos/" },
+  { label: "Instagram", icone: "instagram", href: "https://www.instagram.com/antoinesnts/" },
+  { label: "TikTok", icone: "tiktok", href: "https://www.tiktok.com/@antoinesnts" },
 ];
