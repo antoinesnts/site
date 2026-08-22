@@ -47,10 +47,10 @@ export default function Reportage() {
 
       <Reveal className={styles.couverture} y={24} immediate>
         <div className={styles.couvertureCadre}>
-          {reportage.youtubeEmbed ? (
+          {reportage.youtubeEmbed || reportage.embedUrl ? (
             <iframe
               className={styles.youtube}
-              src={reportage.youtubeEmbed}
+              src={reportage.youtubeEmbed ?? reportage.embedUrl}
               title={`Reportage : ${reportage.titre}`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"

@@ -76,6 +76,46 @@ export const reportages = [
       "Entouré de jaguars et de scorpions, vivre dans l’un des villages les plus isolés de l’Hexagone est une aventure.",
     parution: "TF1 — Le 13H",
   },
+  {
+    slug: "chausey",
+    titre: "Archipel de Chausey : les plus grandes marées d’Europe",
+    lieu: "Chausey, Normandie",
+    date: "octobre 2025",
+    mois: "10/25",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    cameras: ["Sony FX6", "DJI Mavic Pro 3"],
+    client: "TF1 — Le 13H",
+    image: "/photos/chausey.jpg",
+    embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7383499336590008320",
+    source: "https://www.linkedin.com/posts/antoinesantos_normandie-grandesmaraezes-grandemaraeze-ugcPost-7383499336590008320-8TmO/",
+    galerie: ["/photos/chausey.jpg"],
+    resume:
+      "L’archipel de Chausey offre un spectacle naturel saisissant pendant les grandes marées. À marée basse, 365 îlots se découvrent, contre 52 à marée haute. Avec un marnage qui peut atteindre 14 mètres, la mer transforme entièrement le paysage en seulement quelques heures. Avec Aurore Coulon, nous avons parcouru l’archipel pour raconter ce phénomène en images, à travers des séquences avant/après et des timelapses.",
+    chapeau:
+      "À Chausey, les plus grandes marées d’Europe transforment le paysage en quelques heures.",
+    parution: "TF1 — Le 13H",
+  },
+  {
+    slug: "etretat",
+    titre: "Étretat : les secours désormais payants pour les imprudents",
+    lieu: "Étretat, Normandie",
+    date: "avril 2026",
+    mois: "04/26",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    cameras: ["Sony FX6", "DJI Mavic Pro 3"],
+    client: "TF1",
+    image: "/photos/etretat.jpg",
+    embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D969146452273589&show_text=false&width=1280",
+    source: "https://www.facebook.com/watch/?v=969146452273589",
+    galerie: ["/photos/etretat.jpg"],
+    resume:
+      "À Étretat, des touristes s’aventurent dans le Trou à l’homme sans anticiper la montée des eaux. Piégés par la marée haute, ils doivent parfois être secourus avec d’importants moyens. Désormais, les interventions concernant des personnes qui ne sont pas en danger peuvent être facturées, pour un montant minimum de 750 euros.",
+    chapeau:
+      "À Étretat, les imprudents surpris par la marée peuvent désormais devoir payer les secours.",
+    parution: "TF1",
+  },
 ];
 
 export const profil =
