@@ -14,6 +14,7 @@ import styles from "./ReportageCard.module.css";
 export default function ReportageCard({ reportage, delay = 0, priority = false }) {
   const { slug, titre, mois, lieu, genre, role, image, vignette, preview } = reportage;
   const imageVignette = vignette ?? image;
+  const roleCarte = role?.replace(/\n/g, " / ");
   const videoRef = useRef(null);
   const [joue, setJoue] = useState(false);
 
@@ -54,10 +55,10 @@ export default function ReportageCard({ reportage, delay = 0, priority = false }
           <span className={styles.titre}>{titre}</span>
           <span className={styles.sous}>
             <span>{genre}</span>
-            {role ? (
+            {roleCarte ? (
               <>
                 <span aria-hidden="true">—</span>
-                <span>{role}</span>
+                <span>{roleCarte}</span>
               </>
             ) : null}
           </span>
