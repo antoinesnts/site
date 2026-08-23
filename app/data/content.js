@@ -456,6 +456,46 @@ export const reportages = [
       "En Guyane, la préservation de la culture amérindienne au cœur des enjeux de transmission.",
     parution: "Public Sénat",
   },
+  {
+    slug: "kitesurf-merville-franceville",
+    titre: "Kitesurf : le spot parfait pour apprendre en Normandie",
+    lieu: "Merville-Franceville, Normandie",
+    date: "avril 2024",
+    mois: "04/24",
+    genre: "Films de marque",
+    role: "Réalisation / Image / Montage",
+    client: "Kite-R Evolution",
+    image: "/photos/QTxNvXll320.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/QTxNvXll320?start=4&rel=0",
+    youtube: "https://www.youtube.com/watch?v=QTxNvXll320&t=4s",
+    galerie: ["/photos/QTxNvXll320.jpg"],
+    accueil: false,
+    resume:
+      "Film de marque pour Kite-R Evolution, école de kitesurf installée à Merville-Franceville. Le film met en avant le spot, les conditions d’apprentissage et les différentes activités proposées par l’école.",
+    chapeau:
+      "À Merville-Franceville, un film de marque pour découvrir Kite-R Evolution et son spot de kitesurf.",
+    parution: "Kite-R Evolution",
+  },
+  {
+    slug: "seasonova-slow-life",
+    titre: "Découvrez la slow life dans les campings Seasonova",
+    lieu: "Normandie, France",
+    date: "mars 2024",
+    mois: "03/24",
+    genre: "Films de marque",
+    role: "Réalisation / Image / Montage",
+    client: "Seasonova",
+    image: "/photos/iWSXJ1xQqRs.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/iWSXJ1xQqRs?rel=0",
+    youtube: "https://www.youtube.com/watch?v=iWSXJ1xQqRs",
+    galerie: ["/photos/iWSXJ1xQqRs.jpg"],
+    accueil: false,
+    resume:
+      "Film de marque pour les campings Seasonova, imaginé autour de la slow life : nature, moments en famille et simplicité des vacances en plein air.",
+    chapeau:
+      "Un film de marque qui invite à découvrir la slow life dans les campings Seasonova.",
+    parution: "Seasonova",
+  },
 ];
 
 export const profil =
