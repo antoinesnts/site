@@ -23,6 +23,17 @@
   margin-bottom: 4px;
 }
 
+@media (min-width: 768px) {
+  /* The drone certification is one useful unit of information: keep it on a
+     single line while letting this small reference block extend naturally. */
+  .bloc:nth-child(2) {
+    min-width: 280px;
+  }
+  .bloc:nth-child(2) span:not(.blocTitre) {
+    white-space: nowrap;
+  }
+}
+
 .titre {
   grid-column: 5 / span 7;
   /* Preserve the four editorial lines from the reference at every desktop width. */
