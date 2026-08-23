@@ -80,7 +80,7 @@ export default function Accueil() {
       </div>
 
       <div className={styles.grillePied}>
-        <span>Total : {selection.length} réalisations</span>
+        <span>Total : {reportages.length} réalisations</span>
         <Link to="/realisations" className={styles.voirTout}>
           <span aria-hidden="true">↳</span>
           Voir tous
