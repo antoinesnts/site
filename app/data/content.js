@@ -241,7 +241,14 @@ export const reportages = [
     preview: "/videos/previews/bora-bora-coraux.mp4",
     embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D5658335480948769&show_text=false&width=1280",
     source: "https://www.facebook.com/watch/?v=5658335480948769",
-    galerie: ["/photos/bora-bora.jpg"],
+    galerie: [
+      "/photos/bora-bora-coraux-1.jpg",
+      "/photos/bora-bora-coraux-2.jpg",
+      "/photos/bora-bora-coraux-3.jpg",
+      "/photos/bora-bora-coraux-4.jpg",
+      "/photos/bora-bora-coraux-5.jpg",
+      "/photos/bora-bora-coraux-6.jpg",
+    ],
     resume:
       "Derrière les lagons turquoise et les paysages de carte postale de Bora-Bora se joue un enjeu environnemental majeur. Des chercheurs travaillent à mieux comprendre l’état des coraux et à connecter le lagon pour recevoir des informations en temps réel, afin d’identifier plus rapidement les menaces qui pèsent sur cet écosystème fragile.",
     chapeau:
