@@ -205,7 +205,7 @@ export const reportages = [
     mois: "06/24",
     genre: "Reportage",
     role: "JRI / Télépilote / Monteur",
-    cameras: ["Sony FX6", "DJI Mavic 2 Pro"],
+    cameras: ["Sony FX6", "DJI Mavic 2 Pro", "iPhone 14 Pro"],
     client: "TF1",
     equipe: "Lucas Barbier, Mérième Stiti et Antoine Santos",
     image: "/photos/arromanches.jpg",
