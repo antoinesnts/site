@@ -214,7 +214,7 @@ export default function Reportage() {
       </section>
 
       <div className={`grid ${styles.galerie}`}>
-        <span className={styles.galerieLabel}>Images</span>
+        <span className={styles.galerieLabel}>Images extraites du reportage</span>
         {galerie.map((src, i) => (
           <Reveal
             key={src}
