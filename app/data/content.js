@@ -376,6 +376,26 @@ export const reportages = [
       "En Polynésie, la mobilisation s’organise pour protéger les bénitiers et leur écosystème.",
     parution: "Outremers 360",
   },
+  {
+    slug: "guadeloupe-place-velo",
+    titre: "En Guadeloupe, faire de la place au vélo",
+    lieu: "Morne-à-l’Eau, Guadeloupe",
+    date: "mai 2022",
+    mois: "05/22",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    client: "Outremers 360",
+    image: "/photos/jOLrth2Uo3s.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/jOLrth2Uo3s?rel=0",
+    youtube: "https://www.youtube.com/watch?v=jOLrth2Uo3s",
+    galerie: ["/photos/jOLrth2Uo3s.jpg"],
+    accueil: false,
+    resume:
+      "En Guadeloupe, plusieurs initiatives cherchent à encourager la mobilité douce face au trafic routier. À Morne-à-l’Eau, la collectivité développe notamment l’usage du vélo auprès des habitants.",
+    chapeau:
+      "En Guadeloupe, le vélo devient une réponse concrète aux enjeux de circulation.",
+    parution: "Outremers 360",
+  },
 ];
 
 export const profil =
