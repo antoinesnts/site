@@ -265,7 +265,7 @@ export const reportages = [
     date: "septembre 2019",
     mois: "09/19",
     genre: "Reportage",
-    role: "JRI / Télépilote / Monteur",
+    role: "JRI / Monteur",
     cameras: ["Sony FX6", "DJI Mavic 3 Pro"],
     client: "TF1",
     image: "/photos/lubrizol.jpg",
