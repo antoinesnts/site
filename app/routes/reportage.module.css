@@ -8,9 +8,11 @@
 
 .informations { padding-block: 120px 0; align-items: start; }
 .resume { grid-column: 1 / span 4; font-size: 18px; line-height: 1.42; }
-.resumeSaul { grid-column: 1 / span 5; }
+.resumeSaul { grid-column: 1 / span 5; width: 115%; }
 .resume h2 { margin: 0 0 20px; font-size: 16px; font-weight: 400; line-height: 1.2; }
 .resume p { opacity: var(--muted-opacity); }
+.equipe { display: flex; flex-direction: column; gap: 8px; margin-top: 32px; }
+.equipe span:first-child { opacity: var(--muted-opacity); }
 
 .fiche { grid-column: 9 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 40px; font-size: 18px; line-height: 1.42; }
 .champ { display: flex; flex-direction: column; gap: 8px; }
@@ -31,6 +33,7 @@
 
 @media (max-width: 1159px) {
   .resume { grid-column: 1 / span 5; }
+  .resumeSaul { width: auto; }
   .fiche { grid-column: 7 / -1; }
 }
 

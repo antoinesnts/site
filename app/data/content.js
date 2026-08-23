@@ -60,6 +60,7 @@ export const reportages = [
     role: "JRI / Télépilote\nMonteur / Étalonneur",
     cameras: ["Sony FX6", "DJI Mavic Pro 3", "iPhone 17 Pro"],
     client: "TF1",
+    equipe: "Jules Beaucamp et Antoine Santos",
     image: "/photos/saul.jpg",
     preview: "/videos/previews/saul.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/d_0IVb4CgsU?start=26&rel=0",

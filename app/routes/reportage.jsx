@@ -106,6 +106,12 @@ export default function Reportage() {
         <Reveal className={`${styles.resume} ${reportage.slug === "saul" ? styles.resumeSaul : ""}`} y={24}>
           <h2>Résumé</h2>
           <p>{reportage.resume ?? reportage.chapeau}</p>
+          {reportage.equipe ? (
+            <div className={styles.equipe}>
+              <span>Équipe</span>
+              <span>{reportage.equipe}</span>
+            </div>
+          ) : null}
         </Reveal>
 
         <Reveal className={styles.fiche} y={24} delay={0.08}>
