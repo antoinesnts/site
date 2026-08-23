@@ -55,7 +55,7 @@ export const reportages = [
     titre: "Au cœur du village le plus isolé de France",
     lieu: "Saül, Guyane française",
     date: "janvier 2026",
-    mois: "03/25",
+    mois: "01/26",
     genre: "Reportage",
     role: "JRI / Télépilote\nMonteur / Étalonneur",
     cameras: ["Sony FX6", "DJI Mavic Pro 3", "iPhone 17 Pro"],
