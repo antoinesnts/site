@@ -11,10 +11,10 @@ export default {
   prerender() {
     return [
       "/",
-      "/reportages",
+      "/realisations",
       "/a-propos",
       "/contact",
-      ...reportages.map((r) => `/reportages/${r.slug}`),
+      ...reportages.map((r) => `/realisations/${r.slug}`),
     ];
   },
 };

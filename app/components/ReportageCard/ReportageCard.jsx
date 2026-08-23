@@ -38,7 +38,7 @@ export default function ReportageCard({ reportage, delay = 0, priority = false }
   return (
     <Reveal y={48} delay={delay} duration={0.7}>
       <Link
-        to={`/reportages/${slug}`}
+        to={`/realisations/${slug}`}
         data-carte
         data-joue={joue ? "true" : "false"}
         className={styles.lien}

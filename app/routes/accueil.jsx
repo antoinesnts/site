@@ -66,7 +66,7 @@ export default function Accueil() {
         </Reveal>
       </section>
 
-      <section className={`grid ${styles.section}`} aria-label="Reportages" />
+      <section className={`grid ${styles.section}`} aria-label="Réalisations" />
 
       <div className={styles.grille} data-peu={selection.length < 3 ? "true" : "false"}>
         {selection.map((reportage, i) => (
@@ -80,8 +80,8 @@ export default function Accueil() {
       </div>
 
       <div className={styles.grillePied}>
-        <span>Total : {reportages.length} reportages</span>
-        <Link to="/reportages" className={styles.voirTout}>
+        <span>Total : {reportages.length} réalisations</span>
+        <Link to="/realisations" className={styles.voirTout}>
           <span aria-hidden="true">↳</span>
           Voir tous
         </Link>

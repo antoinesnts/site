@@ -37,7 +37,7 @@ export const reperes = [
 
 export const navigation = [
   { to: "/", label: "Accueil" },
-  { to: "/reportages", label: "Réalisations" },
+  { to: "/realisations", label: "Réalisations" },
   { to: "/a-propos", label: "À propos" },
 ];
 

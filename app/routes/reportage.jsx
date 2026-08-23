@@ -107,15 +107,15 @@ export default function Reportage() {
       </div>
 
       {precedent || suivant ? (
-        <nav className={`grid ${styles.suite}`} aria-label="Reportages voisins">
+        <nav className={`grid ${styles.suite}`} aria-label="Réalisations voisines">
           <span className={styles.suiteLabel}>Suite</span>
           {precedent ? (
-            <Link to={`/reportages/${precedent.slug}`} className={styles.suiteLien}>
+            <Link to={`/realisations/${precedent.slug}`} className={styles.suiteLien}>
               {precedent.titre}
             </Link>
           ) : <span />}
           {suivant ? (
-            <Link to={`/reportages/${suivant.slug}`} className={`${styles.suiteLien} ${styles.suiteLienDroite}`}>
+            <Link to={`/realisations/${suivant.slug}`} className={`${styles.suiteLien} ${styles.suiteLienDroite}`}>
               {suivant.titre}
             </Link>
           ) : null}

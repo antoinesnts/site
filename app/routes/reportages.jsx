@@ -7,10 +7,10 @@ import styles from "./reportages.module.css";
 
 export function meta() {
   return [
-    { title: `Reportages — ${site.nom}` },
+    { title: `Réalisations — ${site.nom}` },
     {
       name: "description",
-      content: `Tous les reportages photographiques d'${site.nom}.`,
+      content: `Toutes les réalisations d'${site.nom}.`,
     },
   ];
 }
@@ -42,7 +42,7 @@ export default function Reportages() {
     <>
       <section className={`grid ${styles.tete}`}>
         <div className={styles.titreLigne}>
-          <h1>Reportages</h1>
+          <h1>Réalisations</h1>
           <span>{selection.length}</span>
         </div>
 
@@ -73,7 +73,7 @@ export default function Reportages() {
         </Reveal>
       </section>
 
-      <section className={styles.mur} aria-label="Liste des reportages">
+      <section className={styles.mur} aria-label="Liste des réalisations">
         {selection.length ? selection.map((reportage, index) => (
           <ReportageCard key={reportage.slug} reportage={reportage} delay={(index % 3) * 0.05} priority={index < 3} />
         )) : <p className={styles.vide}>Aucun reportage pour cette sélection.</p>}
