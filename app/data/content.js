@@ -154,7 +154,14 @@ export const reportages = [
     preview: "/videos/previews/mont-saint-michel.mp4",
     video: "/videos/mont-saint-michel.mp4",
     source: "https://www.linkedin.com/feed/update/urn:li:activity:7302267178882379777/",
-    galerie: ["/photos/mont-saint-michel.jpg"],
+    galerie: [
+      "/photos/mont-saint-michel-1.jpg",
+      "/photos/mont-saint-michel-2.jpg",
+      "/photos/mont-saint-michel-3.jpg",
+      "/photos/mont-saint-michel-4.jpg",
+      "/photos/mont-saint-michel-5.jpg",
+      "/photos/mont-saint-michel-6.jpg",
+    ],
     resume:
       "Filmer le Mont-Saint-Michel est toujours aussi exaltant, surtout avec cette sublime lumière de l’aube sous une gelée du matin à 0 °C.\n\nLes grandes marées transforment le Mont-Saint-Michel en île environ sept fois par an. Pendant moins d’une heure, la mer submerge le bout de la passerelle et encercle les remparts. Le Mont-Saint-Michel se retrouve coupé du continent. Une heure plus tard, l’eau se retire. La traversée de la baie redevient possible, offrant aux visiteurs l’occasion de découvrir les sables mouvants. Ce reportage suit cette transformation spectaculaire pendant 12 heures.",
     chapeau:
