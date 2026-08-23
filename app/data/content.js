@@ -296,6 +296,26 @@ export const reportages = [
       "À Caen, le viaduc de Calix fait l’objet d’une surveillance constante pour assurer son avenir.",
     parution: "TF1 — Le 13H",
   },
+  {
+    slug: "saint-georges-energie-positive",
+    titre: "En Guyane, l’énergie positive de Saint-Georges",
+    lieu: "Saint-Georges de l’Oyapock, Guyane française",
+    date: "août 2022",
+    mois: "08/22",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    client: "Outremers 360",
+    image: "/photos/saint-georges.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/fumSzFOfzKs?rel=0",
+    youtube: "https://www.youtube.com/watch?v=fumSzFOfzKs",
+    galerie: ["/photos/saint-georges.jpg"],
+    accueil: false,
+    resume:
+      "À Saint-Georges de l’Oyapock, en Guyane, l’électricité est 100 % verte. La commune produit davantage d’énergie renouvelable qu’elle n’en consomme grâce à deux centrales : l’une à biomasse, l’autre hydraulique.",
+    chapeau:
+      "En Guyane, Saint-Georges de l’Oyapock devient un modèle d’autonomie énergétique renouvelable.",
+    parution: "Outremers 360",
+  },
 ];
 
 export const profil =

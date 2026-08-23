@@ -18,7 +18,7 @@ export function meta() {
 
 export default function Accueil() {
   const ready = useIntroReady();
-  const selection = reportages;
+  const selection = reportages.filter((reportage) => reportage.accueil !== false);
 
   return (
     <>
@@ -80,7 +80,7 @@ export default function Accueil() {
       </div>
 
       <div className={styles.grillePied}>
-        <span>Total : {reportages.length} réalisations</span>
+        <span>Total : {selection.length} réalisations</span>
         <Link to="/realisations" className={styles.voirTout}>
           <span aria-hidden="true">↳</span>
           Voir tous
