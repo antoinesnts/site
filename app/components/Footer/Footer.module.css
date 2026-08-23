@@ -7,6 +7,10 @@
   line-height: 1.2;
 }
 
+.compact {
+  margin-top: 32px;
+}
+
 .copyright {
   grid-column: 1 / span 4;
   opacity: var(--muted-opacity);
@@ -56,6 +60,10 @@
     padding-block: 20px 24px;
     row-gap: 24px;
     font-size: 11px;
+  }
+
+  .compact {
+    margin-top: 32px;
   }
 
   .copyright {

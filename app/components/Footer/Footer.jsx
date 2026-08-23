@@ -10,7 +10,7 @@ export default function Footer() {
   if (pathname === "/contact") return null;
 
   return (
-    <footer className={`grid ${styles.root}`}>
+    <footer className={`grid ${styles.root} ${pathname === "/" ? styles.compact : ""}`}>
       <span className={styles.copyright}>© {annee} {site.nom}</span>
 
       <SocialLinks className={styles.reseaux} linkClassName={styles.reseau} />
