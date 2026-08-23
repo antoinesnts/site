@@ -12,7 +12,7 @@ import styles from "./ReportageCard.module.css";
  * by the grid — hovering therefore never re-renders the list.
  */
 export default function ReportageCard({ reportage, delay = 0, priority = false }) {
-  const { slug, titre, mois, lieu, genre, role, image, video } = reportage;
+  const { slug, titre, mois, lieu, genre, role, image, preview } = reportage;
   const videoRef = useRef(null);
   const [joue, setJoue] = useState(false);
 
@@ -70,11 +70,11 @@ export default function ReportageCard({ reportage, delay = 0, priority = false }
             loading={priority ? "eager" : "lazy"}
             decoding="async"
           />
-          {video ? (
+          {preview ? (
             <video
               ref={videoRef}
               className={`${styles.media} ${styles.video}`}
-              src={asset(video)}
+              src={asset(preview)}
               poster={asset(image)}
               muted
               playsInline
