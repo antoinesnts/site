@@ -22,6 +22,7 @@
 .galerie { padding-block: 128px 0; row-gap: 4px; }
 .galerieLabel { grid-column: 1 / -1; opacity: var(--muted-opacity); margin-bottom: 8px; }
 .gDemi { grid-column: span 6; aspect-ratio: 16 / 9; }
+.gTierce { grid-column: span 4; aspect-ratio: 16 / 9; }
 .gPleine { grid-column: 1 / -1; aspect-ratio: 16 / 9; }
 .galerie figure { margin: 0; overflow: hidden; background: #0a0a0a; }
 .galerie img { width: 100%; height: 100%; object-fit: cover; }
@@ -53,7 +54,7 @@
   .informations, .galerie { padding-block: 72px 0; }
   .resume, .fiche { grid-column: 1 / -1; }
   .fiche { grid-template-columns: 1fr; gap: 32px; margin-top: 24px; }
-  .gDemi, .gPleine { grid-column: 1 / -1; }
+  .gDemi, .gTierce, .gPleine { grid-column: 1 / -1; }
   .suite { padding-block: 48px 0; margin-top: 72px; row-gap: 48px; }
   .suiteCarte, .suiteCarteDroite { grid-column: 1 / -1; align-items: flex-start; text-align: left; }
   .suiteTitre { font-size: 22px; }
