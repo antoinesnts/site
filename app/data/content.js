@@ -117,8 +117,9 @@ export const reportages = [
     mois: "04/26",
     genre: "Reportage",
     role: "JRI / Télépilote / Monteur",
-    cameras: ["Sony FX6", "DJI Mavic 3 Pro"],
+    cameras: ["Sony FX6", "DJI Mavic 4 Pro"],
     client: "TF1",
+    equipe: "Guillaume Thorel et Antoine Santos",
     image: "/photos/etretat.jpg",
     preview: "/videos/previews/etretat.mp4",
     embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D969146452273589&show_text=false&width=1280",
@@ -132,7 +133,7 @@ export const reportages = [
       "/photos/etretat-6.jpg",
     ],
     resume:
-      "À Étretat, des touristes s’aventurent dans le Trou à l’homme sans anticiper la montée des eaux. Piégés par la marée haute, ils doivent parfois être secourus avec d’importants moyens. Désormais, les interventions concernant des personnes qui ne sont pas en danger peuvent être facturées, pour un montant minimum de 750 euros.",
+      "À Étretat, des touristes s’aventurent dans le Trou à l’homme sans anticiper la montée des eaux. Piégés par la marée haute, ils doivent parfois être secourus avec d’importants moyens. Désormais, les interventions concernant des personnes qui ne sont pas en danger peuvent être facturées, pour un montant minimum de 750 euros. Nous avons filmé ces touristes bloqués par la marée haute dans le Trou à l’homme. Ne voulant pas attendre en sécurité que la marée baisse, ils se sont jetés dans une eau à 12 °C pour regagner la plage.",
     chapeau:
       "À Étretat, les imprudents surpris par la marée peuvent désormais devoir payer les secours.",
     parution: "TF1",
