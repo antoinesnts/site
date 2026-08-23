@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Sunset Boat — La Réserve Pêché Iodé">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#162c3a"/>
+      <stop offset=".48" stop-color="#cc7651"/>
+      <stop offset="1" stop-color="#f0b36d"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#183a4b"/>
+      <stop offset="1" stop-color="#07141d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1160" cy="330" r="108" fill="#ffe1a0" opacity=".8"/>
+  <path d="M0 515C250 475 420 555 660 515s470-10 940-80v465H0Z" fill="url(#sea)"/>
+  <path d="M0 610c210-50 380 30 590-20s390 30 620-20 270 5 390-20" fill="none" stroke="#f5c087" stroke-opacity=".4" stroke-width="7"/>
+  <path d="M535 565h435l-70 58H600Z" fill="#071218"/>
+  <path d="M665 505h170l72 60H600Z" fill="#102631"/>
+  <text x="84" y="120" fill="#fff6e7" font-family="Arial, sans-serif" font-size="42" letter-spacing="5">LA RÉSERVE PÊCHÉ IODÉ</text>
+  <text x="84" y="784" fill="#fff6e7" font-family="Arial, sans-serif" font-size="94" letter-spacing="-3">SUNSET BOAT</text>
+</svg>
