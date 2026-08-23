@@ -110,6 +110,7 @@ export default function Reportage() {
   const lecteurRef = useRef(null);
   const [sonActif, setSonActif] = useState(false);
   const lecteurYoutube = Boolean((reportage.youtubeEmbed ?? reportage.embedUrl)?.includes("youtube"));
+  const equipe = reportage.equipe ?? (reportage.resume ? "Antoine Santos" : null);
 
   const basculerSon = () => {
     const commande = sonActif ? "mute" : "unMute";
@@ -183,13 +184,13 @@ export default function Reportage() {
       </Reveal>
 
       <section className={`grid ${styles.informations}`}>
-        <Reveal className={`${styles.resume} ${reportage.slug === "saul" ? styles.resumeSaul : ""}`} y={24}>
+        <Reveal className={`${styles.resume} ${reportage.resume ? styles.resumeEtendu : ""}`} y={24}>
           <h2>Résumé</h2>
           <p>{reportage.resume ?? reportage.chapeau}</p>
-          {reportage.equipe ? (
+          {equipe ? (
             <div className={styles.equipe}>
               <span>Équipe</span>
-              <span>{reportage.equipe}</span>
+              <span>{equipe}</span>
             </div>
           ) : null}
         </Reveal>
