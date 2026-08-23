@@ -133,7 +133,7 @@ export const reportages = [
     image: "/photos/mont-saint-michel.jpg",
     vignette: "/photos/mont-saint-michel-vignette.jpg",
     preview: "/videos/previews/mont-saint-michel.mp4",
-    embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7302267178882379777",
+    video: "/videos/mont-saint-michel.mp4",
     source: "https://www.linkedin.com/feed/update/urn:li:activity:7302267178882379777/",
     galerie: ["/photos/mont-saint-michel.jpg"],
     resume:
