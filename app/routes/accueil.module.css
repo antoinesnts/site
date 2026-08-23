@@ -118,6 +118,10 @@
   .titre {
     grid-column: 1 / -1;
     translate: none;
+    font-size: clamp(12px, 3.8vw, 15px);
+    line-height: 1.35;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
   }
   .cta {
     grid-column: 1 / -1;
