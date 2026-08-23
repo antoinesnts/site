@@ -73,7 +73,7 @@ export const reportages = [
     ],
     youtube: "https://www.youtube.com/watch?v=d_0IVb4CgsU&t=26s",
     resume:
-      "Entouré de jaguars et de scorpions, vivre dans l’un des villages les plus isolés de l’Hexagone est une aventure. Saül est un trésor caché de Guyane, loin de tout, en pleine forêt amazonienne. Il compte à peine 50 maisons sur 4 475 km², 42 fois la superficie de Paris. Le quotidien est bien différent, à 7 000 kilomètres de nous. Pas de route, de fleuve à proximité… le seul moyen d’y accéder est un aérodrome. Depuis Cayenne, il faut 45 minutes de vol à bord d’un petit avion d’une capacité de 19 passagers. Reportage au cœur du village le plus isolé de France.",
+      "Entouré de jaguars et de scorpions, vivre dans l’un des villages les plus isolés de l’Hexagone est une aventure. Saül est un trésor caché de Guyane, loin de tout, en pleine forêt amazonienne. Il compte à peine 50 maisons sur 4 475 km², 42 fois la superficie de Paris. Le quotidien est bien différent, à 7 000 kilomètres de la métropole. Pas de route, de fleuve à proximité… le seul moyen d’y accéder est un aérodrome. Depuis Cayenne, il faut 45 minutes de vol à bord d’un petit avion d’une capacité de 19 passagers. Reportage au cœur du village le plus isolé de France.",
     chapeau:
       "Entouré de jaguars et de scorpions, vivre dans l’un des villages les plus isolés de l’Hexagone est une aventure.",
     parution: "TF1 — Le 13H",
