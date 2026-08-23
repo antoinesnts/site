@@ -555,6 +555,44 @@ export const reportages = [
       "Un film sur les territoires français confrontés au surtourisme.",
     parution: "Grands Reportages — TF1",
   },
+  {
+    slug: "zeph-control-entretien-barre-kitesurf",
+    titre: "Comment entretenir et ajuster sa barre de kitesurf ?",
+    lieu: "France",
+    date: "novembre 2020",
+    mois: "11/20",
+    genre: "Films de marque",
+    client: "Zeph Control",
+    image: "/photos/WVl4zCVPPFQ.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/WVl4zCVPPFQ?rel=0",
+    youtube: "https://www.youtube.com/watch?v=WVl4zCVPPFQ",
+    galerie: ["/photos/WVl4zCVPPFQ.jpg"],
+    accueil: false,
+    resume:
+      "Film pratique pour Zeph Control autour de l’entretien, du réglage et de la sécurité d’une barre et de ses lignes de kitesurf.",
+    chapeau:
+      "Les bons gestes pour entretenir et ajuster sa barre de kitesurf.",
+    parution: "Zeph Control",
+  },
+  {
+    slug: "aftermovie-festival-beauregard-2026",
+    titre: "Aftermovie — Festival Beauregard 2026",
+    lieu: "Hérouville-Saint-Clair, Normandie",
+    date: "août 2026",
+    mois: "08/26",
+    genre: "Films de marque",
+    client: "Festival Beauregard",
+    image: "/photos/2dvxAncy5RI.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/2dvxAncy5RI?rel=0",
+    youtube: "https://www.youtube.com/watch?v=2dvxAncy5RI",
+    galerie: ["/photos/2dvxAncy5RI.jpg"],
+    accueil: false,
+    resume:
+      "Aftermovie officiel du Festival Beauregard 2026, cinq jours de concerts et de fête au château, réunis dans un film de cinq minutes.",
+    chapeau:
+      "Les temps forts de l’édition 2026 du Festival Beauregard.",
+    parution: "Festival Beauregard",
+  },
 ];
 
 export const profil =
