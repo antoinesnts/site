@@ -516,6 +516,26 @@ export const reportages = [
       "Sunset Boat : une expérience estivale sur l’estuaire de l’Orne par La Réserve Pêché Iodé.",
     parution: "La Réserve Pêché Iodé",
   },
+  {
+    slug: "ultra-tour-obiou-2026",
+    titre: "Ultra Tour de l’Obiou 2026",
+    lieu: "Massif de l’Obiou, France",
+    date: "juillet 2026",
+    mois: "07/26",
+    genre: "Films de marque",
+    role: "Télépilote de drone",
+    client: "UTOBI",
+    image: "/photos/bF3ZwWwKDLw.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/bF3ZwWwKDLw?rel=0",
+    youtube: "https://www.youtube.com/watch?v=bF3ZwWwKDLw",
+    galerie: ["/photos/bF3ZwWwKDLw.jpg"],
+    accueil: false,
+    resume:
+      "Aftermovie de l’Ultra Tour de l’Obiou 2026, un événement de trail au cœur du massif de l’Obiou. Intervention en tant que télépilote de drone pour les images aériennes.",
+    chapeau:
+      "Images aériennes de l’Ultra Tour de l’Obiou 2026.",
+    parution: "Pure Films",
+  },
 ];
 
 export const profil =
