@@ -1,4 +1,4 @@
-.tete { padding-block: 232px 136px; row-gap: 48px; }
+.tete { padding-block: 232px 112px; row-gap: 48px; }
 .titreLigne { grid-column: 1 / -1; display: flex; align-items: flex-start; gap: 6px; }
 .titreLigne h1 { font-size: var(--fs-display); line-height: var(--lh-display); letter-spacing: var(--ls-display); text-transform: uppercase; }
 .titreLigne span { padding-top: 3px; opacity: var(--muted-opacity); }
