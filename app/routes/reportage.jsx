@@ -103,7 +103,7 @@ export default function Reportage() {
       </Reveal>
 
       <section className={`grid ${styles.informations}`}>
-        <Reveal className={styles.resume} y={24}>
+        <Reveal className={`${styles.resume} ${reportage.slug === "saul" ? styles.resumeSaul : ""}`} y={24}>
           <h2>Résumé</h2>
           <p>{reportage.resume ?? reportage.chapeau}</p>
         </Reveal>

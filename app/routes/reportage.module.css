@@ -8,6 +8,7 @@
 
 .informations { padding-block: 120px 0; align-items: start; }
 .resume { grid-column: 1 / span 4; font-size: 18px; line-height: 1.42; }
+.resumeSaul { grid-column: 1 / span 5; }
 .resume h2 { margin: 0 0 20px; font-size: 16px; font-weight: 400; line-height: 1.2; }
 .resume p { opacity: var(--muted-opacity); }
 
