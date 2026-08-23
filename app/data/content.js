@@ -123,7 +123,14 @@ export const reportages = [
     preview: "/videos/previews/etretat.mp4",
     embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D969146452273589&show_text=false&width=1280",
     source: "https://www.facebook.com/watch/?v=969146452273589",
-    galerie: ["/photos/etretat.jpg"],
+    galerie: [
+      "/photos/etretat-1.jpg",
+      "/photos/etretat-2.jpg",
+      "/photos/etretat-3.jpg",
+      "/photos/etretat-4.jpg",
+      "/photos/etretat-5.jpg",
+      "/photos/etretat-6.jpg",
+    ],
     resume:
       "À Étretat, des touristes s’aventurent dans le Trou à l’homme sans anticiper la montée des eaux. Piégés par la marée haute, ils doivent parfois être secourus avec d’importants moyens. Désormais, les interventions concernant des personnes qui ne sont pas en danger peuvent être facturées, pour un montant minimum de 750 euros.",
     chapeau:

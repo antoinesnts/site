@@ -219,7 +219,7 @@ export default function Reportage() {
           <Reveal
             key={src}
             as="figure"
-            className={["saul", "chausey"].includes(reportage.slug) && i >= galerie.length - 3
+            className={["saul", "chausey", "etretat"].includes(reportage.slug) && i >= galerie.length - 3
               ? styles.gTierce
               : i % 3 === 2 ? styles.gPleine : styles.gDemi}
             y={40}
