@@ -23,10 +23,11 @@ export default function Reportages() {
   const ready = useIntroReady();
   const [categorie, setCategorie] = useState("Tous");
   const [anneeSelectionnee, setAnneeSelectionnee] = useState("Toutes");
-  const categories = useMemo(
-    () => ["Tous", ...new Set(reportages.map((reportage) => reportage.genre))],
-    [],
-  );
+  const categories = useMemo(() => {
+    const disponibles = new Set(reportages.map((reportage) => reportage.genre));
+    const ordre = ["Reportage", "Film", "Film de marque"];
+    return ["Tous", ...ordre.filter((item) => disponibles.has(item))];
+  }, []);
   const annees = useMemo(
     () => [...new Set(reportages.map(annee))].sort((a, b) => b.localeCompare(a)),
     [],
