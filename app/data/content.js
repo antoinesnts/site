@@ -336,6 +336,46 @@ export const reportages = [
       "La forêt amazonienne de Guyane, source d’innovation pour la cosmétique locale.",
     parution: "Outremers 360",
   },
+  {
+    slug: "bora-bora-eco-camping",
+    titre: "À Bora-Bora, des campings écolos sur la perle du Pacifique",
+    lieu: "Bora-Bora, Polynésie française",
+    date: "juin 2023",
+    mois: "06/23",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    client: "Outremers 360",
+    image: "/photos/gZVIr1dFyw0.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/gZVIr1dFyw0?rel=0",
+    youtube: "https://www.youtube.com/watch?v=gZVIr1dFyw0",
+    galerie: ["/photos/gZVIr1dFyw0.jpg"],
+    accueil: false,
+    resume:
+      "À Bora-Bora, Tahianui Lacour et son époux ont ouvert un éco-camping sur un motu. Une alternative plus accessible, écologique et conviviale aux grands hôtels de luxe de l’île.",
+    chapeau:
+      "À Bora-Bora, un éco-camping propose une autre façon de découvrir la perle du Pacifique.",
+    parution: "Outremers 360",
+  },
+  {
+    slug: "benitier-polynesie",
+    titre: "Le bénitier de Polynésie, une espèce à protéger",
+    lieu: "Polynésie française",
+    date: "avril 2023",
+    mois: "04/23",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    client: "Outremers 360",
+    image: "/photos/roQ3FYvocOE.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/roQ3FYvocOE?rel=0",
+    youtube: "https://www.youtube.com/watch?v=roQ3FYvocOE",
+    galerie: ["/photos/roQ3FYvocOE.jpg"],
+    accueil: false,
+    resume:
+      "Les bénitiers, appelés pahua en tahitien, jouent un rôle essentiel dans l’écosystème marin. En Polynésie, autorités, associations et chercheurs se mobilisent pour préserver cette espèce menacée à l’échelle mondiale.",
+    chapeau:
+      "En Polynésie, la mobilisation s’organise pour protéger les bénitiers et leur écosystème.",
+    parution: "Outremers 360",
+  },
 ];
 
 export const profil =
