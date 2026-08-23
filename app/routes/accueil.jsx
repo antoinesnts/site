@@ -31,7 +31,7 @@ export default function Accueil() {
               y={16}
               delay={0.3 + i * 0.04}
               duration={0.6}
-              opacity={0.5}
+              opacity={0.75}
               immediate gate={ready}
             >
               <span className={styles.blocTitre}>{bloc.label}</span>
