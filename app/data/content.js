@@ -216,6 +216,7 @@ export const reportages = [
     cameras: ["Sony FX6", "DJI Mavic Pro 3"],
     client: "TF1 INFO",
     image: "/photos/deserts-medicaux.jpg",
+    vignette: "/photos/deserts-medicaux-vignette.jpg",
     preview: "/videos/previews/deserts-medicaux-drones.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/YQFAYsgMhbI?rel=0",
     youtube: "https://www.youtube.com/watch?v=YQFAYsgMhbI",
