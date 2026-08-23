@@ -31,6 +31,7 @@
   gap: 12px;
   opacity: var(--muted-opacity);
 }
+.sous span:last-child { white-space: pre-line; }
 
 .cadre {
   position: relative;

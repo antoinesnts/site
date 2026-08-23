@@ -612,7 +612,9 @@ export const reportages = [
   },
 ].map((reportage) => ({
   ...reportage,
-  role: reportage.role?.replace(/Télépilote(?! de drone)/g, "Télépilote de drone"),
+  role: reportage.genre === "Reportage"
+    ? "JRI / Télépilote de drone\nMonteur / Étalonneur"
+    : reportage.role?.replace(/Télépilote(?! de drone)/g, "Télépilote de drone"),
 }));
 
 export const profil =
