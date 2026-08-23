@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import { Link, useLoaderData } from "react-router";
 import Reveal from "../components/Reveal/Reveal.jsx";
 import { reportages, site } from "../data/content.js";
@@ -44,6 +45,63 @@ function lectureAutomatique(url) {
   }
 
   return lecteur.toString();
+}
+
+function RealisationVoisine({ reportage, direction }) {
+  const videoRef = useRef(null);
+  const [joue, setJoue] = useState(false);
+  const estSuivante = direction === "suivante";
+
+  const lancer = () => {
+    const video = videoRef.current;
+    if (!video || !window.matchMedia("(hover: hover)").matches) return;
+    video.play().then(() => setJoue(true)).catch(() => {});
+  };
+
+  const arreter = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    setJoue(false);
+    video.pause();
+    video.currentTime = 0;
+  };
+
+  return (
+    <article className={`${styles.suiteCarte} ${estSuivante ? styles.suiteCarteDroite : ""}`}>
+      <Link
+        to={`/realisations/${reportage.slug}`}
+        className={styles.suiteMedia}
+        data-joue={joue ? "true" : "false"}
+        onMouseEnter={lancer}
+        onMouseLeave={arreter}
+        onFocus={lancer}
+        onBlur={arreter}
+        aria-label={`${estSuivante ? "Réalisation suivante" : "Réalisation précédente"} : ${reportage.titre}`}
+      >
+        <img src={asset(reportage.vignette ?? reportage.image)} alt="" loading="lazy" decoding="async" />
+        {reportage.preview ? (
+          <video
+            ref={videoRef}
+            src={asset(reportage.preview)}
+            poster={asset(reportage.vignette ?? reportage.image)}
+            muted
+            playsInline
+            preload="none"
+            aria-hidden="true"
+          />
+        ) : null}
+      </Link>
+      <p className={styles.suiteTitre}>
+        <span>{reportage.genre}</span>
+        {" — "}
+        {reportage.titre}
+      </p>
+      <Link to={`/realisations/${reportage.slug}`} className={styles.suiteBouton}>
+        <span aria-hidden="true">{estSuivante ? "↳" : "↲"}</span>
+        Réalisation {direction}
+      </Link>
+    </article>
+  );
 }
 
 export default function Reportage() {
@@ -141,16 +199,11 @@ export default function Reportage() {
 
       {precedent || suivant ? (
         <nav className={`grid ${styles.suite}`} aria-label="Réalisations voisines">
-          <span className={styles.suiteLabel}>Suite</span>
           {precedent ? (
-            <Link to={`/realisations/${precedent.slug}`} className={styles.suiteLien}>
-              {precedent.titre}
-            </Link>
+            <RealisationVoisine reportage={precedent} direction="précédente" />
           ) : <span />}
           {suivant ? (
-            <Link to={`/realisations/${suivant.slug}`} className={`${styles.suiteLien} ${styles.suiteLienDroite}`}>
-              {suivant.titre}
-            </Link>
+            <RealisationVoisine reportage={suivant} direction="suivante" />
           ) : null}
         </nav>
       ) : null}
