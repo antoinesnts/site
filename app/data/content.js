@@ -316,6 +316,26 @@ export const reportages = [
       "En Guyane, Saint-Georges de l’Oyapock devient un modèle d’autonomie énergétique renouvelable.",
     parution: "Outremers 360",
   },
+  {
+    slug: "amazonie-richesse-cosmetique",
+    titre: "En Guyane, l’Amazonie est une richesse cosmétique",
+    lieu: "Kourou, Guyane française",
+    date: "juin 2022",
+    mois: "06/22",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    client: "Outremers 360",
+    image: "/photos/saint-georges-seconds.jpg",
+    youtubeEmbed: "https://www.youtube-nocookie.com/embed/jedMgd7fY-k?rel=0",
+    youtube: "https://www.youtube.com/watch?v=jedMgd7fY-k",
+    galerie: ["/photos/saint-georges-seconds.jpg"],
+    accueil: false,
+    resume:
+      "En Guyane, les principes actifs de la forêt amazonienne inspirent les créateurs de cosmétiques. Depuis Kourou, Nature Amazonie développe ses produits et s’ouvre à de nouveaux marchés en Amérique du Nord et en Europe.",
+    chapeau:
+      "La forêt amazonienne de Guyane, source d’innovation pour la cosmétique locale.",
+    parution: "Outremers 360",
+  },
 ];
 
 export const profil =
