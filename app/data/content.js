@@ -631,12 +631,6 @@ export const clients = [
 
 export const equipement = ["Sony FX6", "ARRI Alexa Mini", "RED Komodo 6K", "DJI Ronin", "Zeiss Prime Lenses"];
 
-export const awards = [
-  { annee: "2026", prix: "Best Short Film", evenement: "Urban Frame" },
-  { annee: "2025", prix: "Best Cinematography", evenement: "Motion Awards" },
-  { annee: "2025", prix: "Official Selection", evenement: "Global Film Festival" },
-];
-
 export const liens = [
   { label: "YouTube", icone: "youtube", href: "https://www.youtube.com/c/AntoineSANTOS" },
   { label: "LinkedIn", icone: "linkedin", href: "https://www.linkedin.com/in/antoinesantos/" },

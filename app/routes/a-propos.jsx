@@ -1,6 +1,5 @@
 import Reveal from "../components/Reveal/Reveal.jsx";
 import {
-  awards,
   clients,
   competences,
   details,
@@ -58,19 +57,6 @@ export default function APropos() {
             <ul>{equipement.map((item) => <li key={item}>{item}</li>)}</ul>
           </Bloc>
         </div>
-
-        <Bloc titre="Awards" className={styles.awards} delay={0.3}>
-          <ul>
-            {awards.map((award) => (
-              <li key={`${award.annee}-${award.prix}`}>
-                <span>{award.annee}</span>
-                <span>{award.prix}</span>
-                <span>{award.evenement}</span>
-                <span aria-hidden="true">↗</span>
-              </li>
-            ))}
-          </ul>
-        </Bloc>
       </section>
 
       <section className={`grid ${styles.portraitSection}`}>

@@ -55,27 +55,6 @@
   gap: 40px;
 }
 
-.awards {
-  grid-column: 9 / -1;
-  grid-row: 2;
-}
-
-.awards ul {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.awards li {
-  display: grid;
-  grid-template-columns: 48px minmax(110px, 1fr) minmax(120px, 1fr) auto;
-  gap: 16px;
-}
-
-.awards li span:last-child {
-  justify-self: end;
-}
-
 .portraitSection {
   padding-top: 160px;
 }
@@ -119,9 +98,6 @@
     grid-column: 10 / span 3;
   }
 
-  .awards {
-    grid-column: 7 / -1;
-  }
 }
 
 @media (max-width: 767px) {
@@ -138,7 +114,6 @@
   .details,
   .competences,
   .colonneDroite,
-  .awards,
   .identite,
   .portrait {
     grid-column: 1 / -1;
@@ -148,35 +123,19 @@
     row-gap: 48px;
   }
 
-  .details,
-  .awards {
+  .details {
     margin-top: 0;
   }
 
   .profil,
   .details,
   .competences,
-  .colonneDroite,
-  .awards {
+  .colonneDroite {
     grid-row: auto;
   }
 
   .colonneDroite {
     gap: 48px;
-  }
-
-  .awards li {
-    grid-template-columns: 44px 1fr auto;
-    gap: 8px;
-  }
-
-  .awards li span:nth-child(3) {
-    grid-column: 2;
-  }
-
-  .awards li span:last-child {
-    grid-column: 3;
-    grid-row: 1;
   }
 
   .portraitSection {
