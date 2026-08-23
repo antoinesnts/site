@@ -3,6 +3,8 @@
 .couverture { position: relative; z-index: 10000; margin-top: 0; padding-inline: var(--page-x); }
 .couvertureCadre { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #0a0a0a; }
 .couvertureCadre img, .youtube, .videoPlayer { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.boutonSon { position: absolute; z-index: 1; left: 18px; bottom: 18px; display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; background: rgba(0, 0, 0, .74); border: 1px solid var(--hairline); border-radius: 2px; }
+.boutonSon:hover, .boutonSon:focus-visible { background: rgba(0, 0, 0, .94); }
 .sourceCover { position: relative; display: block; width: 100%; height: 100%; }
 .sourceCover span { position: absolute; right: 20px; bottom: 18px; padding: 8px 12px; background: rgba(0, 0, 0, .72); border: 1px solid var(--hairline); }
 
@@ -51,6 +53,7 @@
 
 @media (max-width: 767px) {
   .couverture { margin-top: 0; padding-inline: var(--page-x); }
+  .boutonSon { left: 12px; bottom: 12px; padding: 7px 10px; }
   .informations, .galerie { padding-block: 72px 0; }
   .resume, .fiche { grid-column: 1 / -1; }
   .fiche { grid-template-columns: 1fr; gap: 32px; margin-top: 24px; }

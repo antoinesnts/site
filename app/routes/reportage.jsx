@@ -37,6 +37,7 @@ function lectureAutomatique(url) {
   if (lecteur.hostname.includes("youtube")) {
     lecteur.searchParams.set("autoplay", "1");
     lecteur.searchParams.set("mute", "1");
+    lecteur.searchParams.set("enablejsapi", "1");
   } else if (lecteur.hostname.includes("facebook")) {
     lecteur.searchParams.set("autoplay", "true");
   } else if (lecteur.hostname.includes("dailymotion")) {
@@ -106,6 +107,20 @@ function RealisationVoisine({ reportage, direction }) {
 
 export default function Reportage() {
   const { reportage, precedent, suivant, galerie } = useLoaderData();
+  const lecteurRef = useRef(null);
+  const [sonActif, setSonActif] = useState(false);
+  const lecteurYoutube = Boolean((reportage.youtubeEmbed ?? reportage.embedUrl)?.includes("youtube"));
+
+  const basculerSon = () => {
+    const commande = sonActif ? "mute" : "unMute";
+    lecteurRef.current?.contentWindow?.postMessage(JSON.stringify({
+      event: "command",
+      func: commande,
+      args: [],
+    }), "*");
+    setSonActif((actif) => !actif);
+  };
+
   const fiche = [
     { titre: "Catégorie", valeur: reportage.genre },
     { titre: "Client", valeur: reportage.client },
@@ -134,6 +149,7 @@ export default function Reportage() {
             />
           ) : reportage.youtubeEmbed || reportage.embedUrl ? (
             <iframe
+              ref={lecteurYoutube ? lecteurRef : undefined}
               className={styles.youtube}
               src={lectureAutomatique(reportage.youtubeEmbed ?? reportage.embedUrl)}
               title={`Reportage : ${reportage.titre}`}
@@ -157,6 +173,12 @@ export default function Reportage() {
               fetchPriority="high"
             />
           )}
+          {lecteurYoutube ? (
+            <button type="button" className={styles.boutonSon} onClick={basculerSon}>
+              <span aria-hidden="true">{sonActif ? "◖))" : "◖×"}</span>
+              {sonActif ? "Couper le son" : "Activer le son"}
+            </button>
+          ) : null}
         </div>
       </Reveal>
 
