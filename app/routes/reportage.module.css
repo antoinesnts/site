@@ -40,6 +40,7 @@
 .suiteMedia[data-joue="true"] video { opacity: 1; }
 .suiteTitre { width: 60%; max-width: 60%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 1.9cqw; line-height: 1.2; opacity: var(--muted-opacity); }
 .suiteBouton { display: inline-flex; align-items: center; gap: 8px; width: fit-content; padding-bottom: 4px; border-bottom: 1px solid var(--hairline); }
+.suiteBoutonPrecedente span { transform: scaleX(-1); }
 .suiteBouton:hover, .suiteBouton:focus-visible { border-color: currentColor; }
 
 @media (max-width: 1400px) and (min-width: 768px) {

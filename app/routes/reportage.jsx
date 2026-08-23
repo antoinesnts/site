@@ -97,8 +97,8 @@ function RealisationVoisine({ reportage, direction }) {
         {" — "}
         {reportage.titre}
       </p>
-      <Link to={`/realisations/${reportage.slug}`} className={styles.suiteBouton}>
-        <span aria-hidden="true">{estSuivante ? "↳" : "↲"}</span>
+      <Link to={`/realisations/${reportage.slug}`} className={`${styles.suiteBouton} ${estSuivante ? "" : styles.suiteBoutonPrecedente}`}>
+        <span aria-hidden="true">↳</span>
         Réalisation {direction}
       </Link>
     </article>
