@@ -65,7 +65,7 @@
   .resume, .fiche { grid-column: 1 / -1; }
   .fiche { grid-template-columns: 1fr; gap: 32px; margin-top: 24px; }
   .gDemi, .gTierce, .gPleine { grid-column: 1 / -1; }
-  .suite { padding-block: 48px; margin-top: 36px; align-items: start; column-gap: 36px; row-gap: 0; }
+  .suite { padding-block: 48px; margin-top: 36px; align-items: start; column-gap: 18px; row-gap: 0; }
   .suiteCarte { grid-column: span 2; align-items: flex-start; gap: 10px; text-align: left; transform: none; }
   .suiteCarteDroite { grid-column: 3 / -1; align-items: flex-start; text-align: left; transform: none; }
   .suiteMedia { width: 100%; }
