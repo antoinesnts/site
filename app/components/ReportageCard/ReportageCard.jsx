@@ -77,7 +77,6 @@ export default function ReportageCard({ reportage, delay = 0, priority = false }
               src={asset(video)}
               poster={asset(image)}
               muted
-              loop
               playsInline
               preload="none"
               tabIndex={-1}
