@@ -524,7 +524,7 @@ export const reportages = [
     role: "Vidéo / Montage",
     client: "La Réserve Pêché Iodé",
     image: "/photos/reserve-peche-iode.svg",
-    embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7212104576395620352",
+    video: "/videos/sunset-boat-reserve-peche-iode.mp4",
     source: "https://www.linkedin.com/posts/aur%C3%A9lie-lemoine-b1726072_nouveau-projet-%C3%A9ph%C3%A9m%C3%A8re-sunset-boat-by-ugcPost-7212104576395620352-uNRo/",
     galerie: ["/photos/reserve-peche-iode.svg"],
     accueil: false,
