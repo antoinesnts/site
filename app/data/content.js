@@ -146,7 +146,7 @@ export const reportages = [
     mois: "03/25",
     genre: "Reportage",
     role: "Co-réalisation / Télépilotage drone",
-    cameras: ["Sony FX6", "DJI Mavic 2 Pro", "iPhone 14 Pro"],
+    cameras: ["Sony FX6", "DJI Mavic 2 Pro", "DJI Mavic 3 Pro", "iPhone 14 Pro"],
     client: "TF1",
     equipe: "Mathieu Rio et Antoine Santos",
     image: "/photos/mont-saint-michel.jpg",
