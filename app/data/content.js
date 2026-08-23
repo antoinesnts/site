@@ -96,11 +96,11 @@ export const reportages = [
     preview: "/videos/previews/chausey.mp4",
     source: "https://www.linkedin.com/posts/antoinesantos_normandie-grandesmaraezes-grandemaraeze-ugcPost-7383499336590008320-8TmO/",
     galerie: [
-      "/photos/chausey-1.jpg",
-      "/photos/chausey-2.jpg",
       "/photos/chausey-3.jpg",
-      "/photos/chausey-4.jpg",
+      "/photos/chausey-2.jpg",
+      "/photos/chausey-1.jpg",
       "/photos/chausey-5.jpg",
+      "/photos/chausey-4.jpg",
       "/photos/chausey-6.jpg",
     ],
     resume:
