@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 10001;
   padding-block: 24px;
   align-items: baseline;
   row-gap: 0;
