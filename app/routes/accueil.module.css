@@ -104,7 +104,8 @@
 
 @media (max-width: 767px) {
   .hero {
-    padding-block: 128px 80px;
+    padding-block: 192px 80px;
+    align-content: start;
     row-gap: 56px;
   }
   .section {

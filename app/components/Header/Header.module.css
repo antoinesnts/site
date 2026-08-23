@@ -31,6 +31,10 @@
   gap: 24px;
 }
 
+.navMobile {
+  display: none;
+}
+
 .lieu {
   grid-column: 9 / span 3;
   display: flex;
@@ -71,74 +75,28 @@
   opacity: var(--muted-opacity);
 }
 
-/* The menu trigger and panel only exist below the tablet breakpoint. */
-.bascule {
-  display: none;
-  grid-column: 4 / span 1;
-  justify-self: end;
-  white-space: nowrap;
-}
-
-.panneau {
-  display: none;
-}
-
 @media (max-width: 767px) {
   .root {
     padding-block: 16px;
     --cols: 4;
+    align-items: baseline;
+    row-gap: 18px;
   }
   .nom {
-    grid-column: 1 / span 3;
+    grid-column: 1 / -1;
   }
   .nav,
   .lieu,
   .contact {
     display: none;
   }
-  .bascule {
-    display: block;
-  }
-
-  .panneau {
-    position: fixed;
-    inset: 0;
-    z-index: 99;
+  .navMobile {
+    grid-column: 1 / -1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-    padding: var(--page-x);
-    background: var(--bg);
-    /* Kept in the DOM so the transition can play both ways. */
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-8px);
-    transition:
-      opacity 0.35s var(--ease),
-      transform 0.45s var(--ease),
-      visibility 0s linear 0.35s;
+    gap: 18px;
+    flex-wrap: wrap;
   }
-  .panneau[data-ouvert="true"] {
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    transition-delay: 0s;
-  }
-
-  .panneauLien {
-    font-size: 32px;
-    line-height: 1.2;
-    letter-spacing: var(--ls-display);
-  }
-  .panneauLien[data-active="true"] {
-    opacity: var(--muted-opacity);
-  }
-
-  .panneauPied {
-    display: flex;
-    gap: 12px;
-    margin-top: 32px;
-    opacity: var(--muted-opacity);
+  .navMobile .link {
+    text-transform: none;
   }
 }
