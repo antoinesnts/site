@@ -276,6 +276,26 @@ export const reportages = [
       "Dans les coulisses de Beauregard, un festival qui rassemble plus de 150 000 personnes.",
     parution: "TF1 INFO",
   },
+  {
+    slug: "viaduc-calix",
+    titre: "Viaduc de Calix : les coulisses d’un pont sous haute surveillance",
+    lieu: "Caen, Normandie",
+    date: "mai 2026",
+    mois: "05/26",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    cameras: ["Sony FX6", "DJI Mavic Pro 3"],
+    client: "TF1 — Le 13H",
+    image: "/photos/viaduc-calix.jpg",
+    embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D1516726993575508&show_text=false&width=1280",
+    source: "https://www.facebook.com/watch/?v=1516726993575508",
+    galerie: ["/photos/viaduc-calix.jpg"],
+    resume:
+      "Chaque jour, près de 80 000 véhicules empruntent le viaduc de Calix, le pont le plus fréquenté de Normandie. Ce reportage révèle les coulisses de cette infrastructure stratégique : la surveillance de l’ouvrage, les travaux d’urgence menés à l’intérieur et les opérations prévues pour prolonger sa durée de vie de plusieurs décennies.",
+    chapeau:
+      "À Caen, le viaduc de Calix fait l’objet d’une surveillance constante pour assurer son avenir.",
+    parution: "TF1 — Le 13H",
+  },
 ];
 
 export const profil =
