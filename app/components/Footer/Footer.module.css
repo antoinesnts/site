@@ -58,18 +58,20 @@
     font-size: 11px;
   }
 
-  .copyright,
-  .reseaux,
-  .mail {
+  .copyright {
     grid-column: 1 / -1;
-  }
-
-  .copyright,
-  .mail {
     justify-self: start;
   }
 
   .reseaux {
+    grid-column: 1 / span 2;
     justify-content: flex-start;
+    gap: 14px;
+  }
+
+  .mail {
+    grid-column: 3 / -1;
+    justify-self: end;
+    white-space: nowrap;
   }
 }
