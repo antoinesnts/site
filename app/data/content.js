@@ -104,7 +104,7 @@ export const reportages = [
       "/photos/chausey-6.jpg",
     ],
     resume:
-      "L’archipel de Chausey offre un spectacle naturel saisissant pendant les grandes marées. À marée basse, 365 îlots se découvrent, contre 52 à marée haute. Avec un marnage qui peut atteindre 14 mètres, la mer transforme entièrement le paysage en seulement quelques heures. Avec Aurore Coulon, nous avons parcouru l’archipel pour raconter ce phénomène en images, à travers des séquences avant/après et des timelapses.",
+      "L’archipel de Chausey offre un spectacle naturel saisissant pendant les grandes marées. À marée basse, 365 îlots se découvrent, contre 52 à marée haute. Avec un marnage qui peut atteindre 14 mètres, la mer transforme entièrement le paysage en seulement quelques heures. Notre défi pour ce reportage : raconter d’une nouvelle façon en images ce phénomène spectaculaire. Pour cela, nous avons parcouru une quinzaine de kilomètres à travers tout l’archipel pour réaliser des avant/après, timelapse et autres séquences pour montrer l’ampleur de ces marées.",
     chapeau:
       "À Chausey, les plus grandes marées d’Europe transforment le paysage en quelques heures.",
     parution: "TF1 — Le 13H",
