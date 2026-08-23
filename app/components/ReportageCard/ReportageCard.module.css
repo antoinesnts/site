@@ -23,6 +23,7 @@
 .titre {
   grid-column: 2;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .sous {
@@ -30,8 +31,16 @@
   display: flex;
   gap: 12px;
   opacity: var(--muted-opacity);
+  white-space: nowrap;
 }
-.sous span:last-child { white-space: pre-line; }
+.sous span:last-child { white-space: nowrap; }
+
+/* On desktop, the compact scale protects the editorial one-line layout when
+   the browser window is narrowed, without changing the mobile presentation. */
+@media (min-width: 768px) {
+  .titre { font-size: clamp(11px, 0.8vw, 16px); }
+  .sous { font-size: clamp(10px, 0.75vw, 16px); }
+}
 
 .cadre {
   position: relative;
