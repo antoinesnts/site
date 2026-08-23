@@ -1,6 +1,6 @@
 .visuallyHidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
-.couverture { position: relative; z-index: 10000; margin-top: calc(var(--header-h) + 16px); padding-inline: var(--page-x); }
+.couverture { position: relative; z-index: 10000; margin-top: 0; padding-inline: var(--page-x); }
 .couvertureCadre { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #0a0a0a; }
 .couvertureCadre img, .youtube, .videoPlayer { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
 .sourceCover { position: relative; display: block; width: 100%; height: 100%; }
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 767px) {
-  .couverture { margin-top: var(--header-h); padding-inline: var(--page-x); }
+  .couverture { margin-top: 0; padding-inline: var(--page-x); }
   .informations, .galerie { padding-block: 72px 0; }
   .resume, .fiche { grid-column: 1 / -1; }
   .fiche { grid-template-columns: 1fr; gap: 32px; margin-top: 24px; }
