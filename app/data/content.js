@@ -212,7 +212,14 @@ export const reportages = [
     preview: "/videos/previews/erosion-debarquement.mp4",
     embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D487174353751058&show_text=false&width=1280",
     source: "https://www.facebook.com/watch/?v=487174353751058",
-    galerie: ["/photos/arromanches.jpg"],
+    galerie: [
+      "/photos/erosion-debarquement-1.jpg",
+      "/photos/erosion-debarquement-2.jpg",
+      "/photos/erosion-debarquement-3.jpg",
+      "/photos/erosion-debarquement-4.jpg",
+      "/photos/erosion-debarquement-5.jpg",
+      "/photos/erosion-debarquement-6.jpg",
+    ],
     resume:
       "À Arromanches-les-Bains, la mer a déjà grignoté une grande partie du port artificiel construit pour le Débarquement. À la Pointe du Hoc, la falaise s’effrite et les éboulements se multiplient. Face à l’érosion, le défi est de préserver et transmettre une histoire dont les traces physiques disparaissent progressivement.",
     chapeau:
