@@ -11,6 +11,10 @@
   margin-top: 32px;
 }
 
+.sansMarge {
+  margin-top: 0;
+}
+
 .copyright {
   grid-column: 1 / span 4;
   opacity: var(--muted-opacity);

@@ -6,11 +6,12 @@ import styles from "./Footer.module.css";
 export default function Footer() {
   const annee = new Date().getFullYear();
   const { pathname } = useLocation();
+  const estDetailRealisation = pathname.startsWith("/realisations/");
 
   if (pathname === "/contact") return null;
 
   return (
-    <footer className={`grid ${styles.root} ${pathname === "/" ? styles.compact : ""}`}>
+    <footer className={`grid ${styles.root} ${pathname === "/" ? styles.compact : ""} ${estDetailRealisation ? styles.sansMarge : ""}`}>
       <span className={styles.copyright}>© {annee} {site.nom}</span>
 
       <SocialLinks className={styles.reseaux} linkClassName={styles.reseau} />
