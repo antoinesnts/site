@@ -221,7 +221,7 @@ export const reportages = [
       "/photos/erosion-debarquement-6.jpg",
     ],
     resume:
-      "À Arromanches-les-Bains, la mer a déjà grignoté une grande partie du port artificiel construit pour le Débarquement. À la Pointe du Hoc, la falaise s’effrite et les éboulements se multiplient. Face à l’érosion, le défi est de préserver et transmettre une histoire dont les traces physiques disparaissent progressivement.",
+      "La grande majorité du port artificiel d’Arromanches-les-Bains a été grignotée par la mer. Sur les 115 caissons, il ne reste plus qu’une quinzaine. La municipalité estime que d’ici 50 ans, il n’y aura plus aucune trace de ce port artificiel, symbole de la logistique des Britanniques. Pour les autorités, le défi est donc de continuer à transmettre l’histoire du Débarquement, avec de moins en moins de témoins directs, et de moins en moins de lieux dédiés.",
     chapeau:
       "Sur les plages normandes, l’érosion menace les lieux emblématiques de l’histoire du Débarquement.",
     parution: "TF1",
