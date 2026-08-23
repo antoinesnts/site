@@ -156,7 +156,7 @@ export const reportages = [
     source: "https://www.linkedin.com/feed/update/urn:li:activity:7302267178882379777/",
     galerie: ["/photos/mont-saint-michel.jpg"],
     resume:
-      "Lors des grandes marées, le Mont-Saint-Michel redevient une île pendant moins d’une heure. L’eau submerge le bout de la passerelle et encercle les remparts, avant de se retirer et de rendre à nouveau possible la traversée de la baie. Ce reportage, co-réalisé avec Mathieu Rio, suit cette transformation spectaculaire à l’aube, au sol comme par drone.",
+      "Filmer le Mont-Saint-Michel est toujours aussi exaltant, surtout avec cette sublime lumière de l’aube sous une gelée du matin à 0 °C.\n\nLes grandes marées transforment le Mont-Saint-Michel en île environ sept fois par an. Pendant moins d’une heure, la mer submerge le bout de la passerelle et encercle les remparts. Le Mont-Saint-Michel se retrouve coupé du continent. Une heure plus tard, l’eau se retire. La traversée de la baie redevient possible, offrant aux visiteurs l’occasion de découvrir les sables mouvants. Ce reportage suit cette transformation spectaculaire pendant 12 heures.",
     chapeau:
       "Lors des grandes marées, le Mont-Saint-Michel se retrouve brièvement coupé du continent.",
     parution: "TF1 — Le 20H",

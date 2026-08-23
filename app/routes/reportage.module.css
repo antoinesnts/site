@@ -12,7 +12,7 @@
 .resume { grid-column: 1 / span 4; font-size: 18px; line-height: 1.42; }
 .resumeEtendu { grid-column: 1 / span 5; width: 115%; }
 .resume h2 { margin: 0 0 20px; font-size: 16px; font-weight: 400; line-height: 1.2; }
-.resume p { opacity: var(--muted-opacity); }
+.resume p { opacity: var(--muted-opacity); white-space: pre-line; }
 .equipe { display: flex; flex-direction: column; gap: 8px; margin-top: 32px; }
 .equipe span:first-child { font-size: 16px; line-height: 1.2; }
 .equipe span:last-child { opacity: var(--muted-opacity); }
