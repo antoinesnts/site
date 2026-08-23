@@ -59,7 +59,7 @@
 }
 
 @media (max-width: 767px) {
-  .couverture { margin-top: var(--header-h); padding-inline: var(--page-x); }
+  .couverture { margin-top: calc(var(--header-h) + 40px); padding-inline: var(--page-x); }
   .boutonSon { left: 12px; bottom: 12px; padding: 7px 10px; }
   .informations, .galerie { padding-block: 72px 0; }
   .resume, .fiche { grid-column: 1 / -1; }
