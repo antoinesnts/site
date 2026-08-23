@@ -178,6 +178,7 @@ export const reportages = [
     role: "JRI / Télépilote / Monteur",
     cameras: ["Sony FX6", "DJI Mavic 4 Pro", "iPhone 17 Pro", "Insta360 X5"],
     client: "TF1",
+    equipe: "Guillaume Thorel et Antoine Santos",
     image: "/photos/granville.jpg",
     preview: "/videos/previews/granville.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/JqS8WHB0mI4?start=16&rel=0",
@@ -191,7 +192,7 @@ export const reportages = [
       "/photos/granville-6.jpg",
     ],
     resume:
-      "Cap sur Granville, dans la baie du Mont-Saint-Michel, pour notre nouveau « Week-end à… » en Normandie !\n\nPremier port coquillier de l’Hexagone et surnommée « la Monaco du Nord », la ville était la préférée de Christian Dior. L’art est omniprésent dans Granville, surtout dans la Haute Ville. Une partie de celle-ci est construite sur un bloc de granite massif. Ce roc a fait de Granville une place militaire stratégique. Saviez-vous qu’un archipel de plusieurs centaines d’îles est rattaché à Granville et qu’il est possible d’y passer la nuit ?",
+      "Cap sur Granville, dans la baie du Mont-Saint-Michel, pour notre nouveau « Week-end à… » en Normandie !\n\nPremier port coquillier de l’Hexagone et surnommée « la Monaco du Nord », la ville était la préférée de Christian Dior. L’art est omniprésent dans Granville, surtout dans la Haute Ville. Une partie de celle-ci est construite sur un bloc de granite massif. Ce roc a fait de Granville une place militaire stratégique. Saviez-vous qu’un archipel de plusieurs centaines d’îles est rattaché à Granville et qu’il est possible d’y passer la nuit ?",
     chapeau:
       "Granville dévoile son caractère singulier entre mer, patrimoine et élégance normande.",
     parution: "TF1 INFO",
