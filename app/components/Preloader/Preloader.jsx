@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { markIntroReady, SEEN_KEY } from "../../lib/intro.js";
+import { markIntroReady } from "../../lib/intro.js";
 import styles from "./Preloader.module.css";
 
 /** Must match the curtain delay in Preloader.module.css. */
@@ -17,15 +17,9 @@ export default function Preloader({ nom }) {
   const raf = useRef(null);
 
   useEffect(() => {
-    let dejaVu = false;
-    try {
-      dejaVu = sessionStorage.getItem(SEEN_KEY) === "1";
-    } catch {
-      /* private browsing — the curtain simply replays */
-    }
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    if (dejaVu || reduced) {
+    if (reduced) {
       setSkip(true);
       markIntroReady();
       return;
@@ -43,11 +37,6 @@ export default function Preloader({ nom }) {
       if (t < 1) {
         raf.current = requestAnimationFrame(tick);
       } else {
-        try {
-          sessionStorage.setItem(SEEN_KEY, "1");
-        } catch {
-          /* ignore */
-        }
         markIntroReady();
       }
     };

@@ -1,6 +1,6 @@
 /* The curtain lifts on a CSS animation, not on a JS callback: if the bundle
-   is slow or fails, the page still opens. JS only drives the counter and,
-   on a repeat visit within the session, skips the whole thing. */
+   is slow or fails, the page still opens. JS drives the counter and portrait
+   loop on every browser refresh. */
 .root {
   position: fixed;
   inset: 0;
@@ -20,7 +20,7 @@
   }
 }
 
-/* Seen already this session — no curtain at all. */
+/* Motion-reduction preference — no curtain at all. */
 .root[data-skip="true"] {
   display: none;
   animation: none;
