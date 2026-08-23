@@ -178,6 +178,18 @@ button {
   background-size: 256px 256px;
   background-repeat: repeat;
   opacity: 0.07;
+  animation: grain-shift 0.22s steps(2, end) infinite;
+}
+
+/* A short stepped loop keeps the grain alive like analogue film, without
+   moving any of the page content underneath it. */
+@keyframes grain-shift {
+  0% { background-position: 0 0; }
+  20% { background-position: -42px 27px; }
+  40% { background-position: 31px -48px; }
+  60% { background-position: -18px -31px; }
+  80% { background-position: 49px 16px; }
+  100% { background-position: 0 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
