@@ -301,6 +301,7 @@ export const reportages = [
     cameras: ["Sony FX6", "DJI Mavic Pro 3"],
     client: "TF1 — Le 13H",
     image: "/photos/viaduc-calix.jpg",
+    vignette: "/photos/viaduc-calix-vignette.jpg",
     preview: "/videos/previews/viaduc-calix.mp4",
     embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D1516726993575508&show_text=false&width=1280",
     source: "https://www.facebook.com/watch/?v=1516726993575508",
