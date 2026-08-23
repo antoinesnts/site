@@ -94,7 +94,14 @@ export const reportages = [
     video: "/videos/chausey.mp4",
     preview: "/videos/previews/chausey.mp4",
     source: "https://www.linkedin.com/posts/antoinesantos_normandie-grandesmaraezes-grandemaraeze-ugcPost-7383499336590008320-8TmO/",
-    galerie: ["/photos/chausey.jpg"],
+    galerie: [
+      "/photos/chausey-1.jpg",
+      "/photos/chausey-2.jpg",
+      "/photos/chausey-3.jpg",
+      "/photos/chausey-4.jpg",
+      "/photos/chausey-5.jpg",
+      "/photos/chausey-6.jpg",
+    ],
     resume:
       "L’archipel de Chausey offre un spectacle naturel saisissant pendant les grandes marées. À marée basse, 365 îlots se découvrent, contre 52 à marée haute. Avec un marnage qui peut atteindre 14 mètres, la mer transforme entièrement le paysage en seulement quelques heures. Avec Aurore Coulon, nous avons parcouru l’archipel pour raconter ce phénomène en images, à travers des séquences avant/après et des timelapses.",
     chapeau:
