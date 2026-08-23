@@ -84,6 +84,27 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grillePied {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 72px var(--page-x) 24px;
+  color: color-mix(in srgb, var(--fg) 72%, transparent);
+}
+
+.voirTout {
+  display: inline-flex;
+  gap: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--hairline);
+  transition: border-color 0.25s var(--ease);
+}
+
+.voirTout:hover,
+.voirTout:focus-visible {
+  border-color: currentColor;
+}
+
 /* Hovering one cell recedes the others. Done in CSS rather than React state so
    moving the pointer across the grid never re-renders it. */
 .grille:has([data-carte]:hover) [data-carte]:not(:hover) {
@@ -131,5 +152,8 @@
   .grille {
     grid-template-columns: minmax(0, 1fr);
     row-gap: 48px;
+  }
+  .grillePied {
+    padding-block: 48px 20px;
   }
 }

@@ -78,6 +78,14 @@ export default function Accueil() {
           />
         ))}
       </div>
+
+      <div className={styles.grillePied}>
+        <span>Total : {reportages.length} reportages</span>
+        <Link to="/reportages" className={styles.voirTout}>
+          <span aria-hidden="true">↳</span>
+          Voir tous
+        </Link>
+      </div>
     </>
   );
 }
