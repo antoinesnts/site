@@ -130,6 +130,7 @@ export const reportages = [
     cameras: ["Sony FX6", "DJI Mavic Pro 3"],
     client: "TF1 — Le 20H",
     image: "/photos/mont-saint-michel.jpg",
+    vignette: "/photos/mont-saint-michel-vignette.jpg",
     preview: "/videos/previews/mont-saint-michel.mp4",
     embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7302267178882379777",
     source: "https://www.linkedin.com/feed/update/urn:li:activity:7302267178882379777/",
