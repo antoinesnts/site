@@ -11,7 +11,7 @@
 .resume h2 { margin: 0 0 20px; font-size: 16px; font-weight: 400; line-height: 1.2; }
 .resume p { opacity: var(--muted-opacity); }
 
-.fiche { grid-column: 9 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px 40px; font-size: 18px; line-height: 1.42; }
+.fiche { grid-column: 9 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 40px; font-size: 18px; line-height: 1.42; }
 .champ { display: flex; flex-direction: column; gap: 8px; }
 .champTitre { opacity: var(--muted-opacity); }
 .champValeur { white-space: pre-line; }
