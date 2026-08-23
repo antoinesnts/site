@@ -83,7 +83,7 @@ export default function Accueil() {
         <span>Total : {reportages.length} réalisations</span>
         <Link to="/realisations" className={styles.voirTout}>
           <span aria-hidden="true">↳</span>
-          Voir tous
+          Voir toutes les réalisations
         </Link>
       </div>
     </>
