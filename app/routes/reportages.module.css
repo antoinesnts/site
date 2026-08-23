@@ -1,4 +1,4 @@
-.tete { padding-block: 232px 72px; row-gap: 48px; }
+.tete { padding-block: 232px 160px; row-gap: 48px; }
 .titreLigne { grid-column: 1 / -1; display: flex; align-items: flex-start; gap: 6px; }
 .titreLigne h1 { font-size: var(--fs-display); line-height: var(--lh-display); letter-spacing: var(--ls-display); text-transform: uppercase; }
 .titreLigne span { padding-top: 3px; opacity: var(--muted-opacity); }
@@ -14,14 +14,14 @@
 
 @media (max-width: 1159px) {
   .tete {
-    padding-block: 268px 64px;
+    padding-block: 268px 152px;
   }
   .mur { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 767px) {
   .tete {
-    padding-block: 144px 64px;
+    padding-block: 144px 96px;
     row-gap: 32px;
   }
   .groupeFiltre { display: grid; gap: 10px; }
