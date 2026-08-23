@@ -396,6 +396,66 @@ export const reportages = [
       "En Guadeloupe, le vélo devient une réponse concrète aux enjeux de circulation.",
     parution: "Outremers 360",
   },
+  {
+    slug: "guyane-pollutions-sauvages",
+    titre: "En Guyane, des citoyens contre les pollutions sauvages",
+    lieu: "Guyane française",
+    date: "juillet 2026",
+    mois: "07/26",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    client: "Public Sénat",
+    image: "/photos/k2oMjZR3LtD6qgHt7my.jpg",
+    embedUrl: "https://www.dailymotion.com/embed/video/k2oMjZR3LtD6qgHt7my?queue-enable=false",
+    source: "https://www.dailymotion.com/video/k2oMjZR3LtD6qgHt7my",
+    galerie: ["/photos/k2oMjZR3LtD6qgHt7my.jpg"],
+    accueil: false,
+    resume:
+      "En Guyane, des citoyens engagés signalent les rejets d’eaux usées, dépôts sauvages et carcasses de véhicules grâce à une plateforme numérique. Coordonnée par Guyane Nature Environnement, cette mobilisation aide à alerter les autorités sur les atteintes à l’environnement.",
+    chapeau:
+      "En Guyane, une mobilisation citoyenne pour lutter contre les pollutions sauvages.",
+    parution: "Public Sénat",
+  },
+  {
+    slug: "guyane-boutique-solidaire-enfants",
+    titre: "En Guyane, une boutique solidaire pour les enfants",
+    lieu: "Guyane française",
+    date: "avril 2026",
+    mois: "04/26",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    client: "Public Sénat",
+    image: "/photos/k5RBzDLvKqUW0ZFxea4.jpg",
+    embedUrl: "https://www.dailymotion.com/embed/video/k5RBzDLvKqUW0ZFxea4?queue-enable=false",
+    source: "https://www.dailymotion.com/video/k5RBzDLvKqUW0ZFxea4",
+    galerie: ["/photos/k5RBzDLvKqUW0ZFxea4.jpg"],
+    accueil: false,
+    resume:
+      "En Guyane, une boutique solidaire collecte, trie et revend à petits prix des vêtements, jouets et équipements de puériculture. Ce modèle aide les familles tout en donnant une seconde vie à plusieurs tonnes d’objets chaque année.",
+    chapeau:
+      "Une boutique solidaire en Guyane donne une seconde vie aux objets destinés aux enfants.",
+    parution: "Public Sénat",
+  },
+  {
+    slug: "amerindiens-culture-guyane",
+    titre: "Les Amérindiens entre préservation de leur culture",
+    lieu: "Guyane française",
+    date: "mars 2022",
+    mois: "03/22",
+    genre: "Reportage",
+    role: "JRI / Télépilote / Monteur",
+    client: "Public Sénat",
+    image: "/photos/k5UCyLPTfqNdZ2xKkud.jpg",
+    embedUrl: "https://www.dailymotion.com/embed/video/k5UCyLPTfqNdZ2xKkud?queue-enable=false",
+    source: "https://www.dailymotion.com/video/k5UCyLPTfqNdZ2xKkud",
+    galerie: ["/photos/k5UCyLPTfqNdZ2xKkud.jpg"],
+    accueil: false,
+    resume:
+      "En Guyane, les communautés amérindiennes poursuivent leurs efforts pour préserver et transmettre leur culture.",
+    chapeau:
+      "En Guyane, la préservation de la culture amérindienne au cœur des enjeux de transmission.",
+    parution: "Public Sénat",
+  },
 ];
 
 export const profil =
