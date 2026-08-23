@@ -30,6 +30,22 @@ export function meta({ data }) {
   ];
 }
 
+function lectureAutomatique(url) {
+  const lecteur = new URL(url);
+
+  if (lecteur.hostname.includes("youtube")) {
+    lecteur.searchParams.set("autoplay", "1");
+    lecteur.searchParams.set("mute", "1");
+  } else if (lecteur.hostname.includes("facebook")) {
+    lecteur.searchParams.set("autoplay", "true");
+  } else if (lecteur.hostname.includes("dailymotion")) {
+    lecteur.searchParams.set("autoplay", "1");
+    lecteur.searchParams.set("mute", "1");
+  }
+
+  return lecteur.toString();
+}
+
 export default function Reportage() {
   const { reportage, precedent, suivant, galerie } = useLoaderData();
   const fiche = [
@@ -53,13 +69,15 @@ export default function Reportage() {
               src={asset(reportage.video)}
               poster={asset(reportage.image)}
               controls
+              autoPlay
+              muted
               playsInline
               preload="metadata"
             />
           ) : reportage.youtubeEmbed || reportage.embedUrl ? (
             <iframe
               className={styles.youtube}
-              src={reportage.youtubeEmbed ?? reportage.embedUrl}
+              src={lectureAutomatique(reportage.youtubeEmbed ?? reportage.embedUrl)}
               title={`Reportage : ${reportage.titre}`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
