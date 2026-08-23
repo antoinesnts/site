@@ -104,7 +104,8 @@
 
 @media (max-width: 767px) {
   .hero {
-    padding-block: 192px 80px;
+    min-height: 0;
+    padding-block: 154px 56px;
     align-content: start;
     row-gap: 56px;
   }
@@ -125,10 +126,7 @@
     white-space: nowrap;
   }
   .cta {
-    grid-column: 1 / -1;
-    justify-self: start;
-    order: 3;
-    translate: none;
+    display: none;
   }
   .grille {
     grid-template-columns: minmax(0, 1fr);
