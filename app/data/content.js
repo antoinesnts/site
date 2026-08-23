@@ -32,7 +32,7 @@ export const reperes = [
   { label: "Réalisations", lignes: ["+900 Reportages", "+20 Productions"] },
   { label: "Expérience", lignes: ["JRI Monteur depuis 2018", "Télépilote de drone STS / A1-A2-A3"] },
   { label: "Clients", lignes: ["+10 entreprises"] },
-  { label: "Médias", lignes: ["TF1 · Public Sénat · NOVO19 · Ici"] },
+  { label: "Médias", lignes: ["TF1 · Public Sénat · NOVO19 · Ici · M6"] },
 ];
 
 export const navigation = [
