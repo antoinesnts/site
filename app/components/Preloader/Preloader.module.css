@@ -5,12 +5,10 @@
   position: fixed;
   inset: 0;
   z-index: 1000;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: var(--page-x);
+  display: grid;
+  place-items: center;
   background: var(--bg);
-  animation: rideau 0.7s var(--ease) 1.1s forwards;
+  animation: rideau 0.7s var(--ease) var(--intro-duration) forwards;
 }
 
 @keyframes rideau {
@@ -28,6 +26,17 @@
   animation: none;
 }
 
+.contenu {
+  width: clamp(184px, 22vw, 320px);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
 .label,
 .count {
   font-size: var(--fs-body);
@@ -39,9 +48,52 @@
   opacity: var(--muted-opacity);
 }
 
+.cadre {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  background: #090909;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 0.32s var(--ease), transform 0.55s var(--ease);
+}
+
+.image[data-active="true"] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.progression {
+  height: 1px;
+  margin-top: 12px;
+  background: color-mix(in srgb, var(--fg) 22%, transparent);
+  overflow: hidden;
+}
+
+.progression span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--fg);
+  transform-origin: left;
+  transition: transform 0.06s linear;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .root {
     animation-delay: 0s;
     animation-duration: 0.01ms;
+  }
+
+  .image {
+    transition: none;
   }
 }

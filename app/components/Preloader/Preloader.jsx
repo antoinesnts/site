@@ -2,12 +2,18 @@ import { useEffect, useRef, useState } from "react";
 import { markIntroReady, SEEN_KEY } from "../../lib/intro.js";
 import styles from "./Preloader.module.css";
 
-/** Must match the animation delay in Preloader.module.css. */
-const DURATION = 1100;
+/** Must match the curtain delay in Preloader.module.css. */
+const DURATION = 2800;
+const IMAGES = [
+  "/photos/intro-1.jpg",
+  "/photos/intro-2.jpg",
+  "/photos/intro-3.jpg",
+];
 
 export default function Preloader({ nom }) {
   const [pct, setPct] = useState(0);
   const [skip, setSkip] = useState(false);
+  const [imageActive, setImageActive] = useState(0);
   const raf = useRef(null);
 
   useEffect(() => {
@@ -26,6 +32,10 @@ export default function Preloader({ nom }) {
     }
 
     const start = performance.now();
+    const cycle = window.setInterval(() => {
+      setImageActive((index) => (index + 1) % IMAGES.length);
+    }, 620);
+
     const tick = (now) => {
       const t = Math.min(1, (now - start) / DURATION);
       // Ease-out so the counter decelerates into 100 rather than snapping.
@@ -42,7 +52,10 @@ export default function Preloader({ nom }) {
       }
     };
     raf.current = requestAnimationFrame(tick);
-    return () => raf.current && cancelAnimationFrame(raf.current);
+    return () => {
+      if (raf.current) cancelAnimationFrame(raf.current);
+      window.clearInterval(cycle);
+    };
   }, []);
 
   return (
@@ -50,12 +63,34 @@ export default function Preloader({ nom }) {
       className={styles.root}
       data-preloader=""
       data-skip={skip ? "true" : "false"}
+      style={{ "--intro-duration": `${DURATION}ms` }}
       aria-hidden="true"
     >
-      <span className={styles.label}>{nom}</span>
-      <span className={styles.count} suppressHydrationWarning>
-        {pct}%
-      </span>
+      <div className={styles.contenu}>
+        <div className={styles.meta}>
+          <span className={styles.label}>{nom}</span>
+          <span className={styles.count} suppressHydrationWarning>
+            {pct}%
+          </span>
+        </div>
+
+        <div className={styles.cadre}>
+          {IMAGES.map((src, index) => (
+            <img
+              key={src}
+              src={src}
+              alt=""
+              className={styles.image}
+              data-active={index === imageActive ? "true" : "false"}
+              fetchPriority={index === 0 ? "high" : "auto"}
+            />
+          ))}
+        </div>
+
+        <div className={styles.progression} aria-hidden="true">
+          <span style={{ transform: `scaleX(${pct / 100})` }} />
+        </div>
+      </div>
     </div>
   );
 }
