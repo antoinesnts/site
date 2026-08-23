@@ -182,7 +182,14 @@ export const reportages = [
     preview: "/videos/previews/granville.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/JqS8WHB0mI4?start=16&rel=0",
     youtube: "https://www.youtube.com/watch?v=JqS8WHB0mI4&t=16s",
-    galerie: ["/photos/granville.jpg"],
+    galerie: [
+      "/photos/granville-1.jpg",
+      "/photos/granville-2.jpg",
+      "/photos/granville-3.jpg",
+      "/photos/granville-4.jpg",
+      "/photos/granville-5.jpg",
+      "/photos/granville-6.jpg",
+    ],
     resume:
       "Cap sur Granville, joyau de la baie du Mont-Saint-Michel, surnommée la « Monaco du Nord ». La ville conjugue son port, ses remparts et l’élégance qui a notamment séduit Christian Dior.",
     chapeau:
