@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Tourisme : nos paradis perdus">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a3044"/><stop offset=".58" stop-color="#4d9eb5"/><stop offset="1" stop-color="#e8c486"/></linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#00111d" stop-opacity=".35"/><stop offset="1" stop-color="#00111d" stop-opacity=".85"/></linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sea)"/>
+  <path d="M0 565c185-105 315 40 515-50s365 20 560-78 350-48 525-150v613H0Z" fill="#0b2030" opacity=".84"/>
+  <path d="M0 0h1600v900H0z" fill="url(#shade)"/>
+  <text x="84" y="120" fill="#fff" font-family="Arial, sans-serif" font-size="42" letter-spacing="5">GRANDS REPORTAGES · TF1</text>
+  <text x="84" y="738" fill="#fff" font-family="Arial, sans-serif" font-size="94" letter-spacing="-3">TOURISME :</text>
+  <text x="84" y="838" fill="#fff" font-family="Arial, sans-serif" font-size="94" letter-spacing="-3">NOS PARADIS PERDUS</text>
+</svg>

@@ -39,7 +39,7 @@ export default function Reportage() {
     { titre: "Lieu", valeur: reportage.lieu },
     { titre: "Client", valeur: reportage.client },
     { titre: "Date", valeur: reportage.date },
-  ];
+  ].filter((champ) => champ.valeur);
 
   return (
     <article>
@@ -65,6 +65,15 @@ export default function Reportage() {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
+          ) : reportage.source ? (
+            <a className={styles.sourceCover} href={reportage.source} target="_blank" rel="noreferrer">
+              <img
+                src={asset(reportage.image)}
+                alt={`${reportage.titre} — ${reportage.lieu}`}
+                fetchPriority="high"
+              />
+              <span>{reportage.sourceLabel ?? "Voir le film"} ↗</span>
+            </a>
           ) : (
             <img
               src={asset(reportage.image)}

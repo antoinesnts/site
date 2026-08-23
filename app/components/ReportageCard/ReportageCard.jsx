@@ -53,8 +53,12 @@ export default function ReportageCard({ reportage, delay = 0, priority = false }
           <span className={styles.titre}>{titre}</span>
           <span className={styles.sous}>
             <span>{genre}</span>
-            <span aria-hidden="true">—</span>
-            <span>{role}</span>
+            {role ? (
+              <>
+                <span aria-hidden="true">—</span>
+                <span>{role}</span>
+              </>
+            ) : null}
           </span>
         </div>
 

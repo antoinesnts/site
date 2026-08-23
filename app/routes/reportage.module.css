@@ -3,6 +3,8 @@
 .couverture { margin-top: calc(var(--header-h) + 16px); padding-inline: var(--page-x); }
 .couvertureCadre { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #0a0a0a; }
 .couvertureCadre img, .youtube, .videoPlayer { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.sourceCover { position: relative; display: block; width: 100%; height: 100%; }
+.sourceCover span { position: absolute; right: 20px; bottom: 18px; padding: 8px 12px; background: rgba(0, 0, 0, .72); border: 1px solid var(--hairline); }
 
 .informations { padding-block: 120px 0; align-items: start; }
 .resume { grid-column: 1 / span 4; font-size: 18px; line-height: 1.42; }

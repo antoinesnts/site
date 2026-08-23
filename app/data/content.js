@@ -536,6 +536,25 @@ export const reportages = [
       "Images aériennes de l’Ultra Tour de l’Obiou 2026.",
     parution: "Pure Films",
   },
+  {
+    slug: "tourisme-paradis-perdus",
+    titre: "Tourisme : nos paradis perdus",
+    lieu: "France",
+    date: "juin 2026",
+    mois: "06/26",
+    genre: "Films",
+    client: "TF1",
+    image: "/photos/tourisme-paradis-perdus.svg",
+    source: "https://www.tf1.fr/tf1/grands-reportages/videos/grands-reportages-tourisme-nos-paradis-perdus-03249713.html",
+    sourceLabel: "Voir le film sur TF1+",
+    galerie: ["/photos/tourisme-paradis-perdus.svg"],
+    accueil: false,
+    resume:
+      "À Étretat, Nice, Chamonix ou Marseille, habitants et acteurs locaux cherchent des réponses face aux conséquences du tourisme de masse : pollution, bruit et hausse des loyers.",
+    chapeau:
+      "Un film sur les territoires français confrontés au surtourisme.",
+    parution: "Grands Reportages — TF1",
+  },
 ];
 
 export const profil =
