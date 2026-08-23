@@ -1,10 +1,7 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import { Link } from "react-router";
+import { useMemo, useState } from "react";
 import Reveal from "../components/Reveal/Reveal.jsx";
-import SplitText from "../components/SplitText/SplitText.jsx";
+import ReportageCard from "../components/ReportageCard/ReportageCard.jsx";
 import { reportages, site } from "../data/content.js";
-import { pluriel } from "../lib/texte.js";
-import { asset } from "../lib/asset.js";
 import { useIntroReady } from "../lib/intro.js";
 import styles from "./reportages.module.css";
 
@@ -18,77 +15,69 @@ export function meta() {
   ];
 }
 
+function annee(reportage) {
+  return reportage.date.match(/\d{4}/)?.[0] ?? "";
+}
+
 export default function Reportages() {
   const ready = useIntroReady();
-  const [apercu, setApercu] = useState(null);
-  const apercuRef = useRef(null);
-  const position = useRef({ x: 0, y: 0 });
-  const raf = useRef(null);
-
-  // Position the preview outside React state: on every mousemove a re-render
-  // would be far too much work for a purely visual follow.
-  const onMove = useCallback((event) => {
-    position.current = { x: event.clientX, y: event.clientY };
-    if (raf.current) return;
-    raf.current = requestAnimationFrame(() => {
-      raf.current = null;
-      const el = apercuRef.current;
-      if (!el) return;
-      const { x, y } = position.current;
-      el.style.translate = `${x}px ${y}px`;
-    });
-  }, []);
-
-  useEffect(() => () => raf.current && cancelAnimationFrame(raf.current), []);
+  const [categorie, setCategorie] = useState("Tous");
+  const [anneeSelectionnee, setAnneeSelectionnee] = useState("Toutes");
+  const categories = useMemo(
+    () => ["Tous", ...new Set(reportages.map((reportage) => reportage.genre))],
+    [],
+  );
+  const annees = useMemo(
+    () => [...new Set(reportages.map(annee))].sort((a, b) => b.localeCompare(a)),
+    [],
+  );
+  const selection = useMemo(
+    () => reportages.filter((reportage) =>
+      (categorie === "Tous" || reportage.genre === categorie)
+      && (anneeSelectionnee === "Toutes" || annee(reportage) === anneeSelectionnee)),
+    [categorie, anneeSelectionnee],
+  );
 
   return (
     <>
       <section className={`grid ${styles.tete}`}>
-        <h1 className={styles.titre}>
-          <SplitText text="Tous les sujets," delay={0.1} immediate gate={ready} />{" "}
-          <SplitText text="du plus récent au plus ancien." delay={0.28} immediate gate={ready} />
-        </h1>
-        <Reveal className={styles.compte} delay={0.4} opacity={0.5} immediate gate={ready}>
-          {pluriel(reportages.length, "sujet")}
+        <div className={styles.titreLigne}>
+          <h1>Reportages</h1>
+          <span>{selection.length}</span>
+        </div>
+
+        <Reveal className={styles.filtres} immediate gate={ready}>
+          <div className={styles.groupeFiltre}>
+            <span className={styles.etiquette}>Catégorie</span>
+            <div className={styles.boutons}>
+              {categories.map((item) => (
+                <button key={item} type="button" className={styles.filtre} data-actif={categorie === item} aria-pressed={categorie === item} onClick={() => setCategorie(item)}>
+                  {item}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className={styles.groupeFiltre}>
+            <span className={styles.etiquette}>Date</span>
+            <div className={styles.boutons}>
+              <button type="button" className={styles.filtre} data-actif={anneeSelectionnee === "Toutes"} aria-pressed={anneeSelectionnee === "Toutes"} onClick={() => setAnneeSelectionnee("Toutes")}>
+                Toutes
+              </button>
+              {annees.map((item) => (
+                <button key={item} type="button" className={styles.filtre} data-actif={anneeSelectionnee === item} aria-pressed={anneeSelectionnee === item} onClick={() => setAnneeSelectionnee(item)}>
+                  {item}
+                </button>
+              ))}
+            </div>
+          </div>
         </Reveal>
       </section>
 
-      <div
-        className={`grid ${styles.liste}`}
-        onMouseMove={onMove}
-        onMouseLeave={() => setApercu(null)}
-      >
-        {/* Each row *is* the link: `display: contents` on an anchor drops it
-            from the accessibility tree in some browsers. */}
-        {reportages.map((r, i) => (
-          <Reveal
-            key={r.slug}
-            as={Link}
-            to={`/reportages/${r.slug}`}
-            aria-label={`${r.titre} — ${r.lieu}, ${r.date}`}
-            className={styles.ligne}
-            y={24}
-            delay={Math.min(i * 0.03, 0.3)}
-            duration={0.6}
-            onMouseEnter={() => setApercu(r)}
-          >
-            <span className={styles.date}>{r.date}</span>
-            <span className={styles.nom}>{r.titre}</span>
-            <span className={styles.lieu}>{r.lieu}</span>
-            <span className={styles.genre}>{r.genre}</span>
-            <span className={styles.parution}>{r.parution}</span>
-          </Reveal>
-        ))}
-      </div>
-
-      <div
-        ref={apercuRef}
-        className={styles.apercu}
-        data-visible={apercu ? "true" : "false"}
-        aria-hidden="true"
-      >
-        {apercu ? <img src={asset(apercu.image)} alt="" /> : null}
-      </div>
+      <section className={styles.mur} aria-label="Liste des reportages">
+        {selection.length ? selection.map((reportage, index) => (
+          <ReportageCard key={reportage.slug} reportage={reportage} delay={(index % 3) * 0.05} priority={index < 3} />
+        )) : <p className={styles.vide}>Aucun reportage pour cette sélection.</p>}
+      </section>
     </>
   );
 }
