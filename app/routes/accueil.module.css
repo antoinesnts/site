@@ -24,12 +24,11 @@
 }
 
 @media (min-width: 768px) {
-  /* The drone certification is one useful unit of information: keep it on a
-     single line while letting this small reference block extend naturally. */
-  .bloc:nth-child(2) {
-    min-width: 280px;
-  }
+  /* Keep the original two-column spacing; only make the long certification
+     slightly more compact so it remains readable as a single unit. */
   .bloc:nth-child(2) span:not(.blocTitre) {
+    font-size: 13px;
+    letter-spacing: -0.02em;
     white-space: nowrap;
   }
 }
