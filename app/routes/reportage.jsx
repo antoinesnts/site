@@ -134,7 +134,7 @@ export default function Reportage() {
     { titre: "Catégorie", valeur: reportage.genre },
     { titre: "Client", valeur: reportage.client },
     { titre: "Date", valeur: reportage.date },
-    { titre: "Lieu", valeur: reportage.lieu },
+    { titre: reportage.lieux ? "Lieux" : "Lieu", valeur: reportage.lieu },
     { titre: "Rôle", valeur: reportage.role },
     { titre: "Caméras", valeur: reportage.cameras?.join("\n") },
   ].filter((champ) => champ.valeur);
