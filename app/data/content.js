@@ -273,7 +273,14 @@ export const reportages = [
     preview: "/videos/previews/deserts-medicaux-drones.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/YQFAYsgMhbI?rel=0",
     youtube: "https://www.youtube.com/watch?v=YQFAYsgMhbI",
-    galerie: ["/photos/deserts-medicaux.jpg"],
+    galerie: [
+      "/photos/deserts-medicaux-01.jpg",
+      "/photos/deserts-medicaux-02.jpg",
+      "/photos/deserts-medicaux-03.jpg",
+      "/photos/deserts-medicaux-04.jpg",
+      "/photos/deserts-medicaux-05.jpg",
+      "/photos/deserts-medicaux-06.jpg",
+    ],
     resume:
       "Dans les territoires éloignés des laboratoires, une ligne de drones est mise en place pour acheminer des prélèvements médicaux. Une solution qui pourrait raccourcir les délais d’analyse et faciliter l’accès aux soins dans les déserts médicaux.",
     chapeau:
