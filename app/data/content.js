@@ -140,7 +140,7 @@ export const reportages = [
   },
   {
     slug: "mont-saint-michel",
-    titre: "Mont-Saint-Michel : les grandes marées le transforment en île",
+    titre: "Mont-Saint-Michel : le retour à l’insularité",
     lieu: "Mont-Saint-Michel, Normandie",
     date: "mars 2025",
     mois: "03/25",
