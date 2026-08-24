@@ -660,7 +660,7 @@ export const reportages = [
   },
   {
     slug: "ultra-tour-obiou-2026",
-    titre: "Ultra Tour de l’Obiou 2026",
+    titre: "Ultra Tour de l’Obiou 2026 – L’Aftermovie",
     lieu: "Massif de l’Obiou, France",
     date: "juillet 2026",
     mois: "07/26",
