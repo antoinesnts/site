@@ -300,7 +300,7 @@ export const reportages = [
   },
   {
     slug: "lubrizol",
-    titre: "Rouen : une usine chimique ravagée par le feu",
+    titre: "Lubrizol : images exclusives de l'intérieur de l'usine",
     lieu: "Rouen, Normandie",
     date: "septembre 2019",
     mois: "09/19",
