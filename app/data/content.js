@@ -199,7 +199,7 @@ export const reportages = [
   },
   {
     slug: "erosion-debarquement",
-    titre: "Normandie : l’érosion menace les vestiges du Débarquement",
+    titre: "L’érosion menace les vestiges du Débarquement",
     lieu: "Arromanches-les-Bains, Pointe du Hoc, Utah Beach et Ver-sur-Mer, Normandie",
     date: "juin 2024",
     mois: "06/24",
