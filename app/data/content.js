@@ -680,7 +680,7 @@ export const reportages = [
   },
   {
     slug: "tourisme-paradis-perdus",
-    titre: "Tourisme : nos paradis perdus",
+    titre: "Grands Reportages : Tourisme, nos paradis perdus",
     lieu: "France",
     date: "juin 2026",
     mois: "06/26",
