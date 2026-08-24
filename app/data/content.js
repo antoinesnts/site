@@ -58,7 +58,7 @@ export const reportages = [
     mois: "01/26",
     genre: "Reportage",
     role: "JRI / Télépilote\nMonteur / Étalonneur",
-    cameras: ["Sony FX6", "DJI Mavic 3 Pro", "iPhone 17 Pro"],
+    cameras: ["Sony FX6", "DJI Mavic 4 Pro", "iPhone 17 Pro"],
     client: "TF1",
     equipe: "Jules Beaucamp et Antoine Santos",
     image: "/photos/saul.jpg",
