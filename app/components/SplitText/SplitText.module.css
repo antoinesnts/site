@@ -28,6 +28,15 @@
   will-change: auto;
 }
 
+/* On small screens the fixed two-line header occupies more vertical space.
+   Keep the welcome text in its final position while it fades in, so no word
+   can briefly pass underneath the navigation during the opening sequence. */
+@media (max-width: 767px) {
+  .inner {
+    transform: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .inner {
     opacity: 1;
