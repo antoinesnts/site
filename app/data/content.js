@@ -228,7 +228,7 @@ export const reportages = [
   },
   {
     slug: "bora-bora-coraux",
-    titre: "Bora-Bora : la renaissance des coraux dans un paradis turquoise",
+    titre: "Bora-Bora : la renaissance des coraux ... Jusqu'à quand ?",
     lieu: "Bora-Bora, Polynésie française",
     date: "janvier 2023",
     mois: "01/23",
