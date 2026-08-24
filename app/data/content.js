@@ -484,7 +484,7 @@ export const reportages = [
     galerie: ["/photos/gZVIr1dFyw0.jpg"],
     accueil: false,
     resume:
-      "À Bora-Bora, Tahianui Lacour et son époux ont ouvert un éco-camping sur un motu. Une alternative plus accessible, écologique et conviviale aux grands hôtels de luxe de l’île.",
+      "À Bora-Bora, Tahianui Lacour et son époux ont imaginé un éco-camping installé sur un motu, loin des grands complexes hôteliers. Leur projet propose une manière plus accessible, conviviale et respectueuse de l’environnement de découvrir la perle du Pacifique. Hébergements légers, vie au rythme du lagon et valorisation du cadre naturel : cette initiative offre une autre vision du tourisme à Bora-Bora.",
     chapeau:
       "À Bora-Bora, un éco-camping propose une autre façon de découvrir la perle du Pacifique.",
     parution: "Outremers 360",
