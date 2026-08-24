@@ -452,7 +452,14 @@ export const reportages = [
     preview: "/videos/previews/amazonie-richesse-cosmetique.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/jedMgd7fY-k?rel=0",
     youtube: "https://www.youtube.com/watch?v=jedMgd7fY-k",
-    galerie: ["/photos/saint-georges-seconds.jpg"],
+    galerie: [
+      "/photos/amazonie-richesse-cosmetique-01.jpg",
+      "/photos/amazonie-richesse-cosmetique-02.jpg",
+      "/photos/amazonie-richesse-cosmetique-03.jpg",
+      "/photos/amazonie-richesse-cosmetique-04.jpg",
+      "/photos/amazonie-richesse-cosmetique-05.jpg",
+      "/photos/amazonie-richesse-cosmetique-06.jpg",
+    ],
     accueil: false,
     resume:
       "En Guyane, les principes actifs de la forêt amazonienne inspirent les créateurs de cosmétiques. Depuis Kourou, Nature Amazonie développe ses produits et s’ouvre à de nouveaux marchés en Amérique du Nord et en Europe.",
