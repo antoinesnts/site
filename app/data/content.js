@@ -449,6 +449,7 @@ export const reportages = [
     equipe: "Médéric Pirckher et Antoine Santos",
     image: "/photos/saint-georges-seconds.jpg",
     vignette: "/photos/amazonie-richesse-cosmetique-vignette.jpg",
+    preview: "/videos/previews/amazonie-richesse-cosmetique.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/jedMgd7fY-k?rel=0",
     youtube: "https://www.youtube.com/watch?v=jedMgd7fY-k",
     galerie: ["/photos/saint-georges-seconds.jpg"],
