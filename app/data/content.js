@@ -311,7 +311,7 @@ export const reportages = [
       "/photos/demolition-a13-06.jpg",
     ],
     resume:
-      "Après des mois de préparation, le dernier péage physique de l’A13 est démantelé sous l’œil de la caméra et du drone. Les automobilistes traversent désormais l’autoroute sans s’arrêter : des portiques enregistrent les plaques et le règlement s’effectue ensuite en ligne ou chez un partenaire.",
+      "Après des mois de préparation minutieuse, le dernier péage physique de l’A13 a été démantelé. Tel un château de cartes, la dernière barrière de péage de l’autoroute A13 s’est écroulée devant notre caméra et notre drone. Les travaux liés au passage en flux libre doivent se poursuivre pendant encore un an et demi.",
     chapeau:
       "Le dernier péage physique de l’A13 disparaît, symbole du passage au flux libre.",
     parution: "TF1",
