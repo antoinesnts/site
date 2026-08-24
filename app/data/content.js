@@ -438,7 +438,7 @@ export const reportages = [
   },
   {
     slug: "amazonie-richesse-cosmetique",
-    titre: "En Guyane, l’Amazonie est une richesse cosmétique",
+    titre: "L’Amazonie est une richesse cosmétique",
     lieu: "Kourou, Guyane française",
     date: "novembre 2021",
     mois: "11/21",
