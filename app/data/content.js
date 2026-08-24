@@ -391,7 +391,14 @@ export const reportages = [
     preview: "/videos/previews/viaduc-calix.mp4",
     embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D1516726993575508&show_text=false&width=1280",
     source: "https://www.facebook.com/watch/?v=1516726993575508",
-    galerie: ["/photos/viaduc-calix.jpg"],
+    galerie: [
+      "/photos/viaduc-calix-01.jpg",
+      "/photos/viaduc-calix-02.jpg",
+      "/photos/viaduc-calix-03.jpg",
+      "/photos/viaduc-calix-04.jpg",
+      "/photos/viaduc-calix-05.jpg",
+      "/photos/viaduc-calix-06.jpg",
+    ],
     resume:
       "Chaque jour, près de 80 000 véhicules empruntent le viaduc de Calix, le pont le plus fréquenté de Normandie. Ce reportage révèle les coulisses de cette infrastructure stratégique : la surveillance de l’ouvrage, les travaux d’urgence menés à l’intérieur et les opérations prévues pour prolonger sa durée de vie de plusieurs décennies.",
     chapeau:
