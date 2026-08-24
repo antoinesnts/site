@@ -348,7 +348,7 @@ export const reportages = [
   },
   {
     slug: "beauregard",
-    titre: "Beauregard : 1 an en coulisses dans l’un des plus grands festivals français",
+    titre: "Beauregard : 1 an en coulisses dans l’un des plus grands festivals",
     lieu: "Hérouville-Saint-Clair, Normandie",
     date: "juillet 2026",
     mois: "07/26",
