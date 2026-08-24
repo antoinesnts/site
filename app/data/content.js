@@ -342,7 +342,7 @@ export const reportages = [
   },
   {
     slug: "viaduc-calix",
-    titre: "Calix : les coulisses d'un pont sous haute surveillance",
+    titre: "Calix : un viaduc sous haute surveillance qui a besoin de travaux",
     lieu: "Caen, Normandie",
     date: "mai 2026",
     mois: "05/26",
