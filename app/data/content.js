@@ -640,7 +640,7 @@ export const reportages = [
   },
   {
     slug: "sunset-boat-reserve-peche-iode",
-    titre: "Sunset Boat — La Réserve Pêché Iodé",
+    titre: "Sunset Boat, le nouveau concept de La Réserve Pêché Iodé",
     lieu: "Merville-Franceville, Normandie",
     date: "juin 2024",
     mois: "06/24",
