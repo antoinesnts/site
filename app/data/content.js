@@ -718,7 +718,7 @@ export const reportages = [
   },
   {
     slug: "aftermovie-festival-beauregard-2026",
-    titre: "Aftermovie — Festival Beauregard 2026",
+    titre: "Festival Beauregard 2026 - L'Aftermovie",
     lieu: "Hérouville-Saint-Clair, Normandie",
     date: "août 2026",
     mois: "08/26",
