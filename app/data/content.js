@@ -361,7 +361,14 @@ export const reportages = [
     preview: "/videos/previews/beauregard.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/vXK4G6dUwT0?start=25&rel=0",
     youtube: "https://www.youtube.com/watch?v=vXK4G6dUwT0&t=25s",
-    galerie: ["/photos/beauregard.jpg"],
+    galerie: [
+      "/photos/beauregard-01.jpg",
+      "/photos/beauregard-02.jpg",
+      "/photos/beauregard-03.jpg",
+      "/photos/beauregard-04.jpg",
+      "/photos/beauregard-05.jpg",
+      "/photos/beauregard-06.jpg",
+    ],
     resume:
       "Pendant un an, ce reportage suit les préparatifs du festival Beauregard, à Hérouville-Saint-Clair. Derrière les 42 artistes et les 150 000 festivaliers attendus sur cinq jours, l’équipe organisatrice doit relever de nombreux défis pour faire vivre l’un des plus grands rendez-vous musicaux français.",
     chapeau:
