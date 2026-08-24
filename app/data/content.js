@@ -297,11 +297,19 @@ export const reportages = [
     role: "JRI / Télépilote / Monteur",
     cameras: ["Sony FX6", "DJI Mavic 3 Pro"],
     client: "TF1",
+    equipe: "Lucas Barbier et Antoine Santos",
     image: "/photos/a13.jpg",
     preview: "/videos/previews/demolition-a13.mp4",
     embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D2344931052628879&show_text=false&width=1280",
     source: "https://www.facebook.com/watch/?v=2344931052628879",
-    galerie: ["/photos/a13.jpg"],
+    galerie: [
+      "/photos/demolition-a13-01.jpg",
+      "/photos/demolition-a13-02.jpg",
+      "/photos/demolition-a13-03.jpg",
+      "/photos/demolition-a13-04.jpg",
+      "/photos/demolition-a13-05.jpg",
+      "/photos/demolition-a13-06.jpg",
+    ],
     resume:
       "Après des mois de préparation, le dernier péage physique de l’A13 est démantelé sous l’œil de la caméra et du drone. Les automobilistes traversent désormais l’autoroute sans s’arrêter : des portiques enregistrent les plaques et le règlement s’effectue ensuite en ligne ou chez un partenaire.",
     chapeau:
