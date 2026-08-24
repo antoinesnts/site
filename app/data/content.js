@@ -469,7 +469,7 @@ export const reportages = [
   },
   {
     slug: "bora-bora-eco-camping",
-    titre: "À Bora-Bora, des campings écolos sur la perle du Pacifique",
+    titre: "À Bora-Bora, le premier camping éco vient d’ouvrir",
     lieu: "Bora-Bora, Polynésie française",
     date: "décembre 2022",
     mois: "12/22",
