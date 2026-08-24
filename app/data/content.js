@@ -282,7 +282,7 @@ export const reportages = [
       "/photos/deserts-medicaux-06.jpg",
     ],
     resume:
-      "Dans les territoires éloignés des laboratoires, une ligne de drones est mise en place pour acheminer des prélèvements médicaux. Une solution qui pourrait raccourcir les délais d’analyse et faciliter l’accès aux soins dans les déserts médicaux.",
+      "Aux urgences de l’hôpital de Verneuil d’Avre et d’Iton (Eure), une ligne de drones est mise en place pour acheminer des prélèvements médicaux. Ils sont désormais envoyés au laboratoire par les airs à 110 km/h pour parcourir 30 kilomètres. En seulement 15 minutes, ils arrivent au laboratoire d’analyses de L’Aigle (Orne). Une solution pour pallier la fermeture du laboratoire de la ville il y a trois ans.",
     chapeau:
       "Des drones ouvrent une nouvelle voie pour transporter rapidement des prélèvements médicaux.",
     parution: "TF1 INFO",
