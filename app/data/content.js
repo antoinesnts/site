@@ -580,7 +580,7 @@ export const reportages = [
   },
   {
     slug: "amerindiens-culture-guyane",
-    titre: "Les Amérindiens entre préservation de leur culture",
+    titre: "Les Amérindiens entre préservation de leur culture et scolarité",
     lieu: "Guyane française",
     date: "mars 2022",
     mois: "03/22",
