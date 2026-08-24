@@ -324,15 +324,17 @@ export const reportages = [
     mois: "09/19",
     genre: "Reportage",
     role: "JRI / Monteur",
-    cameras: ["Sony FX6", "DJI Mavic 3 Pro"],
+    sansTelepilote: true,
+    cameras: ["Panasonic AJ-HPX800"],
     client: "TF1",
+    equipe: "Guillaume Thorel et Antoine Santos",
     image: "/photos/lubrizol.jpg",
     preview: "/videos/previews/lubrizol.mp4",
     embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D526264831540226&show_text=false&width=1280",
     source: "https://www.facebook.com/watch/?v=526264831540226",
     galerie: ["/photos/lubrizol.jpg"],
     resume:
-      "Le 26 septembre 2019, un incendie ravage l’usine Lubrizol à Rouen, classée Seveso. Après l’extinction du feu, les pompiers restent mobilisés dans les décombres fumants afin d’éviter toute reprise. Une enquête judiciaire est ouverte pour déterminer les causes de l’incendie.",
+      "Le 26 septembre 2019, un incendie ravage l’usine Lubrizol à Rouen, classée Seveso. Après l’extinction du feu, les pompiers restent mobilisés dans les décombres fumants afin d’éviter toute reprise. Une enquête judiciaire est ouverte pour déterminer les causes de l’incendie. Nous avons pu filmer en exclusivité les dégâts du plus grand incident industriel normand du XXIe siècle.",
     chapeau:
       "À Rouen, les images exclusives de l’incendie qui a ravagé l’usine Lubrizol.",
     parution: "TF1",
@@ -679,7 +681,7 @@ export const reportages = [
   },
 ].map((reportage) => ({
   ...reportage,
-  role: reportage.genre === "Reportage"
+  role: reportage.genre === "Reportage" && !reportage.sansTelepilote
     ? "JRI / Télépilote de drone\nMonteur / Étalonneur"
     : reportage.role?.replace(/Télépilote(?! de drone)/g, "Télépilote de drone"),
 }));
