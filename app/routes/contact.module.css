@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: var(--gutter);
-  row-gap: 96px;
+  row-gap: 56px;
 }
 
 .bloc {
@@ -49,11 +49,11 @@
 
 .base,
 .disponible {
-  grid-column: 9 / span 4;
+  grid-column: 5 / span 3;
 }
 
 .portrait {
-  grid-column: 5 / span 3;
+  grid-column: 9 / span 3;
   grid-row: 1 / span 2;
   width: 80%;
   translate: 0 -20%;
