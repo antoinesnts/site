@@ -540,6 +540,7 @@ export const reportages = [
     client: "Public Sénat",
     equipe: "Anaïs Lebranchu et Antoine Santos",
     image: "/photos/jOLrth2Uo3s.jpg",
+    vignette: "/photos/guadeloupe-place-velo-vignette.jpg",
     preview: "/videos/previews/guadeloupe-place-velo.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/jOLrth2Uo3s?rel=0",
     youtube: "https://www.youtube.com/watch?v=jOLrth2Uo3s",
