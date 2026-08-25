@@ -36,7 +36,7 @@
 .profil {
   grid-column: 1 / -1;
   width: calc(65vw - var(--page-x));
-  font-size: 13px;
+  font-size: 16.25px;
 }
 
 .profilColonnes {
@@ -85,8 +85,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 52px;
-  height: 26px;
+  min-width: 78px;
+  height: 39px;
   line-height: 1;
   opacity: .68;
   text-transform: uppercase;
@@ -96,7 +96,7 @@
 .logo img {
   display: block;
   width: auto;
-  max-width: 132px;
+  max-width: 198px;
   height: 100%;
   object-fit: contain;
   filter: grayscale(1) brightness(0) invert(1);
@@ -218,8 +218,8 @@
   }
 
   .logo {
-    height: 22px;
-    min-width: 46px;
+    height: 33px;
+    min-width: 69px;
   }
 
   .portraitSection {
