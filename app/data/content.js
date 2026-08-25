@@ -894,7 +894,7 @@ export const competences = [
 
 export const clients = [
   "Festival Beauregard", "UTOBI", "La Réserve Pêche Iodé", "Kite-R Évolution",
-  "Le Sémaphore", "Normandie Pays d’Auge Tourisme", "Merville-Franceville", "Zeph Control",
+  "Le Sémaphore", "Normandie Pays d’Auge Tourisme", "Merville-Franceville", "Zeph Control", "Seasonova",
 ];
 
 export const mediasPartenaires = ["TF1", "Public Sénat", "NOVO19", "ICI", "M6"];
@@ -916,6 +916,7 @@ export const logosClients = [
   { nom: "Normandie Pays d’Auge Tourisme", fichier: "/logos/normandie-tourisme.png" },
   { nom: "Merville-Franceville", fichier: "/logos/merville-franceville.png" },
   { nom: "Zeph Control", fichier: "/logos/zeph-control.png" },
+  { nom: "Seasonova", fichier: "/logos/seasonova.png" },
 ];
 
 export const equipement = ["Sony FX6", "ARRI Alexa Mini", "RED Komodo 6K", "DJI Ronin", "Zeiss Prime Lenses"];
