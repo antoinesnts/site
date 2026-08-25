@@ -509,9 +509,17 @@ export const reportages = [
     client: "Public Sénat",
     equipe: "Guillaume Thorel et Antoine Santos",
     image: "/photos/roQ3FYvocOE.jpg",
+    vignette: "/photos/benitier-polynesie-vignette.jpg",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/roQ3FYvocOE?rel=0",
     youtube: "https://www.youtube.com/watch?v=roQ3FYvocOE",
-    galerie: ["/photos/roQ3FYvocOE.jpg"],
+    galerie: [
+      "/photos/benitier-polynesie-01.jpg",
+      "/photos/benitier-polynesie-02.jpg",
+      "/photos/benitier-polynesie-03.jpg",
+      "/photos/benitier-polynesie-04.jpg",
+      "/photos/benitier-polynesie-05.jpg",
+      "/photos/benitier-polynesie-06.jpg",
+    ],
     accueil: false,
     resume:
       "Les bénitiers, appelés pahua en tahitien, jouent un rôle essentiel dans l’écosystème marin des lagons polynésiens. À Bora-Bora comme à Punaauia, cette espèce emblématique fait l’objet d’une attention particulière. Face aux menaces qui pèsent sur ses populations à l’échelle mondiale, autorités, associations et chercheurs se mobilisent pour mieux la connaître, protéger son habitat et préserver l’équilibre fragile du récif.",
