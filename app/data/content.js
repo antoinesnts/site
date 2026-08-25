@@ -900,7 +900,7 @@ export const clients = [
 export const mediasPartenaires = ["TF1", "Public Sénat", "NOVO19", "ICI", "M6"];
 
 export const logosMedias = [
-  { nom: "TF1", fichier: "/logos/tf1.svg" },
+  { nom: "TF1", fichier: "/logos/tf1.png" },
   { nom: "Public Sénat", fichier: "/logos/public-senat.png" },
   { nom: "NOVO19", fichier: "/logos/novo19.svg" },
   { nom: "ICI", fichier: "/logos/ici.svg" },
