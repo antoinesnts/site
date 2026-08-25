@@ -1,4 +1,5 @@
 import {
+  FacebookLogoIcon,
   InstagramLogoIcon,
   LinkedinLogoIcon,
   TiktokLogoIcon,
@@ -8,6 +9,7 @@ import { liens } from "../../data/content.js";
 
 const icones = {
   youtube: YoutubeLogoIcon,
+  facebook: FacebookLogoIcon,
   linkedin: LinkedinLogoIcon,
   instagram: InstagramLogoIcon,
   tiktok: TiktokLogoIcon,

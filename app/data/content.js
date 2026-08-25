@@ -895,6 +895,7 @@ export const equipement = ["Sony FX6", "ARRI Alexa Mini", "RED Komodo 6K", "DJI 
 
 export const liens = [
   { label: "YouTube", icone: "youtube", href: "https://www.youtube.com/c/AntoineSANTOS" },
+  { label: "Facebook", icone: "facebook", href: "https://www.facebook.com/antoine.santos.26/" },
   { label: "LinkedIn", icone: "linkedin", href: "https://www.linkedin.com/in/antoinesantos/" },
   { label: "Instagram", icone: "instagram", href: "https://www.instagram.com/antoinesnts/" },
   { label: "TikTok", icone: "tiktok", href: "https://www.tiktok.com/@antoinesnts" },
