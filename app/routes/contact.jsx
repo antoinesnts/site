@@ -22,7 +22,7 @@ export default function Contact() {
 
       <div className={styles.informations}>
         <Reveal className={styles.bloc} y={20} delay={0.1} immediate gate={ready}>
-          <span className={styles.label}>Écris-moi !</span>
+          <span className={styles.label}>Envie de travailler ensemble ? Prenons contact !</span>
           <a className={styles.email} href={`mailto:${site.emailPiedDePage}`}>
             {site.emailPiedDePage}
           </a>
