@@ -571,6 +571,7 @@ export const reportages = [
     client: "Public Sénat",
     equipe: "Jules Beaucamp et Antoine Santos",
     image: "/photos/k2oMjZR3LtD6qgHt7my.jpg",
+    vignette: "/photos/guyane-pollutions-sauvages-vignette.jpg",
     embedUrl: "https://www.dailymotion.com/embed/video/k2oMjZR3LtD6qgHt7my?queue-enable=false",
     source: "https://www.dailymotion.com/video/k2oMjZR3LtD6qgHt7my",
     galerie: ["/photos/k2oMjZR3LtD6qgHt7my.jpg"],
