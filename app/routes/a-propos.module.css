@@ -54,7 +54,7 @@
 }
 
 .secondaires {
-  grid-column: 1 / span 6;
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;
