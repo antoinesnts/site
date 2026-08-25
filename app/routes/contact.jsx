@@ -20,6 +20,13 @@ export default function Contact() {
         Contact
       </Reveal>
 
+      <Reveal as="figure" className={styles.portrait} y={24} delay={0.18} immediate gate={ready}>
+        <img
+          src="/photos/antoine-santos-contact.jpg"
+          alt="Antoine Santos au coucher du soleil — photo Corentin Gérard"
+        />
+      </Reveal>
+
       <div className={styles.informations}>
         <Reveal className={styles.bloc} y={20} delay={0.1} immediate gate={ready}>
           <span className={styles.label}>Envie de travailler ensemble ? Prenons contact !</span>
@@ -41,13 +48,6 @@ export default function Contact() {
         <Reveal className={`${styles.bloc} ${styles.disponible}`} y={20} delay={0.28} immediate gate={ready}>
           <span className={styles.label}>Disponible</span>
           <span>partout en France et dans le monde</span>
-        </Reveal>
-
-        <Reveal as="figure" className={styles.portrait} y={24} delay={0.18} immediate gate={ready}>
-          <img
-            src="/photos/antoine-santos-contact.jpg"
-            alt="Antoine Santos au coucher du soleil — photo Corentin Gérard"
-          />
         </Reveal>
       </div>
     </section>

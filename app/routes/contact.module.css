@@ -1,6 +1,8 @@
 .root {
+  --contact-title-top: 232px;
+  position: relative;
   min-height: 100svh;
-  padding-block: 232px 13vh;
+  padding-block: var(--contact-title-top) 13vh;
   align-content: start;
 }
 
@@ -53,10 +55,10 @@
 }
 
 .portrait {
-  grid-column: 9 / span 3;
-  grid-row: 1 / span 2;
-  width: 80%;
-  translate: 0 -20%;
+  position: absolute;
+  top: var(--contact-title-top);
+  right: 14.5%;
+  width: 19%;
   margin: 0;
   align-self: start;
   overflow: hidden;
@@ -97,6 +99,7 @@
 
 @media (max-width: 767px) {
   .root {
+    --contact-title-top: 144px;
     padding-block: 144px 64px;
     row-gap: 88px;
   }
@@ -120,9 +123,11 @@
   }
 
   .portrait {
+    position: static;
     grid-column: 1 / -1;
     grid-row: auto;
     width: min(80%, 288px);
+    right: auto;
     margin-top: -12px;
   }
 }
