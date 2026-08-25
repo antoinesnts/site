@@ -667,7 +667,14 @@ export const reportages = [
     preview: "/videos/previews/kitesurf-merville-franceville.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/QTxNvXll320?start=4&rel=0",
     youtube: "https://www.youtube.com/watch?v=QTxNvXll320&t=4s",
-    galerie: ["/photos/QTxNvXll320.jpg"],
+    galerie: [
+      "/photos/kitesurf-merville-franceville-01.jpg",
+      "/photos/kitesurf-merville-franceville-02.jpg",
+      "/photos/kitesurf-merville-franceville-03.jpg",
+      "/photos/kitesurf-merville-franceville-04.jpg",
+      "/photos/kitesurf-merville-franceville-05.jpg",
+      "/photos/kitesurf-merville-franceville-06.jpg",
+    ],
     accueil: false,
     resume:
       "Film de marque pour Kite-R Evolution, école de kitesurf installée à Merville-Franceville. Le film met en avant le spot, les conditions d’apprentissage et l’expérience proposée aux pratiquants, du premier cours aux sessions de perfectionnement.",
