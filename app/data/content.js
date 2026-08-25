@@ -663,6 +663,7 @@ export const reportages = [
     cameras: ["DJI Mavic 3 Pro", "iPhone 14 Pro"],
     client: "Kite-R Evolution",
     image: "/photos/QTxNvXll320.jpg",
+    preview: "/videos/previews/kitesurf-merville-franceville.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/QTxNvXll320?start=4&rel=0",
     youtube: "https://www.youtube.com/watch?v=QTxNvXll320&t=4s",
     galerie: ["/photos/QTxNvXll320.jpg"],
