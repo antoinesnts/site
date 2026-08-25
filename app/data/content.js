@@ -787,10 +787,11 @@ export const reportages = [
     cameras: ["DJI Mavic 2 Pro", "DJI Mavic 3 Pro", "DJI Mavic 4 Pro"],
     client: "TF1",
     equipe: "Auriane Baudin, Naomi Moschini, Pierre Tailliez, Guillaume Birot, Vincent Ferreira, Antoine Santos et Virginie Letendre",
-    image: "/photos/tourisme-paradis-perdus.svg",
+    image: "/photos/tourisme-paradis-perdus.jpg",
+    preview: "/videos/previews/tourisme-paradis-perdus.mp4",
     source: "https://www.tf1.fr/tf1/grands-reportages/videos/grands-reportages-tourisme-nos-paradis-perdus-03249713.html",
     sourceLabel: "Voir le film sur TF1+",
-    galerie: ["/photos/tourisme-paradis-perdus.svg"],
+    galerie: ["/photos/tourisme-paradis-perdus.jpg"],
     accueil: false,
     resume:
       "À Étretat, Nice, Chamonix ou Marseille, habitants et acteurs locaux cherchent des réponses face aux conséquences du tourisme de masse : pollution, bruit et hausse des loyers.",
