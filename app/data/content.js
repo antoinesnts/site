@@ -915,7 +915,7 @@ export const logosClients = [
   { nom: "Le Sémaphore" },
   { nom: "Normandie Pays d’Auge Tourisme", fichier: "/logos/normandie-tourisme.png" },
   { nom: "Merville-Franceville", fichier: "/logos/merville-franceville.png" },
-  { nom: "Zeph Control" },
+  { nom: "Zeph Control", fichier: "/logos/zeph-control.png" },
 ];
 
 export const equipement = ["Sony FX6", "ARRI Alexa Mini", "RED Komodo 6K", "DJI Ronin", "Zeiss Prime Lenses"];
