@@ -32,6 +32,10 @@
   font-size: 20px;
 }
 
+.contactBloc {
+  grid-column: 1 / span 5;
+}
+
 .label {
   color: var(--fg);
   opacity: var(--muted-opacity);
@@ -51,7 +55,7 @@
 
 .base,
 .disponible {
-  grid-column: 5 / span 3;
+  grid-column: 7 / span 2;
 }
 
 .portrait {
@@ -115,6 +119,7 @@
   }
 
   .bloc,
+  .contactBloc,
   .base,
   .disponible {
     grid-column: 1 / -1;

@@ -28,7 +28,7 @@ export default function Contact() {
       </Reveal>
 
       <div className={styles.informations}>
-        <Reveal className={styles.bloc} y={20} delay={0.1} immediate gate={ready}>
+        <Reveal className={`${styles.bloc} ${styles.contactBloc}`} y={20} delay={0.1} immediate gate={ready}>
           <span className={styles.label}>Envie de travailler ensemble ? Prenons contact !</span>
           <a className={styles.email} href={`mailto:${site.emailPiedDePage}`}>
             {site.emailPiedDePage}
