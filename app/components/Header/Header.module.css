@@ -82,7 +82,7 @@
 }
 
 .time {
-  opacity: var(--muted-opacity);
+  opacity: 1;
 }
 
 .disponibilite {
@@ -90,7 +90,7 @@
   align-items: center;
   gap: 7px;
   font-size: 0.82em;
-  opacity: var(--muted-opacity);
+  opacity: 1;
 }
 
 .indicateur {
