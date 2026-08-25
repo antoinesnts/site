@@ -685,11 +685,11 @@ export const reportages = [
   {
     slug: "seasonova-slow-life",
     titre: "Découvrez la slow life dans les campings Seasonova",
-    lieu: "Normandie, France",
+    lieu: "Normandie et Nouvelle-Aquitaine, France",
     date: "mars 2024",
     mois: "03/24",
     genre: "Film de marque",
-    role: "Réalisation / Image / Montage",
+    role: "Réalisation / Montage / Étalonnage",
     client: "Seasonova",
     image: "/photos/iWSXJ1xQqRs.jpg",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/iWSXJ1xQqRs?rel=0",
@@ -697,7 +697,7 @@ export const reportages = [
     galerie: ["/photos/iWSXJ1xQqRs.jpg"],
     accueil: false,
     resume:
-      "Film de marque pour les campings Seasonova, imaginé autour de la slow life : nature, moments en famille et simplicité des vacances en plein air.",
+      "Film de marque pour les campings Seasonova, imaginé autour de la slow life : nature, moments en famille et simplicité des vacances en plein air. Le film invite à ralentir, à profiter des paysages et à se retrouver autour d’expériences simples, entre activités de plein air, détente et découvertes locales. Une immersion lumineuse dans l’esprit des séjours Seasonova, en Normandie comme en Nouvelle-Aquitaine.",
     chapeau:
       "Un film de marque qui invite à découvrir la slow life dans les campings Seasonova.",
     parution: "Seasonova",
