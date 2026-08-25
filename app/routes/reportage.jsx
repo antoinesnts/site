@@ -219,7 +219,7 @@ export default function Reportage() {
           <Reveal
             key={src}
             as="figure"
-            className={["saul", "chausey", "etretat", "mont-saint-michel", "granville", "erosion-debarquement", "bora-bora-coraux", "deserts-medicaux-drones", "demolition-a13", "lubrizol", "beauregard", "viaduc-calix", "saint-georges-energie-positive", "amazonie-richesse-cosmetique", "bora-bora-eco-camping", "benitier-polynesie", "guadeloupe-place-velo", "guyane-pollutions-sauvages", "guyane-boutique-solidaire-enfants", "amerindiens-culture-guyane", "kitesurf-merville-franceville", "seasonova-slow-life", "sunset-boat-reserve-peche-iode", "ultra-tour-obiou-2026"].includes(reportage.slug) && i >= galerie.length - 3
+            className={["saul", "chausey", "etretat", "mont-saint-michel", "granville", "erosion-debarquement", "bora-bora-coraux", "deserts-medicaux-drones", "demolition-a13", "lubrizol", "beauregard", "viaduc-calix", "saint-georges-energie-positive", "amazonie-richesse-cosmetique", "bora-bora-eco-camping", "benitier-polynesie", "guadeloupe-place-velo", "guyane-pollutions-sauvages", "guyane-boutique-solidaire-enfants", "amerindiens-culture-guyane", "kitesurf-merville-franceville", "seasonova-slow-life", "sunset-boat-reserve-peche-iode", "ultra-tour-obiou-2026", "zeph-control-entretien-barre-kitesurf"].includes(reportage.slug) && i >= galerie.length - 3
               ? styles.gTierce
               : i % 3 === 2 ? styles.gPleine : styles.gDemi}
             y={40}

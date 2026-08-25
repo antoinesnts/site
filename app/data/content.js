@@ -802,7 +802,14 @@ export const reportages = [
     preview: "/videos/previews/zeph-control-entretien-barre-kitesurf.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/WVl4zCVPPFQ?rel=0",
     youtube: "https://www.youtube.com/watch?v=WVl4zCVPPFQ",
-    galerie: ["/photos/WVl4zCVPPFQ.jpg"],
+    galerie: [
+      "/photos/zeph-control-entretien-barre-kitesurf-01.jpg",
+      "/photos/zeph-control-entretien-barre-kitesurf-02.jpg",
+      "/photos/zeph-control-entretien-barre-kitesurf-03.jpg",
+      "/photos/zeph-control-entretien-barre-kitesurf-04.jpg",
+      "/photos/zeph-control-entretien-barre-kitesurf-05.jpg",
+      "/photos/zeph-control-entretien-barre-kitesurf-06.jpg",
+    ],
     accueil: false,
     resume:
       "Film de marque pour Zeph Control autour de l’entretien, du réglage et de la sécurité d’une barre et de ses lignes de kitesurf.",
