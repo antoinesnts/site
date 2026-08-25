@@ -574,7 +574,14 @@ export const reportages = [
     vignette: "/photos/guyane-pollutions-sauvages-vignette.jpg",
     embedUrl: "https://www.dailymotion.com/embed/video/k2oMjZR3LtD6qgHt7my?queue-enable=false",
     source: "https://www.dailymotion.com/video/k2oMjZR3LtD6qgHt7my",
-    galerie: ["/photos/k2oMjZR3LtD6qgHt7my.jpg"],
+    galerie: [
+      "/photos/guyane-pollutions-sauvages-01.jpg",
+      "/photos/guyane-pollutions-sauvages-02.jpg",
+      "/photos/guyane-pollutions-sauvages-03.jpg",
+      "/photos/guyane-pollutions-sauvages-04.jpg",
+      "/photos/guyane-pollutions-sauvages-05.jpg",
+      "/photos/guyane-pollutions-sauvages-06.jpg",
+    ],
     accueil: false,
     resume:
       "En Guyane, des citoyens engagés signalent les rejets d’eaux usées, dépôts sauvages et carcasses de véhicules grâce à une plateforme numérique. Coordonnée par Guyane Nature Environnement, cette mobilisation aide à alerter les autorités sur les atteintes à l’environnement.",
