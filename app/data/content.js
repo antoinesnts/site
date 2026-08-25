@@ -659,7 +659,8 @@ export const reportages = [
     date: "avril 2024",
     mois: "04/24",
     genre: "Film de marque",
-    role: "Réalisation / Image / Montage",
+    role: "Réalisation / Montage / Étalonnage",
+    cameras: ["DJI Mavic 3 Pro", "iPhone 14 Pro"],
     client: "Kite-R Evolution",
     image: "/photos/QTxNvXll320.jpg",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/QTxNvXll320?start=4&rel=0",
@@ -667,7 +668,7 @@ export const reportages = [
     galerie: ["/photos/QTxNvXll320.jpg"],
     accueil: false,
     resume:
-      "Film de marque pour Kite-R Evolution, école de kitesurf installée à Merville-Franceville. Le film met en avant le spot, les conditions d’apprentissage et les différentes activités proposées par l’école.",
+      "Film de marque pour Kite-R Evolution, école de kitesurf installée à Merville-Franceville. Le film met en avant le spot, les conditions d’apprentissage et l’expérience proposée aux pratiquants, du premier cours aux sessions de perfectionnement.",
     chapeau:
       "À Merville-Franceville, un film de marque pour découvrir Kite-R Evolution et son spot de kitesurf.",
     parution: "Kite-R Evolution",
