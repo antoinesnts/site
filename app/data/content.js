@@ -832,7 +832,14 @@ export const reportages = [
     preview: "/videos/previews/aftermovie-festival-beauregard-2026.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/2dvxAncy5RI?rel=0",
     youtube: "https://www.youtube.com/watch?v=2dvxAncy5RI",
-    galerie: ["/photos/2dvxAncy5RI.jpg"],
+    galerie: [
+      "/photos/aftermovie-festival-beauregard-2026-01.jpg",
+      "/photos/aftermovie-festival-beauregard-2026-02.jpg",
+      "/photos/aftermovie-festival-beauregard-2026-03.jpg",
+      "/photos/aftermovie-festival-beauregard-2026-04.jpg",
+      "/photos/aftermovie-festival-beauregard-2026-05.jpg",
+      "/photos/aftermovie-festival-beauregard-2026-06.jpg",
+    ],
     accueil: false,
     resume:
       "Aftermovie officiel du Festival Beauregard 2026, qui réunit en cinq minutes l’énergie des concerts, la ferveur du public et l’atmosphère singulière du château de Beauregard. Les images retracent les temps forts de l’édition, entre scènes, coulisses et moments de partage, pour prolonger l’expérience du festival. J’ai fait partie de l’équipe des télépilotes de drone mobilisée pour capter les images aériennes de cette édition.",
