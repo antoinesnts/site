@@ -1,13 +1,14 @@
 .entete {
-  padding-block: 144px 168px;
+  padding-block: 232px 168px;
 }
 
 .titre {
   grid-column: 1 / -1;
-  font-size: clamp(56px, 5vw, 80px);
-  line-height: 1;
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
   letter-spacing: var(--ls-display);
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .contenu {
@@ -102,11 +103,11 @@
 
 @media (max-width: 767px) {
   .entete {
-    padding-block: 128px 80px;
+    padding-block: 144px 80px;
   }
 
   .titre {
-    font-size: 56px;
+    font-size: var(--fs-display);
   }
 
   .bloc,
