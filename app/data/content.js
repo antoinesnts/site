@@ -736,7 +736,7 @@ export const reportages = [
     ],
     accueil: false,
     resume:
-      "Film de marque pour Sunset Boat, l’expérience estivale imaginée par La Réserve Pêché Iodé : une croisière panoramique sur l’estuaire de l’Orne, entre apéritif au coucher du soleil et dîner à Merville-Franceville.",
+      "Film de marque pour « Sunset Boat », l’expérience estivale imaginée par La Réserve Pêché Iodé. Cette croisière panoramique sur l’estuaire de l’Orne invite à profiter du paysage et de la lumière de fin de journée, entre navigation, apéritif au coucher du soleil et dîner dans le restaurant.",
     chapeau:
       "Sunset Boat : une expérience estivale sur l’estuaire de l’Orne par La Réserve Pêché Iodé.",
     parution: "La Réserve Pêché Iodé",
