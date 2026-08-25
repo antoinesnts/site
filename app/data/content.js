@@ -755,7 +755,14 @@ export const reportages = [
     preview: "/videos/previews/ultra-tour-obiou-2026.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/bF3ZwWwKDLw?rel=0",
     youtube: "https://www.youtube.com/watch?v=bF3ZwWwKDLw",
-    galerie: ["/photos/bF3ZwWwKDLw.jpg"],
+    galerie: [
+      "/photos/ultra-tour-obiou-2026-01.jpg",
+      "/photos/ultra-tour-obiou-2026-02.jpg",
+      "/photos/ultra-tour-obiou-2026-03.jpg",
+      "/photos/ultra-tour-obiou-2026-04.jpg",
+      "/photos/ultra-tour-obiou-2026-05.jpg",
+      "/photos/ultra-tour-obiou-2026-06.jpg",
+    ],
     accueil: false,
     resume:
       "Aftermovie de l’Ultra Tour de l’Obiou 2026, un défi de trail au cœur des Alpes, autour du massif de l’Obiou. L’épreuve principale propose un parcours de 72 kilomètres et près de 4 300 mètres de dénivelé positif, majoritairement sur des sentiers, à parcourir en solo ou en relais à deux. Les coureurs traversent les paysages du Dévoluy, du Trièves et de la Matheysine. Intervention en tant que télépilote de drone pour les images aériennes.",
