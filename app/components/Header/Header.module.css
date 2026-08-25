@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 768px) {
-  .root {
+  .root.root {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +109,7 @@
 }
 
 @media (max-width: 767px) {
-  .root {
+  .root.root {
     display: grid;
     padding-block: 16px;
     --cols: 4;
