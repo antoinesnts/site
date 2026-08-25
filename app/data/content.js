@@ -32,7 +32,7 @@ export const reperes = [
   { label: "Réalisations", lignes: ["+900 Reportages", "+20 Films de marque"] },
   { label: "Expérience", lignes: ["JRI Monteur depuis 2018", "Télépilote de drone STS / A1-A2-A3"] },
   { label: "Clients", lignes: ["+10 entreprises"] },
-  { label: "Médias", lignes: ["TF1 · Public Sénat · NOVO19 · Ici · M6"] },
+  { label: "Médias", lignes: ["TF1 · Public Sénat · NOVO19 · ICI · M6"] },
 ];
 
 export const navigation = [
@@ -897,13 +897,13 @@ export const clients = [
   "Le Sémaphore", "Normandie Pays d’Auge Tourisme", "Merville-Franceville", "Zeph Control",
 ];
 
-export const mediasPartenaires = ["TF1", "Public Sénat", "NOVO19", "ici", "M6"];
+export const mediasPartenaires = ["TF1", "Public Sénat", "NOVO19", "ICI", "M6"];
 
 export const logosMedias = [
   { nom: "TF1", fichier: "/logos/tf1.svg" },
   { nom: "Public Sénat", fichier: "/logos/public-senat.png" },
   { nom: "NOVO19", fichier: "/logos/novo19.svg" },
-  { nom: "ici", fichier: "/logos/ici.svg" },
+  { nom: "ICI", fichier: "/logos/ici.svg" },
   { nom: "M6", fichier: "/logos/m6.svg" },
 ];
 
