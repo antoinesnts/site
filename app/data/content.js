@@ -784,7 +784,7 @@ export const reportages = [
     mois: "06/26",
     genre: "Film",
     role: "Télépilote de drone",
-    cameras: ["DJI Mavic 2 Pro", "DJI Mavic 3 Pro", "DJI Mavic 4 Pro"],
+    cameras: ["DJI Mavic 3 Pro"],
     client: "TF1",
     equipe: "Auriane Baudin, Naomi Moschini, Pierre Tailliez, Guillaume Birot, Vincent Ferreira, Antoine Santos et Virginie Letendre",
     image: "/photos/tourisme-paradis-perdus.jpg",
