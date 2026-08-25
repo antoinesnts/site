@@ -1,8 +1,8 @@
 import Reveal from "../components/Reveal/Reveal.jsx";
 import {
-  clients,
   competences,
-  mediasPartenaires,
+  logosClients,
+  logosMedias,
   profil,
   site,
 } from "../data/content.js";
@@ -48,11 +48,21 @@ export default function APropos() {
           </Bloc>
           <Reveal className={`${styles.bloc} ${styles.references}`} y={20} delay={0.18}>
             <h2>Ils me font confiance</h2>
-            <div className={styles.logoLigne} aria-label="Médias">
-              {mediasPartenaires.map((media) => <span className={styles.logo} key={media}>{media}</span>)}
-            </div>
-            <div className={styles.logoLigne} aria-label="Entreprises">
-              {clients.map((client) => <span className={styles.logo} key={client}>{client}</span>)}
+            <div className={styles.logoBandeau}>
+              <div className={styles.logoLigne} aria-label="Médias partenaires">
+                {logosMedias.map(({ nom, fichier }) => (
+                  <span className={styles.logo} key={nom} title={nom}>
+                    <img src={asset(fichier)} alt={nom} />
+                  </span>
+                ))}
+              </div>
+              <div className={styles.logoLigne} aria-label="Entreprises partenaires">
+                {logosClients.map(({ nom, fichier }) => (
+                  <span className={styles.logo} key={nom} title={nom}>
+                    {fichier ? <img src={asset(fichier)} alt={nom} /> : <span>{nom}</span>}
+                  </span>
+                ))}
+              </div>
             </div>
           </Reveal>
         </div>

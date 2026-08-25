@@ -899,6 +899,25 @@ export const clients = [
 
 export const mediasPartenaires = ["TF1", "Public Sénat", "NOVO19", "ici", "M6"];
 
+export const logosMedias = [
+  { nom: "TF1", fichier: "/logos/tf1.svg" },
+  { nom: "Public Sénat", fichier: "/logos/public-senat.png" },
+  { nom: "NOVO19", fichier: "/logos/novo19.svg" },
+  { nom: "ici", fichier: "/logos/ici.svg" },
+  { nom: "M6", fichier: "/logos/m6.svg" },
+];
+
+export const logosClients = [
+  { nom: "Festival Beauregard" },
+  { nom: "UTOBI", fichier: "/logos/utobi.png" },
+  { nom: "La Réserve Pêche Iodé" },
+  { nom: "Kite-R Évolution", fichier: "/logos/kite-r.png" },
+  { nom: "Le Sémaphore" },
+  { nom: "Normandie Pays d’Auge Tourisme", fichier: "/logos/normandie-tourisme.png" },
+  { nom: "Merville-Franceville", fichier: "/logos/merville-franceville.png" },
+  { nom: "Zeph Control" },
+];
+
 export const equipement = ["Sony FX6", "ARRI Alexa Mini", "RED Komodo 6K", "DJI Ronin", "Zeiss Prime Lenses"];
 
 export const liens = [
