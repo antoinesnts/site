@@ -606,7 +606,14 @@ export const reportages = [
     preview: "/videos/previews/guyane-boutique-solidaire-enfants.mp4",
     embedUrl: "https://www.dailymotion.com/embed/video/k5RBzDLvKqUW0ZFxea4?queue-enable=false",
     source: "https://www.dailymotion.com/video/k5RBzDLvKqUW0ZFxea4",
-    galerie: ["/photos/k5RBzDLvKqUW0ZFxea4.jpg"],
+    galerie: [
+      "/photos/guyane-boutique-solidaire-enfants-01.jpg",
+      "/photos/guyane-boutique-solidaire-enfants-02.jpg",
+      "/photos/guyane-boutique-solidaire-enfants-03.jpg",
+      "/photos/guyane-boutique-solidaire-enfants-04.jpg",
+      "/photos/guyane-boutique-solidaire-enfants-05.jpg",
+      "/photos/guyane-boutique-solidaire-enfants-06.jpg",
+    ],
     accueil: false,
     resume:
       "En Guyane, une boutique solidaire collecte, trie et revend à petits prix des vêtements, jouets et équipements de puériculture. Ce modèle aide les familles tout en donnant une seconde vie à plusieurs tonnes d’objets chaque année.",
