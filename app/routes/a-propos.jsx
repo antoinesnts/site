@@ -1,6 +1,5 @@
 import Reveal from "../components/Reveal/Reveal.jsx";
 import {
-  competences,
   logosClients,
   logosMedias,
   profil,
@@ -43,9 +42,6 @@ export default function APropos() {
         </Bloc>
 
         <div className={styles.secondaires}>
-          <Bloc titre="Compétences" className={styles.competences} delay={0.12}>
-            <ul>{competences.map((item) => <li key={item}>{item}</li>)}</ul>
-          </Bloc>
           <Reveal className={`${styles.bloc} ${styles.references}`} y={20} delay={0.18}>
             <h2>Ils me font confiance</h2>
             <div className={styles.logoBandeau}>

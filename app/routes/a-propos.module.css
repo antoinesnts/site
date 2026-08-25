@@ -61,10 +61,6 @@
   padding-top: 48px;
 }
 
-.competences {
-  grid-column: auto;
-}
-
 .references h2 {
   margin-bottom: 24px;
 }
@@ -174,7 +170,6 @@
 
   .bloc,
   .profil,
-  .competences,
   .secondaires {
     grid-column: 1 / -1;
   }
@@ -193,7 +188,6 @@
   }
 
   .profil,
-  .competences,
   .secondaires {
     grid-row: auto;
   }
