@@ -198,7 +198,16 @@ export default function Reportage() {
           {equipe ? (
             <div className={styles.equipe}>
               <span>Équipe</span>
-              <span>{equipe}</span>
+              <span>
+                {reportage.equipeLien ? (
+                  <>
+                    <a href={reportage.equipeLien.href} target="_blank" rel="noreferrer">
+                      {reportage.equipeLien.libelle}
+                    </a>
+                    {equipe.slice(reportage.equipeLien.libelle.length)}
+                  </>
+                ) : equipe}
+              </span>
             </div>
           ) : null}
         </Reveal>

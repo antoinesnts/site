@@ -752,6 +752,11 @@ export const reportages = [
     role: "Télépilote de drone",
     cameras: ["DJI Mavic 3 Pro"],
     client: "UTOBI / Pure Films",
+    equipe: "Pure Films et Antoine Santos",
+    equipeLien: {
+      libelle: "Pure Films",
+      href: "https://purefilms.fr/",
+    },
     image: "/photos/bF3ZwWwKDLw.jpg",
     preview: "/videos/previews/ultra-tour-obiou-2026.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/bF3ZwWwKDLw?rel=0",
