@@ -543,7 +543,14 @@ export const reportages = [
     preview: "/videos/previews/guadeloupe-place-velo.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/jOLrth2Uo3s?rel=0",
     youtube: "https://www.youtube.com/watch?v=jOLrth2Uo3s",
-    galerie: ["/photos/jOLrth2Uo3s.jpg"],
+    galerie: [
+      "/photos/guadeloupe-place-velo-01.jpg",
+      "/photos/guadeloupe-place-velo-02.jpg",
+      "/photos/guadeloupe-place-velo-03.jpg",
+      "/photos/guadeloupe-place-velo-04.jpg",
+      "/photos/guadeloupe-place-velo-05.jpg",
+      "/photos/guadeloupe-place-velo-06.jpg",
+    ],
     accueil: false,
     resume:
       "En Guadeloupe, plusieurs initiatives cherchent à encourager la mobilité douce face à un trafic routier très présent. À Morne-à-l’Eau, la collectivité souhaite donner davantage de place au vélo dans les déplacements du quotidien. Aménagements, sensibilisation et accompagnement des habitants : le reportage suit cette volonté de faire évoluer les habitudes et de proposer une alternative concrète à la voiture, plus agréable et plus respectueuse de l’environnement.",
