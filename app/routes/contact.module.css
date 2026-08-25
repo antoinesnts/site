@@ -93,7 +93,7 @@
   right: 12px;
   bottom: 10px;
   color: var(--fg);
-  font-size: 12px;
+  font-size: 6px;
   opacity: 0;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.75);
   transition: opacity 0.25s var(--ease);
