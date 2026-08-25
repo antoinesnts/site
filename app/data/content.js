@@ -910,7 +910,7 @@ export const logosMedias = [
 export const logosClients = [
   { nom: "Festival Beauregard", fichier: "/logos/festival-beauregard.png" },
   { nom: "UTOBI", fichier: "/logos/utobi.png" },
-  { nom: "La Réserve Pêche Iodé" },
+  { nom: "La Réserve Pêche Iodé", fichier: "/logos/reserve-peche-iode.png" },
   { nom: "Kite-R Évolution", fichier: "/logos/kite-r.png" },
   { nom: "Le Sémaphore" },
   { nom: "Normandie Pays d’Auge Tourisme", fichier: "/logos/normandie-tourisme.png" },
