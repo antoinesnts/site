@@ -791,7 +791,14 @@ export const reportages = [
     preview: "/videos/previews/tourisme-paradis-perdus.mp4",
     source: "https://www.tf1.fr/tf1/grands-reportages/videos/grands-reportages-tourisme-nos-paradis-perdus-03249713.html",
     sourceLabel: "Voir le film sur TF1+",
-    galerie: ["/photos/tourisme-paradis-perdus.jpg"],
+    galerie: [
+      "/photos/tourisme-paradis-perdus-01.jpg",
+      "/photos/tourisme-paradis-perdus-02.jpg",
+      "/photos/tourisme-paradis-perdus-03.jpg",
+      "/photos/tourisme-paradis-perdus-04.jpg",
+      "/photos/tourisme-paradis-perdus-05.jpg",
+      "/photos/tourisme-paradis-perdus-06.jpg",
+    ],
     accueil: false,
     resume:
       "À Étretat, Nice, Chamonix ou Marseille, habitants et acteurs locaux cherchent des réponses face aux conséquences du tourisme de masse : pollution, bruit et hausse des loyers.",
