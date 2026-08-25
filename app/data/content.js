@@ -638,7 +638,7 @@ export const reportages = [
     galerie: ["/photos/k5UCyLPTfqNdZ2xKkud.jpg"],
     accueil: false,
     resume:
-      "En Guyane, les communautés amérindiennes poursuivent leurs efforts pour préserver et transmettre leur culture.",
+      "À Antecume-Pata, en Guyane, les communautés amérindiennes font vivre une culture transmise de génération en génération. Langues, savoir-faire, traditions et lien au territoire sont au cœur de cette transmission. Le reportage suit les habitants dans leur volonté de préserver cette identité tout en accompagnant les plus jeunes dans leur scolarité. Un équilibre essentiel pour que l’école et la modernité ne fassent pas disparaître les repères culturels du village.",
     chapeau:
       "En Guyane, la préservation de la culture amérindienne au cœur des enjeux de transmission.",
     parution: "Public Sénat",
