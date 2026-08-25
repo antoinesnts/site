@@ -36,7 +36,10 @@ export default function APropos() {
 
       <section className={`grid ${styles.contenu}`}>
         <Bloc titre="Profil" className={styles.profil} delay={0.1}>
-          {profil.map((paragraphe) => <p key={paragraphe}>{paragraphe}</p>)}
+          <div className={styles.profilColonnes}>
+            <div>{profil.slice(0, 3).map((paragraphe) => <p key={paragraphe}>{paragraphe}</p>)}</div>
+            <div>{profil.slice(3).map((paragraphe) => <p key={paragraphe}>{paragraphe}</p>)}</div>
+          </div>
         </Bloc>
 
         <div className={styles.secondaires}>
