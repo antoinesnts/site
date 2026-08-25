@@ -692,6 +692,8 @@ export const reportages = [
     role: "Réalisation / Montage / Étalonnage",
     client: "Seasonova",
     image: "/photos/iWSXJ1xQqRs.jpg",
+    vignette: "/photos/seasonova-slow-life-vignette.jpg",
+    preview: "/videos/previews/seasonova-slow-life.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/iWSXJ1xQqRs?rel=0",
     youtube: "https://www.youtube.com/watch?v=iWSXJ1xQqRs",
     galerie: ["/photos/iWSXJ1xQqRs.jpg"],
