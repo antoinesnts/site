@@ -39,15 +39,14 @@ export default function APropos() {
           {profil.map((paragraphe) => <p key={paragraphe}>{paragraphe}</p>)}
         </Bloc>
 
-        <Bloc titre="Compétences" className={styles.competences} delay={0.12}>
-          <ul>{competences.map((item) => <li key={item}>{item}</li>)}</ul>
-        </Bloc>
-
-        <div className={styles.colonneDroite}>
-          <Bloc titre="Clients" delay={0.18}>
+        <div className={styles.secondaires}>
+          <Bloc titre="Compétences" className={styles.competences} delay={0.12}>
+            <ul>{competences.map((item) => <li key={item}>{item}</li>)}</ul>
+          </Bloc>
+          <Bloc titre="Clients" className={styles.clients} delay={0.18}>
             <ul>{clients.map((item) => <li key={item}>{item}</li>)}</ul>
           </Bloc>
-          <Bloc titre="Équipement" delay={0.24}>
+          <Bloc titre="Équipement" className={styles.equipement} delay={0.24}>
             <ul>{equipement.map((item) => <li key={item}>{item}</li>)}</ul>
           </Bloc>
         </div>

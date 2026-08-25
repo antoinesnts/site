@@ -35,35 +35,38 @@
 
 .profil {
   grid-column: 1 / span 6;
-  grid-row: 1 / span 2;
 }
 
-.details {
-  grid-column: 1 / span 4;
-  grid-row: 3;
+.secondaires {
+  grid-column: 1 / span 6;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gutter);
+  padding-top: 48px;
 }
 
 .competences {
-  grid-column: 9 / span 2;
-  grid-row: 1 / span 2;
+  grid-column: auto;
 }
 
-.colonneDroite {
-  grid-column: 11 / span 2;
-  grid-row: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.clients,
+.equipement {
+  grid-column: auto;
 }
 
 .portraitSection {
-  padding-top: 160px;
+  position: absolute;
+  top: 232px;
+  right: 8%;
+  width: 19%;
+  padding: 0;
+  display: block;
 }
 
 .identite {
-  grid-column: 1 / span 4;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 4px;
   margin-bottom: 8px;
 }
 
@@ -72,10 +75,10 @@
 }
 
 .portrait {
-  grid-column: 1 / span 3;
   position: relative;
   margin: 0;
-  aspect-ratio: 3 / 4;
+  width: 100%;
+  aspect-ratio: 2 / 3;
   overflow: hidden;
   background: #0a0a0a;
 }
@@ -103,16 +106,8 @@
 
 @media (max-width: 1159px) {
   .profil,
-  .details {
+  .secondaires {
     grid-column: 1 / span 5;
-  }
-
-  .competences {
-    grid-column: 7 / span 3;
-  }
-
-  .colonneDroite {
-    grid-column: 10 / span 3;
   }
 
 }
@@ -128,11 +123,8 @@
 
   .bloc,
   .profil,
-  .details,
   .competences,
-  .colonneDroite,
-  .identite,
-  .portrait {
+  .secondaires {
     grid-column: 1 / -1;
   }
 
@@ -140,22 +132,21 @@
     row-gap: 48px;
   }
 
-  .details {
-    margin-top: 0;
-  }
-
   .profil,
-  .details,
   .competences,
-  .colonneDroite {
+  .secondaires {
     grid-row: auto;
   }
 
-  .colonneDroite {
+  .secondaires {
+    grid-template-columns: 1fr;
     gap: 48px;
+    padding-top: 0;
   }
 
   .portraitSection {
+    position: static;
+    width: auto;
     padding-top: 96px;
   }
 
