@@ -572,6 +572,7 @@ export const reportages = [
     equipe: "Jules Beaucamp et Antoine Santos",
     image: "/photos/k2oMjZR3LtD6qgHt7my.jpg",
     vignette: "/photos/guyane-pollutions-sauvages-vignette.jpg",
+    preview: "/videos/previews/guyane-pollutions-sauvages.mp4",
     embedUrl: "https://www.dailymotion.com/embed/video/k2oMjZR3LtD6qgHt7my?queue-enable=false",
     source: "https://www.dailymotion.com/video/k2oMjZR3LtD6qgHt7my",
     galerie: [
