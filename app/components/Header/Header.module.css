@@ -9,6 +9,14 @@
   row-gap: 0;
 }
 
+@media (min-width: 768px) {
+  .root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 /* Scrim so the header stays readable where it overlaps photographs. */
 .root::before {
   content: "";
@@ -103,6 +111,7 @@
 
 @media (max-width: 767px) {
   .root {
+    display: grid;
     padding-block: 16px;
     --cols: 4;
     align-items: baseline;
