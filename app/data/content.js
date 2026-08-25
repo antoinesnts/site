@@ -598,6 +598,7 @@ export const reportages = [
     mois: "12/25",
     genre: "Reportage",
     role: "JRI / Télépilote / Monteur",
+    cameras: ["Sony FX6", "DJI Mavic 3 Pro", "iPhone 17 Pro"],
     client: "Public Sénat",
     equipe: "Jules Beaucamp et Antoine Santos",
     image: "/photos/k5RBzDLvKqUW0ZFxea4.jpg",
