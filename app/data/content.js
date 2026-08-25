@@ -829,6 +829,7 @@ export const reportages = [
     cameras: ["DJI Mavic 4 Pro"],
     client: "Festival Beauregard",
     image: "/photos/2dvxAncy5RI.jpg",
+    preview: "/videos/previews/aftermovie-festival-beauregard-2026.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/2dvxAncy5RI?rel=0",
     youtube: "https://www.youtube.com/watch?v=2dvxAncy5RI",
     galerie: ["/photos/2dvxAncy5RI.jpg"],
