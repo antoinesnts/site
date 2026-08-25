@@ -893,9 +893,11 @@ export const competences = [
 ];
 
 export const clients = [
-  "Festival Beauregard", "UTOBI", "La Réserve Pêche lodé", "Kite-R Évolution",
-  "Le Sémaphore", "Normandie Pays d’Auge Tourisme", "Merville-Franceville",
+  "Festival Beauregard", "UTOBI", "La Réserve Pêche Iodé", "Kite-R Évolution",
+  "Le Sémaphore", "Normandie Pays d’Auge Tourisme", "Merville-Franceville", "Zeph Control",
 ];
+
+export const mediasPartenaires = ["TF1", "Public Sénat", "NOVO19", "ici", "M6"];
 
 export const equipement = ["Sony FX6", "ARRI Alexa Mini", "RED Komodo 6K", "DJI Ronin", "Zeiss Prime Lenses"];
 

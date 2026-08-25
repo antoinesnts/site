@@ -56,8 +56,8 @@
 .secondaires {
   grid-column: 1 / span 6;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--gutter);
+  grid-template-columns: 1fr;
+  gap: 48px;
   padding-top: 48px;
 }
 
@@ -65,8 +65,30 @@
   grid-column: auto;
 }
 
-.clients {
-  grid-column: auto;
+.references h2 {
+  margin-bottom: 24px;
+}
+
+.logoLigne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 28px;
+}
+
+.logoLigne + .logoLigne {
+  margin-top: 24px;
+}
+
+.logo {
+  color: var(--fg);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .02em;
+  opacity: .8;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .portraitSection {
@@ -158,6 +180,10 @@
     grid-template-columns: 1fr;
     gap: 48px;
     padding-top: 0;
+  }
+
+  .logoLigne {
+    gap: 16px 20px;
   }
 
   .portraitSection {
