@@ -102,9 +102,13 @@
   filter: grayscale(1) brightness(0) invert(1);
 }
 
-/* Le logo TF1 possède déjà des lettres blanches : on conserve ses contrastes
-   et on le passe simplement en niveaux de gris. */
-.logo img[src$="tf1.png"] {
+/* Les logos des médias possèdent déjà des zones claires et foncées : on
+   conserve leurs contrastes et on les passe simplement en niveaux de gris. */
+.logo img[src$="tf1.png"],
+.logo img[src$="public-senat.png"],
+.logo img[src$="novo19.svg"],
+.logo img[src$="ici.svg"],
+.logo img[src$="m6.png"] {
   filter: grayscale(1);
 }
 
