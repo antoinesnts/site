@@ -36,6 +36,15 @@
 .profil {
   grid-column: 1 / -1;
   width: calc(65vw - var(--page-x));
+  font-size: 16px;
+}
+
+.profil p {
+  margin: 0;
+}
+
+.profil p + p {
+  margin-top: 1.42em;
 }
 
 .secondaires {
