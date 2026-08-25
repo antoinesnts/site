@@ -37,7 +37,7 @@ export default function APropos() {
 
       <section className={`grid ${styles.contenu}`}>
         <Bloc titre="Profil" className={styles.profil} delay={0.1}>
-          <p>{profil}</p>
+          {profil.map((paragraphe) => <p key={paragraphe}>{paragraphe}</p>)}
         </Bloc>
 
         <Bloc titre="Détails" className={styles.details} delay={0.16}>

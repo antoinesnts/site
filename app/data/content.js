@@ -873,8 +873,14 @@ export const reportages = [
     : reportage.role?.replace(/Télépilote(?! de drone)/g, "Télépilote de drone"),
 }));
 
-export const profil =
-  "Je conçois et réalise des reportages, magazines et je participe comme télépilote de drone à des films documentaires pour des médias nationaux, notamment TF1, France 3, NOVO19 ou encore Public Sénat. De la recherche de sujet au tournage, en passant par la réalisation, les prises de vues aériennes et le montage, j’interviens sur l’ensemble de la chaîne de production. Je suis basé sur Caen en Normandie et disponible sur toute la France. Mon expérience de terrain me permet de m’adapter sur des sujets très variés, en France comme à l’étranger, dans des contextes qui exigent réactivité, autonomie et capacité d’adaptation. Je porte une attention particulière à la qualité des images, à leur sens et au récit, avec la volonté de rendre chaque sujet à la fois rigoureux, tourné en séquences et visuellement fort. Habitué aux exigences des diffuseurs nationaux et aux délais contraints, je mets cette double expertise journalistique et audiovisuelle au service de projets éditoriaux ambitieux.";
+export const profil = [
+  "Journaliste reporter d’images, je réalise des reportages et des magazines pour des médias nationaux, ainsi que des films de marque pour des entreprises et des institutions. Je participe également à des films documentaires comme télépilote de drone.",
+  "Basé à Caen, en Normandie, je travaille partout en France et à l’étranger. Dix années de terrain m’ont appris à m’adapter à des sujets, des environnements et des conditions de tournage très variés, avec réactivité et autonomie.",
+  "De la recherche du sujet à sa diffusion, j’interviens à chaque étape de sa production : tournage, prises de vues aériennes et montage.",
+  "J’accorde une attention particulière à l’image, à son sens et à sa construction. Je recherche une écriture en séquences où chaque image participe au récit, avec exigence journalistique et créativité visuelle.",
+  "J’adapte mon écriture aux exigences de chaque diffuseur et aux codes de chaque support, de la télévision aux formats natifs des réseaux sociaux et des plateformes numériques.",
+  "J’interviens aussi en école de journalisme pour transmettre mon expérience du reportage, de la narration par l’image et des réalités du terrain.",
+];
 
 export const details = ["Basé à Caen, en Normandie", "Disponible partout en France et dans le monde"];
 
