@@ -462,7 +462,7 @@ export const reportages = [
     ],
     accueil: false,
     resume:
-      "En Guyane, les principes actifs de la forêt amazonienne inspirent les créateurs de cosmétiques. Depuis Kourou, Nature Amazonie développe ses produits et s’ouvre à de nouveaux marchés en Amérique du Nord et en Europe.",
+      "En Guyane, les principes actifs de la forêt amazonienne inspirent les créateurs de cosmétiques. À Kourou, Nature Amazonie valorise ces ressources naturelles pour développer une gamme de produits issus du territoire. De la sélection des matières premières à leur transformation, l’entreprise mise sur le potentiel de la biodiversité guyanaise et sur des savoir-faire locaux. Ce reportage suit le développement de cette filière, qui cherche à faire connaître ses créations bien au-delà de la Guyane, en Amérique du Nord comme en Europe.",
     chapeau:
       "La forêt amazonienne de Guyane, source d’innovation pour la cosmétique locale.",
     parution: "Outremers 360",
