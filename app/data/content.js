@@ -773,7 +773,7 @@ export const reportages = [
   {
     slug: "tourisme-paradis-perdus",
     titre: "Grands Reportages : Tourisme, nos paradis perdus",
-    lieu: "France",
+    lieu: "Merville-Franceville-Plage, Normandie",
     date: "juin 2026",
     mois: "06/26",
     genre: "Film",
@@ -803,7 +803,7 @@ export const reportages = [
     galerie: ["/photos/WVl4zCVPPFQ.jpg"],
     accueil: false,
     resume:
-      "Film pratique pour Zeph Control autour de l’entretien, du réglage et de la sécurité d’une barre et de ses lignes de kitesurf.",
+      "Film de marque pour Zeph Control autour de l’entretien, du réglage et de la sécurité d’une barre et de ses lignes de kitesurf.",
     chapeau:
       "Les bons gestes pour entretenir et ajuster sa barre de kitesurf.",
     parution: "Zeph Control",
