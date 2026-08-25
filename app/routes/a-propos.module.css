@@ -34,7 +34,8 @@
 }
 
 .profil {
-  grid-column: 1 / span 6;
+  grid-column: 1 / -1;
+  width: calc(65vw - var(--page-x));
 }
 
 .secondaires {
@@ -104,14 +105,6 @@
   opacity: 1;
 }
 
-@media (max-width: 1159px) {
-  .profil,
-  .secondaires {
-    grid-column: 1 / span 5;
-  }
-
-}
-
 @media (max-width: 767px) {
   .entete {
     padding-block: 144px 80px;
@@ -126,6 +119,10 @@
   .competences,
   .secondaires {
     grid-column: 1 / -1;
+  }
+
+  .profil {
+    width: auto;
   }
 
   .contenu {
