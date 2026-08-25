@@ -102,6 +102,12 @@
   filter: grayscale(1) brightness(0) invert(1);
 }
 
+/* Le logo TF1 possède déjà des lettres blanches : on conserve ses contrastes
+   et on le passe simplement en niveaux de gris. */
+.logo img[src$="tf1.png"] {
+  filter: grayscale(1);
+}
+
 .logo > span {
   color: var(--fg);
   font-size: 11px;
