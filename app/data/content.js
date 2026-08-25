@@ -912,7 +912,7 @@ export const logosClients = [
   { nom: "UTOBI", fichier: "/logos/utobi.png" },
   { nom: "La Réserve Pêche Iodé", fichier: "/logos/reserve-peche-iode.png" },
   { nom: "Kite-R Évolution", fichier: "/logos/kite-r.png" },
-  { nom: "Le Sémaphore" },
+  { nom: "Le Sémaphore", fichier: "/logos/le-semaphore.png" },
   { nom: "Normandie Pays d’Auge Tourisme", fichier: "/logos/normandie-tourisme.png" },
   { nom: "Merville-Franceville", fichier: "/logos/merville-franceville.png" },
   { nom: "Zeph Control", fichier: "/logos/zeph-control.png" },
