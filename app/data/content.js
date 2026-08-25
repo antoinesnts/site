@@ -897,7 +897,7 @@ export const clients = [
   "Le Sémaphore", "Normandie Pays d’Auge Tourisme", "Merville-Franceville", "Zeph Control", "Seasonova",
 ];
 
-export const mediasPartenaires = ["TF1", "Public Sénat", "NOVO19", "ICI", "M6"];
+export const mediasPartenaires = ["TF1", "Public Sénat", "NOVO19", "ICI", "M6", "École de Journalisme de Normandie"];
 
 export const logosMedias = [
   { nom: "TF1", fichier: "/logos/tf1.png" },
@@ -905,6 +905,7 @@ export const logosMedias = [
   { nom: "NOVO19", fichier: "/logos/novo19.svg" },
   { nom: "ICI", fichier: "/logos/ici.svg" },
   { nom: "M6", fichier: "/logos/m6.png" },
+  { nom: "École de Journalisme de Normandie", fichier: "/logos/ecole-journalisme-normandie.png" },
 ];
 
 export const logosClients = [
