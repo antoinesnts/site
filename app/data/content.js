@@ -825,6 +825,8 @@ export const reportages = [
     date: "août 2026",
     mois: "08/26",
     genre: "Film de marque",
+    role: "Télépilote de drone",
+    cameras: ["DJI Mavic 4 Pro"],
     client: "Festival Beauregard",
     image: "/photos/2dvxAncy5RI.jpg",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/2dvxAncy5RI?rel=0",
@@ -832,7 +834,7 @@ export const reportages = [
     galerie: ["/photos/2dvxAncy5RI.jpg"],
     accueil: false,
     resume:
-      "Aftermovie officiel du Festival Beauregard 2026, cinq jours de concerts et de fête au château, réunis dans un film de cinq minutes.",
+      "Aftermovie officiel du Festival Beauregard 2026, qui réunit en cinq minutes l’énergie des concerts, la ferveur du public et l’atmosphère singulière du château de Beauregard. Les images retracent les temps forts de l’édition, entre scènes, coulisses et moments de partage, pour prolonger l’expérience du festival. J’ai fait partie de l’équipe des télépilotes de drone mobilisée pour capter les images aériennes de cette édition.",
     chapeau:
       "Les temps forts de l’édition 2026 du Festival Beauregard.",
     parution: "Festival Beauregard",
