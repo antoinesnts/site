@@ -506,6 +506,7 @@ export const reportages = [
     mois: "12/22",
     genre: "Reportage",
     role: "JRI / Télépilote / Monteur",
+    cameras: ["Panasonic AJ-HPX800", "DJI Mavic 2 Pro", "GoPro 10"],
     client: "Public Sénat",
     equipe: "Guillaume Thorel et Antoine Santos",
     image: "/photos/roQ3FYvocOE.jpg",
