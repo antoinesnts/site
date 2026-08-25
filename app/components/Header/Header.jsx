@@ -60,6 +60,10 @@ export default function Header() {
             <Clock timeZone={site.fuseau} />
           </span>
           <span>{site.ville}</span>
+          <span className={styles.disponibilite}>
+            <span className={styles.indicateur} aria-hidden="true" />
+            Disponible pour de nouveaux projets
+          </span>
         </div>
 
         <NavLink to="/contact" className={`${styles.link} ${styles.contact}`}>

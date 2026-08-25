@@ -47,6 +47,8 @@
   grid-column: 9 / span 3;
   display: flex;
   gap: 12px;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .contact {
@@ -81,6 +83,22 @@
 
 .time {
   opacity: var(--muted-opacity);
+}
+
+.disponibilite {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.82em;
+  opacity: var(--muted-opacity);
+}
+
+.indicateur {
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: #30d158;
+  box-shadow: 0 0 8px rgba(48, 209, 88, 0.7);
 }
 
 @media (max-width: 767px) {
