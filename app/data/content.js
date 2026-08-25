@@ -798,6 +798,7 @@ export const reportages = [
     genre: "Film de marque",
     client: "Zeph Control",
     image: "/photos/WVl4zCVPPFQ.jpg",
+    vignette: "/photos/zeph-control-entretien-barre-kitesurf-vignette.jpg",
     preview: "/videos/previews/zeph-control-entretien-barre-kitesurf.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/WVl4zCVPPFQ?rel=0",
     youtube: "https://www.youtube.com/watch?v=WVl4zCVPPFQ",
