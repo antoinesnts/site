@@ -594,7 +594,7 @@ export const reportages = [
   {
     slug: "guyane-boutique-solidaire-enfants",
     titre: "En Guyane, une boutique solidaire pour les enfants",
-    lieu: "Cayenne",
+    lieu: "Cayenne, Guyane française",
     date: "décembre 2025",
     mois: "12/25",
     genre: "Reportage",
