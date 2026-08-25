@@ -108,7 +108,8 @@
 .logo img[src$="public-senat.png"],
 .logo img[src$="novo19.svg"],
 .logo img[src$="ici.svg"],
-.logo img[src$="m6.png"] {
+.logo img[src$="m6.png"],
+.logo img[src$="festival-beauregard.png"] {
   filter: grayscale(1);
 }
 

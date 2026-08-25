@@ -908,7 +908,7 @@ export const logosMedias = [
 ];
 
 export const logosClients = [
-  { nom: "Festival Beauregard" },
+  { nom: "Festival Beauregard", fichier: "/logos/festival-beauregard.png" },
   { nom: "UTOBI", fichier: "/logos/utobi.png" },
   { nom: "La Réserve Pêche Iodé" },
   { nom: "Kite-R Évolution", fichier: "/logos/kite-r.png" },
