@@ -510,6 +510,7 @@ export const reportages = [
     equipe: "Guillaume Thorel et Antoine Santos",
     image: "/photos/roQ3FYvocOE.jpg",
     vignette: "/photos/benitier-polynesie-vignette.jpg",
+    preview: "/videos/previews/benitier-polynesie.mp4",
     youtubeEmbed: "https://www.youtube-nocookie.com/embed/roQ3FYvocOE?rel=0",
     youtube: "https://www.youtube.com/watch?v=roQ3FYvocOE",
     galerie: [
