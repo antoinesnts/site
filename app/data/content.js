@@ -904,7 +904,7 @@ export const logosMedias = [
   { nom: "Public Sénat", fichier: "/logos/public-senat.png" },
   { nom: "NOVO19", fichier: "/logos/novo19.svg" },
   { nom: "ICI", fichier: "/logos/ici.svg" },
-  { nom: "M6", fichier: "/logos/m6.svg" },
+  { nom: "M6", fichier: "/logos/m6.png" },
 ];
 
 export const logosClients = [
