@@ -805,6 +805,7 @@ export const reportages = [
     date: "novembre 2020",
     mois: "11/20",
     genre: "Film de marque",
+    role: "Réalisation / Montage / Étalonnage",
     client: "Zeph Control",
     image: "/photos/WVl4zCVPPFQ.jpg",
     vignette: "/photos/zeph-control-entretien-barre-kitesurf-vignette.jpg",
