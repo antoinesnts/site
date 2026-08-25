@@ -501,7 +501,7 @@ export const reportages = [
   {
     slug: "benitier-polynesie",
     titre: "Le bénitier de Polynésie, une espèce à protéger",
-    lieu: "Bora-Bora et Punaauia, Polynésie française",
+    lieu: "Bora-Bora, Punaauia et Haapiti, Polynésie française",
     date: "décembre 2022",
     mois: "12/22",
     genre: "Reportage",
