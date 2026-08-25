@@ -2,7 +2,6 @@ import Reveal from "../components/Reveal/Reveal.jsx";
 import {
   clients,
   competences,
-  details,
   equipement,
   profil,
   site,
@@ -38,11 +37,6 @@ export default function APropos() {
       <section className={`grid ${styles.contenu}`}>
         <Bloc titre="Profil" className={styles.profil} delay={0.1}>
           {profil.map((paragraphe) => <p key={paragraphe}>{paragraphe}</p>)}
-        </Bloc>
-
-        <Bloc titre="Détails" className={styles.details} delay={0.16}>
-          <p>{details[0]}</p>
-          <p>{details[1]}</p>
         </Bloc>
 
         <Bloc titre="Compétences" className={styles.competences} delay={0.12}>
