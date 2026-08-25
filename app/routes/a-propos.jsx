@@ -2,7 +2,6 @@ import Reveal from "../components/Reveal/Reveal.jsx";
 import {
   clients,
   competences,
-  equipement,
   profil,
   site,
 } from "../data/content.js";
@@ -48,9 +47,6 @@ export default function APropos() {
           </Bloc>
           <Bloc titre="Clients" className={styles.clients} delay={0.18}>
             <ul>{clients.map((item) => <li key={item}>{item}</li>)}</ul>
-          </Bloc>
-          <Bloc titre="Équipement" className={styles.equipement} delay={0.24}>
-            <ul>{equipement.map((item) => <li key={item}>{item}</li>)}</ul>
           </Bloc>
         </div>
       </section>

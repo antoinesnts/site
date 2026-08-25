@@ -65,8 +65,7 @@
   grid-column: auto;
 }
 
-.clients,
-.equipement {
+.clients {
   grid-column: auto;
 }
 
