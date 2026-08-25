@@ -803,7 +803,7 @@ export const reportages = [
     ],
     accueil: false,
     resume:
-      "À Étretat, Nice, Chamonix ou Marseille, habitants et acteurs locaux cherchent des réponses face aux conséquences du tourisme de masse : pollution, bruit et hausse des loyers.",
+      "D’Étretat à Nice, de Chamonix à Marseille, ce reportage suit les habitants et les acteurs locaux confrontés aux effets du surtourisme. Affluence record, sites naturels fragilisés, nuisances du quotidien et logements devenus inaccessibles : ces paysages très prisés voient leur équilibre menacé. Face à une fréquentation qui transforme parfois les destinations en « paradis perdus », riverains, élus et professionnels cherchent des solutions pour concilier accueil des visiteurs, qualité de vie et protection de l’environnement.",
     chapeau:
       "Un film sur les territoires français confrontés au surtourisme.",
     parution: "Grands Reportages — TF1",
