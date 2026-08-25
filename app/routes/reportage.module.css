@@ -7,6 +7,8 @@
 .boutonSon:hover, .boutonSon:focus-visible { background: rgba(0, 0, 0, .94); }
 .sourceCover { position: relative; display: block; width: 100%; height: 100%; }
 .sourceCover span { position: absolute; right: 20px; bottom: 18px; padding: 8px 12px; background: rgba(0, 0, 0, .72); border: 1px solid var(--hairline); }
+.sourceLien { padding-top: 16px; }
+.sourceLien a { grid-column: 1 / span 3; width: fit-content; padding-bottom: 4px; border-bottom: 1px solid var(--hairline); }
 
 .informations { padding-block: 120px 0; align-items: start; }
 .resume { grid-column: 1 / span 4; font-size: 18px; line-height: 1.42; }
@@ -62,6 +64,7 @@
 @media (max-width: 767px) {
   .couverture { margin-top: calc(var(--header-h) + 40px); padding-inline: var(--page-x); }
   .boutonSon { left: 12px; bottom: 12px; padding: 7px 10px; }
+  .sourceLien a { grid-column: 1 / -1; }
   .informations, .galerie { padding-block: 72px 0; }
   .resume, .fiche { grid-column: 1 / -1; }
   .fiche { grid-template-columns: 1fr; gap: 32px; margin-top: 24px; }

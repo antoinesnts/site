@@ -191,6 +191,14 @@ export default function Reportage() {
         </div>
       </Reveal>
 
+      {reportage.sourceSousLecteur ? (
+        <div className={`grid ${styles.sourceLien}`}>
+          <a href={reportage.source} target="_blank" rel="noreferrer">
+            {reportage.sourceLabel ?? "Voir le film"} ↗
+          </a>
+        </div>
+      ) : null}
+
       <section className={`grid ${styles.informations}`}>
         <Reveal className={`${styles.resume} ${reportage.resume ? styles.resumeEtendu : ""}`} y={24}>
           <h2>Résumé</h2>

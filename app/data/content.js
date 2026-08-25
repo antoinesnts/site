@@ -788,9 +788,11 @@ export const reportages = [
     client: "TF1",
     equipe: "Auriane Baudin, Naomi Moschini, Pierre Tailliez, Guillaume Birot, Vincent Ferreira, Antoine Santos et Virginie Letendre",
     image: "/photos/tourisme-paradis-perdus.jpg",
+    video: "/videos/tourisme-paradis-perdus.mp4",
     preview: "/videos/previews/tourisme-paradis-perdus.mp4",
     source: "https://www.tf1.fr/tf1/grands-reportages/videos/grands-reportages-tourisme-nos-paradis-perdus-03249713.html",
     sourceLabel: "Voir le film sur TF1+",
+    sourceSousLecteur: true,
     galerie: [
       "/photos/tourisme-paradis-perdus-01.jpg",
       "/photos/tourisme-paradis-perdus-02.jpg",
