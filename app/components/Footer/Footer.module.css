@@ -15,6 +15,10 @@
   margin-top: 0;
 }
 
+.aPropos {
+  margin-top: 64px;
+}
+
 .copyright {
   grid-column: 1 / span 4;
   opacity: var(--muted-opacity);
@@ -68,6 +72,10 @@
 
   .compact {
     margin-top: 32px;
+  }
+
+  .aPropos {
+    margin-top: 40px;
   }
 
   .copyright {

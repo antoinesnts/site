@@ -2,8 +2,8 @@
   --contact-title-top: 232px;
   position: relative;
   /* The footer follows the contact details more closely on larger screens. */
-  min-height: 76svh;
-  padding-block: var(--contact-title-top) 13vh;
+  min-height: 64svh;
+  padding-block: var(--contact-title-top) 6.5vh;
   align-content: start;
 }
 
