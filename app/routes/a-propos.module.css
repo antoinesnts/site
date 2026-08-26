@@ -35,7 +35,7 @@
 
 .profil {
   grid-column: 1 / -1;
-  width: calc(65vw - var(--page-x));
+  width: calc(68.25vw - var(--page-x));
   font-size: 14.25px;
 }
 
