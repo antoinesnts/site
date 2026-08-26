@@ -133,7 +133,9 @@
     --contact-title-top: 144px;
     min-height: 100svh;
     padding-block: 144px 64px;
-    row-gap: 56px;
+    /* The portrait follows the Caen block with the same 32px rhythm used
+       between the email and the location details. */
+    row-gap: 32px;
   }
 
   .titre {
@@ -182,8 +184,7 @@
     justify-self: start;
     width: min(72%, 260px);
     right: auto;
-    /* Match the spacing between the email and the location block. */
-    margin: -24px 0 0;
+    margin: 0;
   }
 
   .informations {
