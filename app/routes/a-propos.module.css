@@ -272,9 +272,11 @@
 
   .logoLigne {
     display: block;
+    width: 100%;
+    max-width: 420px;
     overflow: hidden;
-    margin-inline: calc(var(--page-x) * -1);
-    padding-inline: var(--page-x);
+    margin-inline: 0;
+    padding-inline: 0;
   }
 
   .logoPiste {
