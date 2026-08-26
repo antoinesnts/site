@@ -381,9 +381,10 @@
   }
 
   .portrait {
-    width: calc(100% - 4px);
-    max-width: calc(100% - 4px);
-    margin-left: 4px;
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
   }
 }
 
