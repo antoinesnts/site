@@ -24,6 +24,18 @@ function Bloc({ titre, children, className = "", delay = 0 }) {
   );
 }
 
+function Logo({ nom, fichier, lien, decoratif = false }) {
+  const image = <img src={asset(fichier)} alt={decoratif ? "" : nom} />;
+
+  return decoratif ? (
+    <span className={styles.logo} aria-hidden="true">{image}</span>
+  ) : (
+    <a className={styles.logo} href={lien} target="_blank" rel="noreferrer" title={nom} aria-label={nom}>
+      {image}
+    </a>
+  );
+}
+
 export default function APropos() {
   return (
     <>
@@ -46,18 +58,24 @@ export default function APropos() {
             <h2>Ils me font confiance</h2>
             <div className={styles.logoBandeau}>
               <div className={styles.logoLigne} aria-label="Médias partenaires">
-                {logosMedias.map(({ nom, fichier, lien }) => (
-                  <a className={styles.logo} key={nom} href={lien} target="_blank" rel="noreferrer" title={nom} aria-label={nom}>
-                    <img src={asset(fichier)} alt={nom} />
-                  </a>
-                ))}
+                <div className={styles.logoPiste}>
+                  <div className={styles.logoSegment}>
+                    {logosMedias.map((logo) => <Logo key={logo.nom} {...logo} />)}
+                  </div>
+                  <div className={`${styles.logoSegment} ${styles.logoSegmentDuplique}`}>
+                    {logosMedias.map((logo) => <Logo key={`${logo.nom}-duplique`} {...logo} decoratif />)}
+                  </div>
+                </div>
               </div>
               <div className={styles.logoLigne} aria-label="Entreprises partenaires">
-                {logosClients.map(({ nom, fichier, lien }) => (
-                  <a className={styles.logo} key={nom} href={lien} target="_blank" rel="noreferrer" title={nom} aria-label={nom}>
-                    {fichier ? <img src={asset(fichier)} alt={nom} /> : <span>{nom}</span>}
-                  </a>
-                ))}
+                <div className={styles.logoPiste}>
+                  <div className={styles.logoSegment}>
+                    {logosClients.map((logo) => <Logo key={logo.nom} {...logo} />)}
+                  </div>
+                  <div className={`${styles.logoSegment} ${styles.logoSegmentDuplique}`}>
+                    {logosClients.map((logo) => <Logo key={`${logo.nom}-duplique`} {...logo} decoratif />)}
+                  </div>
+                </div>
               </div>
             </div>
           </Reveal>

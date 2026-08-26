@@ -80,6 +80,15 @@
   gap: 18px 36px;
 }
 
+.logoPiste,
+.logoSegment {
+  display: contents;
+}
+
+.logoSegmentDuplique {
+  display: none;
+}
+
 .logoLigne + .logoLigne {
   margin-top: 22px;
 }
@@ -254,7 +263,35 @@
   }
 
   .logoLigne {
+    display: block;
+    overflow: hidden;
+    margin-inline: calc(var(--page-x) * -1);
+    padding-inline: var(--page-x);
+  }
+
+  .logoPiste {
+    display: flex;
+    width: max-content;
+    gap: 24px;
+    animation: logos-defilent 26s linear infinite;
+    will-change: transform;
+  }
+
+  .logoSegment,
+  .logoSegmentDuplique {
+    display: flex;
+    flex: none;
+    align-items: center;
     gap: 16px 24px;
+  }
+
+  .logoLigne + .logoLigne .logoPiste {
+    animation-direction: reverse;
+    animation-duration: 30s;
+  }
+
+  .logoLigne:hover .logoPiste {
+    animation-play-state: paused;
   }
 
   .logoBandeau {
@@ -279,5 +316,17 @@
 
   .portrait {
     max-width: 420px;
+  }
+}
+
+@keyframes logos-defilent {
+  to {
+    transform: translateX(calc(-50% - 12px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logoPiste {
+    animation: none;
   }
 }
