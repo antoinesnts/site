@@ -179,13 +179,12 @@
   .portrait {
     position: relative;
     grid-column: 1 / -1;
-    grid-row: 3;
+    grid-row: auto;
     order: 3;
     justify-self: start;
     width: min(72%, 260px);
     right: auto;
-    /* Rapproche la photo des deux informations juste au-dessus. */
-    margin: -300px 0 0;
+    margin: 0;
   }
 
   .informations {
