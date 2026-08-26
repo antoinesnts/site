@@ -215,7 +215,7 @@
 }
 
 .logo img[src$="zeph-control.png"] {
-  transform: scale(1.936);
+  transform: translateY(3px) scale(1.936);
 }
 
 .logo img[src$="seasonova.png"] {
