@@ -142,6 +142,16 @@
   transform: scale(1.21);
 }
 
+/* The media logo rule above is intentionally more specific than the generic
+   hover rule, so it needs this matching hover override to reveal the colors. */
+.logo:hover img[src$="tf1.png"],
+.logo:hover img[src$="public-senat.png"],
+.logo:hover img[src$="novo19.svg"],
+.logo:hover img[src$="ici.svg"],
+.logo:hover img[src$="m6.png"] {
+  filter: none;
+}
+
 .logo img[src$="aktua-prod.png"] {
   transform: scale(1.05);
 }
