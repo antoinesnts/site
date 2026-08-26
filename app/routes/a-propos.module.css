@@ -339,30 +339,31 @@
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    overflow: hidden;
+    overflow: visible;
     margin-inline: 0;
     padding-inline: 0;
   }
 
   .logoPiste {
-    display: flex;
-    width: max-content;
-    gap: 24px;
-    animation: logos-defilent 26s linear infinite;
-    will-change: transform;
+    display: block;
+    width: 100%;
+    animation: none;
   }
 
-  .logoSegment,
-  .logoSegmentDuplique {
-    display: flex;
-    flex: none;
+  .logoSegment {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
     align-items: center;
-    gap: 16px 24px;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .logoSegmentDuplique {
+    display: none;
   }
 
   .logoLigne + .logoLigne .logoPiste {
-    animation-direction: reverse;
-    animation-duration: 30s;
+    animation: none;
   }
 
   .logoLigne:hover .logoPiste {
@@ -374,8 +375,14 @@
   }
 
   .logo {
-    height: 33px;
-    min-width: 69px;
+    width: 100%;
+    min-width: 0;
+    height: 34px;
+  }
+
+  .logo img {
+    max-width: 100%;
+    transform: none !important;
   }
 
   .portraitSection {
