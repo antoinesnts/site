@@ -361,12 +361,17 @@
   .portraitSection {
     position: static;
     width: auto;
-    padding-top: 96px;
+    padding-top: 0;
+    padding-bottom: 48px;
   }
 
   .identite {
     flex-direction: column;
     gap: 4px;
+  }
+
+  .identite span:last-child {
+    display: none;
   }
 
   .portrait {

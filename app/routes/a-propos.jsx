@@ -45,6 +45,17 @@ export default function APropos() {
         </Reveal>
       </section>
 
+      <section className={`grid ${styles.portraitSection}`}>
+        <Reveal className={styles.identite} y={20}>
+          <span>{site.nom}</span>
+          <span>{site.role}</span>
+        </Reveal>
+        <Reveal as="figure" className={styles.portrait} y={28} delay={0.08}>
+          <img src={asset(site.portrait)} alt={site.portraitAlt} />
+          <figcaption>© Corentin Gérard</figcaption>
+        </Reveal>
+      </section>
+
       <section className={`grid ${styles.contenu}`}>
         <Bloc titre="Profil" className={styles.profil} delay={0.1}>
           <div className={styles.profilColonnes}>
@@ -80,17 +91,6 @@ export default function APropos() {
             </div>
           </Reveal>
         </div>
-      </section>
-
-      <section className={`grid ${styles.portraitSection}`}>
-        <Reveal className={styles.identite} y={20}>
-          <span>{site.nom}</span>
-          <span>{site.role}</span>
-        </Reveal>
-        <Reveal as="figure" className={styles.portrait} y={28} delay={0.08}>
-          <img src={asset(site.portrait)} alt={site.portraitAlt} />
-          <figcaption>© Corentin Gérard</figcaption>
-        </Reveal>
       </section>
     </>
   );
