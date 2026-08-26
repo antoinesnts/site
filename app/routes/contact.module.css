@@ -135,7 +135,8 @@
   }
 
   .titre {
-    font-size: clamp(38px, 11vw, 46px);
+    /* Keep the mobile page title identical to “Réalisations” and “À propos”. */
+    font-size: var(--fs-display);
   }
 
   .informations {
