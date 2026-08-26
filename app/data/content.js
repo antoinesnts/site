@@ -917,8 +917,8 @@ export const logosClients = [
   { nom: "La Réserve Pêche Iodé", fichier: "/logos/reserve-peche-iode.png", lien: "https://www.lareserve-mervillefranceville.com/" },
   { nom: "Kite-R Évolution", fichier: "/logos/kite-r.png", lien: "https://kite-r.com/" },
   { nom: "Le Sémaphore", fichier: "/logos/le-semaphore.png", lien: "https://www.instagram.com/lesemaphore_flamanville/" },
-  { nom: "Normandie Pays d’Auge Tourisme", fichier: "/logos/normandie-tourisme.png", lien: "https://www.normandie-cabourg-paysdauge-tourisme.fr/" },
   { nom: "Merville-Franceville", fichier: "/logos/merville-franceville.png", lien: "https://merville-franceville.fr/" },
+  { nom: "Normandie Pays d’Auge Tourisme", fichier: "/logos/normandie-tourisme.png", lien: "https://www.normandie-cabourg-paysdauge-tourisme.fr/" },
   { nom: "Zeph Control", fichier: "/logos/zeph-control.png", lien: "https://www.zephcontrol.com/" },
   { nom: "Seasonova", fichier: "/logos/seasonova.png", lien: "https://vacances-seasonova.com/fr/" },
 ];
