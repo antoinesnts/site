@@ -148,7 +148,8 @@
 .logo:hover img[src$="public-senat.png"],
 .logo:hover img[src$="novo19.svg"],
 .logo:hover img[src$="ici.svg"],
-.logo:hover img[src$="m6.png"] {
+.logo:hover img[src$="m6.png"],
+.logo:hover img[src$="seasonova.png"] {
   filter: none;
 }
 
