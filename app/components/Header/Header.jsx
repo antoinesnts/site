@@ -24,6 +24,11 @@ export default function Header() {
           {site.nom}
         </NavLink>
 
+        <NavLink to="/contact" className={styles.disponibiliteMobile}>
+          <span className={styles.indicateur} aria-hidden="true" />
+          Disponible pour de nouveaux projets
+        </NavLink>
+
         <nav className={styles.navMobile} aria-label="Navigation principale">
           {navigation.map((item) => (
             <NavLink key={item.to} to={item.to} end={item.to === "/"}>
