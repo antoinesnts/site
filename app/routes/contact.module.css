@@ -184,9 +184,9 @@
     justify-self: start;
     width: min(72%, 260px);
     right: auto;
-    /* Keep the portrait directly below the location details without
-       covering either of the two information columns. */
-    margin: 32px 0 0;
+    /* Align the portrait with the visual marker below the two location
+       columns, while keeping a clear gap under their values. */
+    margin: -84px 0 0;
   }
 
   .informations {
