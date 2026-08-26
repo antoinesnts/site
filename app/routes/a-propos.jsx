@@ -47,6 +47,7 @@ export default function APropos() {
 
       <section className={`grid ${styles.portraitSection}`}>
         <Reveal className={styles.identite} y={20}>
+          <span className={styles.profilMobile}>Profil</span>
           <span>{site.nom}</span>
           <span>{site.role}</span>
         </Reveal>
