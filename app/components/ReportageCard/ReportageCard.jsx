@@ -11,7 +11,12 @@ import styles from "./ReportageCard.module.css";
  * simply stays on its still. Dimming of the *other* cards is pure CSS, handled
  * by the grid — hovering therefore never re-renders the list.
  */
-export default function ReportageCard({ reportage, delay = 0, priority = false }) {
+export default function ReportageCard({
+  reportage,
+  delay = 0,
+  priority = false,
+  revealImmediately = false,
+}) {
   const { slug, titre, mois, lieu, genre, role, image, vignette, preview } = reportage;
   const imageVignette = vignette ?? image;
   const roleCarte = role?.replace(/\n/g, " / ");
@@ -38,7 +43,7 @@ export default function ReportageCard({ reportage, delay = 0, priority = false }
   };
 
   return (
-    <Reveal y={48} delay={delay} duration={0.7}>
+    <Reveal y={48} delay={delay} duration={0.7} immediate={revealImmediately}>
       <Link
         to={`/realisations/${slug}`}
         data-carte

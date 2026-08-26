@@ -75,6 +75,7 @@ export default function Accueil() {
             reportage={reportage}
             delay={(i % 3) * 0.06}
             priority={i < 3}
+            revealImmediately={i === 0}
           />
         ))}
       </div>
