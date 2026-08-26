@@ -8,9 +8,10 @@ export default function Footer() {
   const { pathname } = useLocation();
   const estDetailRealisation = pathname.startsWith("/realisations/");
   const estAPropos = pathname === "/a-propos";
+  const estContact = pathname === "/contact";
 
   return (
-    <footer className={`grid ${styles.root} ${pathname === "/" ? styles.compact : ""} ${estDetailRealisation ? styles.sansMarge : ""} ${estAPropos ? styles.aPropos : ""}`}>
+    <footer className={`grid ${styles.root} ${pathname === "/" ? styles.compact : ""} ${estDetailRealisation ? styles.sansMarge : ""} ${estAPropos ? styles.aPropos : ""} ${estContact ? styles.contact : ""}`}>
       <span className={styles.copyright}>© {annee} {site.nom}</span>
 
       <SocialLinks className={styles.reseaux} linkClassName={styles.reseau} />

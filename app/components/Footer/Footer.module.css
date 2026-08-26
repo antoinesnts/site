@@ -19,6 +19,10 @@
   margin-top: 32px;
 }
 
+.contact {
+  margin-top: 64px;
+}
+
 .copyright {
   grid-column: 1 / span 4;
   opacity: var(--muted-opacity);
@@ -76,6 +80,10 @@
 
   .aPropos {
     margin-top: 40px;
+  }
+
+  .contact {
+    margin-top: 80px;
   }
 
   .copyright {
