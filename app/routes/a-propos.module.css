@@ -179,6 +179,18 @@
   transform: scale(1.6);
 }
 
+.logo img[src$="zeph-control.png"] {
+  transform: scale(1.76);
+}
+
+.logo img[src$="seasonova.png"] {
+  transform: scale(1.597);
+}
+
+.logo img[src$="normandie-tourisme.png"] {
+  transform: scale(1.331);
+}
+
 .logo > span {
   color: var(--fg);
   font-size: 11px;
