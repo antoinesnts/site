@@ -184,9 +184,9 @@
     justify-self: start;
     width: min(72%, 260px);
     right: auto;
-    /* Bring the portrait up to the same visual rhythm as the contact
-       details, without letting it overlap them. */
-    margin: -220px 0 0;
+    /* Keep the portrait directly below the location details without
+       covering either of the two information columns. */
+    margin: 32px 0 0;
   }
 
   .informations {
