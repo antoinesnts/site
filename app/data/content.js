@@ -905,8 +905,8 @@ export const logosMedias = [
   { nom: "NOVO19", fichier: "/logos/novo19.svg", lien: "https://novo19.ouest-france.fr/details/on-a-de-l-info" },
   { nom: "ICI", fichier: "/logos/ici.svg", lien: "https://www.france.tv/france-3/normandie/" },
   { nom: "M6", fichier: "/logos/m6.png", lien: "https://www.m6.fr/un-jour-un-doc-p_22196" },
-  { nom: "Aktua Prod", fichier: "/logos/aktua-prod.png", lien: "https://aktua-prod.fr/" },
   { nom: "Cercle Bleu", fichier: "/logos/cercle-bleu.png", lien: "https://www.cerclebleu.com/" },
+  { nom: "Aktua Prod", fichier: "/logos/aktua-prod.png", lien: "https://aktua-prod.fr/" },
   { nom: "IUT de Lannion", fichier: "/logos/iut-lannion.png", lien: "https://www.iut.infocomlannion.fr/" },
   { nom: "École de Journalisme de Normandie", fichier: "/logos/ecole-journalisme-normandie.png", lien: "https://ecole-journalisme-normandie.fr/" },
 ];
