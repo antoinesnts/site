@@ -1,5 +1,4 @@
 import Reveal from "../components/Reveal/Reveal.jsx";
-import SocialLinks from "../components/SocialLinks/SocialLinks.jsx";
 import { site } from "../data/content.js";
 import { useIntroReady } from "../lib/intro.js";
 import styles from "./contact.module.css";
@@ -41,14 +40,9 @@ export default function Contact() {
           <span>{site.ville}</span>
         </Reveal>
 
-        <Reveal className={`${styles.bloc} ${styles.social}`} y={20} delay={0.22} immediate gate={ready}>
-          <span className={styles.label}>Réseaux sociaux</span>
-          <SocialLinks className={styles.reseaux} linkClassName={styles.reseau} />
-        </Reveal>
-
-        <Reveal className={`${styles.bloc} ${styles.disponible}`} y={20} delay={0.28} immediate gate={ready}>
+        <Reveal className={`${styles.bloc} ${styles.disponible}`} y={20} delay={0.22} immediate gate={ready}>
           <span className={styles.label}>Disponible</span>
-          <span>partout en France et dans le monde</span>
+          <span>Partout en France</span>
         </Reveal>
       </div>
     </section>

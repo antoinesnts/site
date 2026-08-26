@@ -131,36 +131,58 @@
   .root {
     --contact-title-top: 144px;
     padding-block: 144px 64px;
-    row-gap: 88px;
+    row-gap: 56px;
   }
 
   .titre {
-    font-size: var(--fs-display);
+    font-size: clamp(38px, 11vw, 46px);
   }
 
   .informations {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     margin-top: 0;
-    row-gap: 56px;
+    row-gap: 32px;
   }
 
   .bloc,
   .contactBloc,
-  .social,
   .base,
   .disponible {
-    grid-column: 1 / -1;
-    grid-row: auto;
+    font-size: clamp(11px, 3.6vw, 14px);
     gap: 4px;
-    font-size: 18px;
+  }
+
+  .contactBloc {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .contactBloc .label {
+    white-space: nowrap;
+  }
+
+  .base {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .disponible {
+    grid-column: 3 / -1;
+    grid-row: 2;
   }
 
   .portrait {
     position: static;
     grid-column: 1 / -1;
-    grid-row: auto;
-    width: min(80%, 288px);
+    grid-row: 3;
+    order: 3;
+    justify-self: center;
+    width: min(72%, 260px);
     right: auto;
-    margin-top: -12px;
+    margin: 0;
+  }
+
+  .informations {
+    order: 2;
   }
 }
