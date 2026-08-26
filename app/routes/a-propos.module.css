@@ -345,9 +345,10 @@
   }
 
   .logoPiste {
-    display: block;
-    width: 100%;
-    animation: none;
+    display: flex;
+    width: 200%;
+    will-change: transform;
+    animation: logos-defilent 34s linear infinite;
   }
 
   .logoSegment {
@@ -355,15 +356,16 @@
     grid-template-columns: repeat(9, minmax(0, 1fr));
     align-items: center;
     gap: 8px;
-    width: 100%;
+    width: 50%;
+    flex: 0 0 50%;
   }
 
   .logoSegmentDuplique {
-    display: none;
+    display: grid;
   }
 
   .logoLigne + .logoLigne .logoPiste {
-    animation: none;
+    animation-direction: reverse;
   }
 
   .logoLigne:hover .logoPiste {
@@ -410,7 +412,7 @@
 
 @keyframes logos-defilent {
   to {
-    transform: translateX(calc(-50% - 12px));
+    transform: translateX(-50%);
   }
 }
 
