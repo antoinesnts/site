@@ -106,6 +106,15 @@
   height: 100%;
   object-fit: contain;
   filter: grayscale(1) brightness(0) invert(1);
+  transition: filter 0.25s var(--ease);
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.logo:hover img {
+  filter: none;
 }
 
 /* Les logos des médias possèdent déjà des zones claires et foncées : on
