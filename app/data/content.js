@@ -258,7 +258,7 @@ export const reportages = [
   },
   {
     slug: "deserts-medicaux-drones",
-    titre: "Déserts médicaux : la première ligne de drones pour les prélèvements",
+    titre: "Déserts médicaux : la première ligne de drones",
     lieu: "Verneuil d’Avre et d’Iton et L’Aigle",
     lieux: true,
     date: "mai 2025",
