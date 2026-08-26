@@ -373,17 +373,6 @@
   }
 
   .identite {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .profilMobile {
-    display: block;
-    margin-bottom: 12px;
-    font-size: 15px;
-  }
-
-  .identite span:last-child {
     display: none;
   }
 
@@ -392,8 +381,9 @@
   }
 
   .portrait {
-    width: 100%;
-    max-width: 100%;
+    width: calc(100% - 4px);
+    max-width: calc(100% - 4px);
+    margin-left: 4px;
   }
 }
 
