@@ -222,7 +222,10 @@ export default function Reportage() {
 
         <Reveal className={styles.fiche} y={24} delay={0.08}>
           {fiche.map((champ) => (
-            <div key={champ.titre} className={styles.champ}>
+            <div
+              key={champ.titre}
+              className={`${styles.champ} ${champ.titre === "Lieu" || champ.titre === "Lieux" ? styles.lieuMobile : ""}`}
+            >
               <span className={styles.champTitre}>{champ.titre}</span>
               <span className={styles.champValeur}>{champ.valeur}</span>
             </div>

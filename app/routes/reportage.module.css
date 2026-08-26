@@ -74,6 +74,7 @@
     font-size: clamp(11px, 3.3vw, 14px);
   }
   .champ { gap: 3px; }
+  .lieuMobile { display: none; }
   .champ:nth-child(-n + 3) { grid-column: span 2; grid-row: 1; }
   .champ:nth-child(5), .champ:nth-child(6) { grid-column: span 3; grid-row: 2; }
   .champ:nth-child(4) { grid-column: 1 / -1; grid-row: 3; }
