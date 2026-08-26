@@ -184,7 +184,9 @@
     justify-self: start;
     width: min(72%, 260px);
     right: auto;
-    margin: 0;
+    /* Keep the portrait visually as close to the location row as the
+       location row is to the email block. */
+    margin: -16px 0 0;
   }
 
   .informations {
