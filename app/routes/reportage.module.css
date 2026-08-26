@@ -67,8 +67,27 @@
   .sourceLien a { grid-column: 1 / -1; }
   .informations, .galerie { padding-block: 72px 0; }
   .resume, .fiche { grid-column: 1 / -1; }
-  .fiche { grid-template-columns: 1fr; gap: 32px; margin-top: 24px; }
-  .gDemi, .gTierce, .gPleine { grid-column: 1 / -1; }
+  .fiche {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px 12px;
+    margin-top: 24px;
+    font-size: clamp(11px, 3.3vw, 14px);
+  }
+  .champ { gap: 3px; }
+  .champ:nth-child(-n + 3) { grid-column: span 2; grid-row: 1; }
+  .champ:nth-child(5), .champ:nth-child(6) { grid-column: span 3; grid-row: 2; }
+  .champ:nth-child(4) { grid-column: 1 / -1; grid-row: 3; }
+
+  /* Every six-image gallery follows the desktop rhythm: 2 images, then one
+     full-width image, then a final row of three images. */
+  .galerie { grid-template-columns: repeat(6, minmax(0, 1fr)); column-gap: 4px; }
+  .galerieLabel { grid-column: 1 / -1; }
+  .galerie figure:nth-of-type(1),
+  .galerie figure:nth-of-type(2) { grid-column: span 3; }
+  .galerie figure:nth-of-type(3) { grid-column: 1 / -1; }
+  .galerie figure:nth-of-type(4),
+  .galerie figure:nth-of-type(5),
+  .galerie figure:nth-of-type(6) { grid-column: span 2; }
   .suite { padding-block: 48px; margin-top: 36px; align-items: start; column-gap: 18px; row-gap: 0; }
   .suiteCarte { grid-column: span 2; align-items: flex-start; gap: 10px; text-align: left; transform: none; }
   .suiteCarteDroite { grid-column: 3 / -1; align-items: flex-start; text-align: left; transform: none; }
