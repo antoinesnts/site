@@ -136,9 +136,9 @@
 @media (max-width: 767px) {
   .hero {
     min-height: 0;
-    /* The mobile navigation has two rows. Reserve its complete footprint so
-       the opening headline never appears underneath it after the preloader. */
-    padding-block: 232px 56px;
+    /* Keep the opening headline at the same visual distance from the mobile
+       navigation as it is from the reference blocks below. */
+    padding-block: 136px 56px;
     align-content: start;
     row-gap: 56px;
   }
