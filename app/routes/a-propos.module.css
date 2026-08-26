@@ -166,6 +166,10 @@
   transform: scale(1.155);
 }
 
+.logo img[src$="public-senat.png"] {
+  transform: scale(1.1);
+}
+
 .logo img[src$="festival-beauregard.png"],
 .logo img[src$="zeph-control.png"],
 .logo img[src$="le-semaphore.png"],
