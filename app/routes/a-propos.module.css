@@ -172,10 +172,13 @@
 
 .logo img[src$="festival-beauregard.png"],
 .logo img[src$="zeph-control.png"],
-.logo img[src$="le-semaphore.png"],
 .logo img[src$="seasonova.png"],
 .logo img[src$="iut-lannion.png"] {
   transform: scale(1.452);
+}
+
+.logo img[src$="le-semaphore.png"] {
+  transform: translateY(-2px) scale(1.28);
 }
 
 .logo img[src$="iut-lannion.png"] {
