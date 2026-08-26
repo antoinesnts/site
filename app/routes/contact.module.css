@@ -1,7 +1,8 @@
 .root {
   --contact-title-top: 232px;
   position: relative;
-  min-height: 100svh;
+  /* The footer follows the contact details more closely on larger screens. */
+  min-height: 76svh;
   padding-block: var(--contact-title-top) 13vh;
   align-content: start;
 }
@@ -130,6 +131,7 @@
 @media (max-width: 767px) {
   .root {
     --contact-title-top: 144px;
+    min-height: 100svh;
     padding-block: 144px 64px;
     row-gap: 56px;
   }
