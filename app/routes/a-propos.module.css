@@ -179,7 +179,11 @@
 }
 
 .logo img[src$="iut-lannion.png"] {
-  transform: scale(1.888);
+  transform: scale(2.077);
+}
+
+.logo img[src$="ecole-journalisme-normandie.png"] {
+  transform: scale(1.331);
 }
 
 .logo img[src$="festival-beauregard.png"],
