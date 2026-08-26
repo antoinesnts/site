@@ -135,7 +135,7 @@
 .logo img[src$="iut-lannion.png"],
 .logo img[src$="cercle-bleu.png"],
 .logo img[src$="ecole-journalisme-normandie.png"] {
-  transform: scale(1.1);
+  transform: scale(1.21);
 }
 
 .logo img[src$="aktua-prod.png"] {
