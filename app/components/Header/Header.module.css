@@ -160,6 +160,6 @@
     flex-wrap: wrap;
   }
   .navMobile .link {
-    text-transform: none;
+    text-transform: uppercase;
   }
 }
