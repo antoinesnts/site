@@ -33,6 +33,10 @@
   font-weight: 500;
 }
 
+.identiteMobile {
+  display: contents;
+}
+
 .nav {
   grid-column: 5 / span 4;
   display: flex;
@@ -121,14 +125,20 @@
     row-gap: 18px;
   }
   .nom {
-    grid-column: 1 / span 2;
+    grid-column: auto;
     white-space: nowrap;
   }
+  .identiteMobile {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
   .disponibiliteMobile {
-    grid-column: 3 / -1;
+    grid-column: auto;
     display: inline-flex;
     align-items: center;
-    justify-self: end;
     gap: 5px;
     font-size: clamp(8px, 2.65vw, 11px);
     line-height: 1;

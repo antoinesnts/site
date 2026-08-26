@@ -20,14 +20,16 @@ export default function Header() {
         immediate
         gate={ready}
       >
-        <NavLink to="/" className={styles.nom}>
-          {site.nom}
-        </NavLink>
+        <div className={styles.identiteMobile}>
+          <NavLink to="/" className={styles.nom}>
+            {site.nom}
+          </NavLink>
 
-        <NavLink to="/contact" className={styles.disponibiliteMobile}>
-          <span className={styles.indicateur} aria-hidden="true" />
-          Disponible pour de nouveaux projets
-        </NavLink>
+          <NavLink to="/contact" className={styles.disponibiliteMobile}>
+            <span className={styles.indicateur} aria-hidden="true" />
+            Disponible pour de nouveaux projets
+          </NavLink>
+        </div>
 
         <nav className={styles.navMobile} aria-label="Navigation principale">
           {navigation.map((item) => (
