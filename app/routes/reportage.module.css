@@ -68,16 +68,24 @@
   .informations, .galerie { padding-block: 72px 0; }
   .resume, .fiche { grid-column: 1 / -1; }
   .fiche {
+    /* Lock the top row into three identical columns, regardless of the
+       length of each value. The second row remains split evenly in two. */
     grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-areas:
+      "categorie categorie client client date date"
+      "role role role cameras cameras cameras";
     gap: 24px 12px;
     margin-top: 24px;
     font-size: clamp(11px, 3.3vw, 14px);
   }
   .champ { gap: 3px; }
   .lieuMobile { display: none; }
-  .champ:nth-child(-n + 3) { grid-column: span 2; grid-row: 1; }
-  .champ:nth-child(5), .champ:nth-child(6) { grid-column: span 3; grid-row: 2; }
-  .champ:nth-child(4) { grid-column: 1 / -1; grid-row: 3; }
+  .champ:nth-child(1) { grid-area: categorie; }
+  .champ:nth-child(2) { grid-area: client; }
+  .champ:nth-child(3) { grid-area: date; }
+  .champ:nth-child(5) { grid-area: role; }
+  .champ:nth-child(6) { grid-area: cameras; }
+  .champ:nth-child(4) { display: none; }
 
   /* Every six-image gallery follows the desktop rhythm: 2 images, then one
      full-width image, then a final row of three images. */
