@@ -22,7 +22,7 @@ export const site = {
   email: "antoine.santos.pro@gmail.com",
   emailPiedDePage: "contact@antoinesantos.fr",
   description:
-    "Antoine Santos, journaliste reporter d'images, monteur et télépilote de drone basé à Caen. Correspondant en Normandie pour TF1 et TF1 Info.",
+    "Journaliste Reporter d’Images, télépilote de drone et monteur. Vidéaste indépendant pour des projets outdoor.",
   portrait: "/photos/antoine-santos-morzine.jpg",
   portraitAlt: "Antoine Santos tenant un drone à Morzine au coucher du soleil — photo Corentin Gérard",
 };
