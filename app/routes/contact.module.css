@@ -184,7 +184,8 @@
     justify-self: start;
     width: min(72%, 260px);
     right: auto;
-    margin: 0;
+    /* Rapproche la photo des deux informations juste au-dessus. */
+    margin: -300px 0 0;
   }
 
   .informations {
