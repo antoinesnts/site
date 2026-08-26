@@ -124,6 +124,10 @@
   transform: scale(1.1);
 }
 
+.logo img[src$="aktua-prod.png"] {
+  transform: scale(1.05);
+}
+
 .logo > span {
   color: var(--fg);
   font-size: 11px;
