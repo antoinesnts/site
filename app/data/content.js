@@ -900,27 +900,27 @@ export const clients = [
 export const mediasPartenaires = ["TF1", "Public Sénat", "NOVO19", "ICI", "M6", "Aktua Prod", "Cercle Bleu", "IUT de Lannion", "École de Journalisme de Normandie"];
 
 export const logosMedias = [
-  { nom: "TF1", fichier: "/logos/tf1.png" },
-  { nom: "Public Sénat", fichier: "/logos/public-senat.png" },
-  { nom: "NOVO19", fichier: "/logos/novo19.svg" },
-  { nom: "ICI", fichier: "/logos/ici.svg" },
-  { nom: "M6", fichier: "/logos/m6.png" },
-  { nom: "Aktua Prod", fichier: "/logos/aktua-prod.png" },
-  { nom: "Cercle Bleu", fichier: "/logos/cercle-bleu.png" },
-  { nom: "IUT de Lannion", fichier: "/logos/iut-lannion.png" },
-  { nom: "École de Journalisme de Normandie", fichier: "/logos/ecole-journalisme-normandie.png" },
+  { nom: "TF1", fichier: "/logos/tf1.png", lien: "https://www.tf1info.fr/" },
+  { nom: "Public Sénat", fichier: "/logos/public-senat.png", lien: "https://www.publicsenat.fr/emission/positive-outre-mer" },
+  { nom: "NOVO19", fichier: "/logos/novo19.svg", lien: "https://novo19.ouest-france.fr/details/on-a-de-l-info" },
+  { nom: "ICI", fichier: "/logos/ici.svg", lien: "https://www.france.tv/france-3/normandie/" },
+  { nom: "M6", fichier: "/logos/m6.png", lien: "https://www.m6.fr/un-jour-un-doc-p_22196" },
+  { nom: "Aktua Prod", fichier: "/logos/aktua-prod.png", lien: "https://aktua-prod.fr/" },
+  { nom: "Cercle Bleu", fichier: "/logos/cercle-bleu.png", lien: "https://www.cerclebleu.com/" },
+  { nom: "IUT de Lannion", fichier: "/logos/iut-lannion.png", lien: "https://www.iut.infocomlannion.fr/" },
+  { nom: "École de Journalisme de Normandie", fichier: "/logos/ecole-journalisme-normandie.png", lien: "https://ecole-journalisme-normandie.fr/" },
 ];
 
 export const logosClients = [
-  { nom: "Festival Beauregard", fichier: "/logos/festival-beauregard.png" },
-  { nom: "UTOBI", fichier: "/logos/utobi.png" },
-  { nom: "La Réserve Pêche Iodé", fichier: "/logos/reserve-peche-iode.png" },
-  { nom: "Kite-R Évolution", fichier: "/logos/kite-r.png" },
-  { nom: "Le Sémaphore", fichier: "/logos/le-semaphore.png" },
-  { nom: "Normandie Pays d’Auge Tourisme", fichier: "/logos/normandie-tourisme.png" },
-  { nom: "Merville-Franceville", fichier: "/logos/merville-franceville.png" },
-  { nom: "Zeph Control", fichier: "/logos/zeph-control.png" },
-  { nom: "Seasonova", fichier: "/logos/seasonova.png" },
+  { nom: "Festival Beauregard", fichier: "/logos/festival-beauregard.png", lien: "https://www.festivalbeauregard.com/" },
+  { nom: "UTOBI", fichier: "/logos/utobi.png", lien: "https://www.utobi.fr/" },
+  { nom: "La Réserve Pêche Iodé", fichier: "/logos/reserve-peche-iode.png", lien: "https://www.lareserve-mervillefranceville.com/" },
+  { nom: "Kite-R Évolution", fichier: "/logos/kite-r.png", lien: "https://kite-r.com/" },
+  { nom: "Le Sémaphore", fichier: "/logos/le-semaphore.png", lien: "https://www.instagram.com/lesemaphore_flamanville/" },
+  { nom: "Normandie Pays d’Auge Tourisme", fichier: "/logos/normandie-tourisme.png", lien: "https://www.normandie-cabourg-paysdauge-tourisme.fr/" },
+  { nom: "Merville-Franceville", fichier: "/logos/merville-franceville.png", lien: "https://merville-franceville.fr/" },
+  { nom: "Zeph Control", fichier: "/logos/zeph-control.png", lien: "https://www.zephcontrol.com/" },
+  { nom: "Seasonova", fichier: "/logos/seasonova.png", lien: "https://vacances-seasonova.com/fr/" },
 ];
 
 export const equipement = ["Sony FX6", "ARRI Alexa Mini", "RED Komodo 6K", "DJI Ronin", "Zeiss Prime Lenses"];

@@ -46,17 +46,17 @@ export default function APropos() {
             <h2>Ils me font confiance</h2>
             <div className={styles.logoBandeau}>
               <div className={styles.logoLigne} aria-label="Médias partenaires">
-                {logosMedias.map(({ nom, fichier }) => (
-                  <span className={styles.logo} key={nom} title={nom}>
+                {logosMedias.map(({ nom, fichier, lien }) => (
+                  <a className={styles.logo} key={nom} href={lien} target="_blank" rel="noreferrer" title={nom} aria-label={nom}>
                     <img src={asset(fichier)} alt={nom} />
-                  </span>
+                  </a>
                 ))}
               </div>
               <div className={styles.logoLigne} aria-label="Entreprises partenaires">
-                {logosClients.map(({ nom, fichier }) => (
-                  <span className={styles.logo} key={nom} title={nom}>
+                {logosClients.map(({ nom, fichier, lien }) => (
+                  <a className={styles.logo} key={nom} href={lien} target="_blank" rel="noreferrer" title={nom} aria-label={nom}>
                     {fichier ? <img src={asset(fichier)} alt={nom} /> : <span>{nom}</span>}
-                  </span>
+                  </a>
                 ))}
               </div>
             </div>
