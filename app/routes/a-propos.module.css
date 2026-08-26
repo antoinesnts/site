@@ -299,12 +299,15 @@
   }
 
   .profil {
-    width: auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .profilColonnes {
     grid-template-columns: 1fr;
     gap: 1.42em;
+    width: 100%;
   }
 
   .contenu {
