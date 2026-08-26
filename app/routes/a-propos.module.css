@@ -323,12 +323,22 @@
     grid-template-columns: 1fr;
     gap: 48px;
     padding-top: 0;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .logoBandeau {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
   }
 
   .logoLigne {
     display: block;
     width: 100%;
-    max-width: 420px;
+    max-width: 100%;
+    min-width: 0;
     overflow: hidden;
     margin-inline: 0;
     padding-inline: 0;
