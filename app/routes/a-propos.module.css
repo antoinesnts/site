@@ -195,6 +195,22 @@
   transform: scale(1.331);
 }
 
+.logo img[src$="cercle-bleu.png"] {
+  transform: scale(1.331);
+}
+
+.logo img[src$="normandie-tourisme.png"] {
+  transform: scale(1.464);
+}
+
+.logo img[src$="zeph-control.png"] {
+  transform: scale(1.936);
+}
+
+.logo img[src$="seasonova.png"] {
+  transform: scale(1.757);
+}
+
 .logo > span {
   color: var(--fg);
   font-size: 11px;
