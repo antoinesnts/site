@@ -174,6 +174,11 @@
   transform: scale(1.452);
 }
 
+.logo img[src$="festival-beauregard.png"],
+.logo img[src$="zeph-control.png"] {
+  transform: scale(1.6);
+}
+
 .logo > span {
   color: var(--fg);
   font-size: 11px;
