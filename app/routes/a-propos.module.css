@@ -113,6 +113,17 @@
   filter: grayscale(1);
 }
 
+.logo img[src$="festival-beauregard.png"],
+.logo img[src$="normandie-tourisme.png"],
+.logo img[src$="zeph-control.png"],
+.logo img[src$="le-semaphore.png"],
+.logo img[src$="seasonova.png"],
+.logo img[src$="iut-lannion.png"],
+.logo img[src$="cercle-bleu.png"],
+.logo img[src$="ecole-journalisme-normandie.png"] {
+  transform: scale(1.1);
+}
+
 .logo > span {
   color: var(--fg);
   font-size: 11px;
