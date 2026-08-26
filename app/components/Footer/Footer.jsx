@@ -8,8 +8,6 @@ export default function Footer() {
   const { pathname } = useLocation();
   const estDetailRealisation = pathname.startsWith("/realisations/");
 
-  if (pathname === "/contact") return null;
-
   return (
     <footer className={`grid ${styles.root} ${pathname === "/" ? styles.compact : ""} ${estDetailRealisation ? styles.sansMarge : ""}`}>
       <span className={styles.copyright}>© {annee} {site.nom}</span>
