@@ -391,6 +391,40 @@
     transform: none !important;
   }
 
+  /* The assets have very different proportions.  Narrow, square marks would
+     otherwise leave visibly larger empty spaces than the wordmarks beside
+     them, despite an identical CSS gap.  These widths keep the visual gaps
+     even while preserving every logo's proportions. */
+  .logo:has(> img[src$="public-senat.png"]) {
+    width: 88px;
+    min-width: 88px;
+  }
+
+  .logo:has(> img[src$="ecole-journalisme-normandie.png"]) {
+    width: 78px;
+    min-width: 78px;
+  }
+
+  .logo:has(> img[src$="le-semaphore.png"]) {
+    width: 81px;
+    min-width: 81px;
+  }
+
+  .logo:has(> img[src$="m6.png"]),
+  .logo:has(> img[src$="seasonova.png"]) {
+    width: 72px;
+    min-width: 72px;
+  }
+
+  .logo:has(> img[src$="cercle-bleu.png"]),
+  .logo:has(> img[src$="iut-lannion.png"]),
+  .logo:has(> img[src$="festival-beauregard.png"]),
+  .logo:has(> img[src$="normandie-tourisme.png"]),
+  .logo:has(> img[src$="zeph-control.png"]) {
+    width: 56px;
+    min-width: 56px;
+  }
+
   .portraitSection {
     position: static;
     width: auto;
