@@ -53,7 +53,9 @@ export default function APropos() {
         </Reveal>
         <Reveal as="figure" className={styles.portrait} y={28} delay={0.08}>
           <img src={asset(site.portrait)} alt={site.portraitAlt} />
-          <figcaption>© Corentin Gérard</figcaption>
+          <figcaption>
+            <a href="https://corentingerard.com/" target="_blank" rel="noreferrer">© Corentin Gérard</a>
+          </figcaption>
         </Reveal>
       </section>
 

@@ -24,7 +24,9 @@ export default function Contact() {
           src="/photos/antoine-santos-contact.jpg"
           alt="Antoine Santos au coucher du soleil — photo Corentin Gérard"
         />
-        <figcaption>© Corentin Gérard</figcaption>
+        <figcaption>
+          <a href="https://corentingerard.com/" target="_blank" rel="noreferrer">© Corentin Gérard</a>
+        </figcaption>
       </Reveal>
 
       <div className={styles.informations}>
