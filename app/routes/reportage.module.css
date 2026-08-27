@@ -81,7 +81,7 @@
   .champ { gap: 3px; }
   .lieuMobile { display: none; }
   .champ:nth-child(1) { grid-area: categorie; }
-  .champ:nth-child(2) { grid-area: client; }
+  .champ:nth-child(2) { grid-area: client; transform: translateX(10px); }
   .champ:nth-child(3) { grid-area: date; }
   .champ:nth-child(5) { grid-area: role; }
   .champ:nth-child(6) { grid-area: cameras; }
