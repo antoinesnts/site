@@ -346,6 +346,7 @@
 
   .logoPiste {
     display: flex;
+    gap: 10px;
     width: max-content;
     will-change: transform;
     animation: logos-defilent 34s linear infinite;
@@ -354,10 +355,10 @@
   .logoSegment {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     width: auto;
     flex: 0 0 auto;
-    padding-right: 8px;
+    padding-right: 0;
   }
 
   .logoSegmentDuplique {
