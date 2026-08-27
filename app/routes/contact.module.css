@@ -186,7 +186,7 @@
     right: auto;
     /* Align the portrait with the visual marker below the two location
        columns, while keeping a clear gap under their values. */
-    margin: -104px 0 0;
+    margin: -124px 0 0;
   }
 
   .informations {
