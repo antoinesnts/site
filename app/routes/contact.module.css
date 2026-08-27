@@ -182,11 +182,11 @@
     grid-row: auto;
     order: 3;
     justify-self: start;
-    width: min(79.2%, 286px);
+    width: min(83.2%, 300px);
     right: auto;
     /* Align the portrait with the visual marker below the two location
        columns, while keeping a clear gap under their values. */
-    margin: -84px 0 0;
+    margin: -104px 0 0;
   }
 
   .informations {
