@@ -14,7 +14,7 @@ export const site = {
   accroche: [
     "Journaliste Reporter d’Images,",
     "Télépilote de drone, monteur et vidéaste,",
-    "Formateur occasionnel en école de journalisme,",
+    "Intervenant-formateur en école de journalisme,",
     "basé en Normandie, disponible partout en France.",
   ],
   ville: "Caen, FR",
