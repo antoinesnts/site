@@ -346,19 +346,17 @@
 
   .logoPiste {
     display: flex;
-    width: 450%;
+    width: max-content;
     will-change: transform;
     animation: logos-defilent 34s linear infinite;
   }
 
   .logoSegment {
-    display: grid;
-    grid-template-columns: repeat(9, minmax(0, 1fr));
+    display: flex;
     align-items: center;
-    gap: 2px;
-    /* Each scrolling band keeps four logos in view. */
-    width: 225%;
-    flex: 0 0 225%;
+    gap: 6px;
+    width: auto;
+    flex: 0 0 auto;
   }
 
   .logoSegmentDuplique {
@@ -378,8 +376,8 @@
   }
 
   .logo {
-    width: 100%;
-    min-width: 0;
+    width: 96px;
+    min-width: 96px;
     height: 38px;
   }
 
