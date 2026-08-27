@@ -428,6 +428,7 @@
   .portraitSection {
     position: static;
     width: auto;
+    margin-top: -15px;
     padding-top: 0;
     padding-bottom: 48px;
   }
