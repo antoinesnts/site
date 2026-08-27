@@ -178,7 +178,7 @@
 }
 
 .logo img[src$="le-semaphore.png"] {
-  transform: translateY(-2px) scale(1.28);
+  transform: translateY(-2px) scale(1.408);
 }
 
 .logo img[src$="iut-lannion.png"] {
@@ -386,6 +386,10 @@
   .logo img {
     max-width: 112%;
     transform: scale(1.12) !important;
+  }
+
+  .logo img[src$="le-semaphore.png"] {
+    transform: translateY(-2px) scale(1.232) !important;
   }
 
   .portraitSection {
