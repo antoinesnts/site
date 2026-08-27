@@ -355,9 +355,8 @@
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr));
     align-items: center;
-    gap: 8px;
-    /* Nine logos span a little more than two screen widths: four remain
-       comfortably readable in the visible window. */
+    gap: 2px;
+    /* Each scrolling band keeps four logos in view. */
     width: 225%;
     flex: 0 0 225%;
   }
@@ -381,12 +380,12 @@
   .logo {
     width: 100%;
     min-width: 0;
-    height: 34px;
+    height: 38px;
   }
 
   .logo img {
-    max-width: 100%;
-    transform: none !important;
+    max-width: 112%;
+    transform: scale(1.12) !important;
   }
 
   .portraitSection {
