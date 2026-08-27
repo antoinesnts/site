@@ -346,7 +346,7 @@
 
   .logoPiste {
     display: flex;
-    width: 200%;
+    width: 450%;
     will-change: transform;
     animation: logos-defilent 34s linear infinite;
   }
@@ -356,8 +356,10 @@
     grid-template-columns: repeat(9, minmax(0, 1fr));
     align-items: center;
     gap: 8px;
-    width: 50%;
-    flex: 0 0 50%;
+    /* Nine logos span a little more than two screen widths: four remain
+       comfortably readable in the visible window. */
+    width: 225%;
+    flex: 0 0 225%;
   }
 
   .logoSegmentDuplique {
