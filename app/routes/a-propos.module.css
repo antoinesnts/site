@@ -99,6 +99,15 @@
   }
 }
 
+/* On very wide monitors, the portrait grows with the viewport while the
+   editorial copy remains comparatively short. Reserve enough vertical room
+   for the portrait before the logo bands so they always begin underneath it. */
+@media (min-width: 1800px) {
+  .secondaires {
+    padding-top: max(48px, calc(28.5vw - 396px));
+  }
+}
+
 .logo {
   display: inline-flex;
   align-items: center;
