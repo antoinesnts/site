@@ -113,6 +113,17 @@ function RealisationVoisine({ reportage, direction }) {
   );
 }
 
+function LiensClient({ liens, valeur }) {
+  if (!liens?.length) return valeur;
+
+  return liens.map((lien, index) => (
+    <span key={lien.href}>
+      {index > 0 ? " / " : null}
+      <a href={lien.href} target="_blank" rel="noreferrer">{lien.libelle}</a>
+    </span>
+  ));
+}
+
 export default function Reportage() {
   const { reportage, precedent, suivant, galerie } = useLoaderData();
   const lecteurRef = useRef(null);
@@ -132,7 +143,11 @@ export default function Reportage() {
 
   const fiche = [
     { titre: "Catégorie", valeur: reportage.genre },
-    { titre: "Client", valeur: reportage.client },
+    {
+      titre: "Client",
+      valeur: reportage.client,
+      contenu: <LiensClient liens={reportage.clientLiens} valeur={reportage.client} />,
+    },
     { titre: "Date", valeur: reportage.date },
     { titre: reportage.lieux ? "Lieux" : "Lieu", valeur: reportage.lieu },
     { titre: "Rôle", valeur: reportage.role },
@@ -227,7 +242,7 @@ export default function Reportage() {
               className={`${styles.champ} ${champ.titre === "Lieu" || champ.titre === "Lieux" ? styles.lieuMobile : ""}`}
             >
               <span className={styles.champTitre}>{champ.titre}</span>
-              <span className={styles.champValeur}>{champ.valeur}</span>
+              <span className={styles.champValeur}>{champ.contenu ?? champ.valeur}</span>
             </div>
           ))}
         </Reveal>

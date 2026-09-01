@@ -752,6 +752,10 @@ export const reportages = [
     role: "Télépilote de drone",
     cameras: ["DJI Mavic 3 Pro"],
     client: "UTOBI / Pure Films",
+    clientLiens: [
+      { libelle: "UTOBI", href: "https://www.utobi.fr/" },
+      { libelle: "Pure Films", href: "https://purefilms.fr/" },
+    ],
     equipe: "Pure Films et Antoine Santos",
     equipeLien: {
       libelle: "Pure Films",
