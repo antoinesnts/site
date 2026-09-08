@@ -112,8 +112,8 @@
   width: 8px;
   aspect-ratio: 1;
   border-radius: 999px;
-  background: #30d158;
-  box-shadow: 0 0 8px rgba(48, 209, 88, 0.7);
+  background: #ff9f0a;
+  box-shadow: 0 0 8px rgba(255, 159, 10, 0.7);
 }
 
 @media (max-width: 767px) {
