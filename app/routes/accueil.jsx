@@ -19,6 +19,11 @@ export function meta() {
 export default function Accueil() {
   const ready = useIntroReady();
   const selection = reportages.filter((reportage) => reportage.accueil !== false);
+  const indexAlbanie = selection.findIndex((reportage) => reportage.slug === "albanie-revolution-flamants-roses");
+  if (indexAlbanie !== -1) {
+    const [albanie] = selection.splice(indexAlbanie, 1);
+    selection.splice(3, 0, albanie);
+  }
 
   return (
     <>
