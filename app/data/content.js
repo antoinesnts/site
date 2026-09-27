@@ -710,7 +710,7 @@ export const reportages = [
       "/photos/kitesurf-merville-franceville-05.jpg",
       "/photos/kitesurf-merville-franceville-06.jpg",
     ],
-    accueil: false,
+    accueil: true,
     resume:
       "Film de marque pour Kite-R Evolution, école de kitesurf installée à Merville-Franceville. Le film met en avant le spot, les conditions d’apprentissage et l’expérience proposée aux pratiquants, du premier cours aux sessions de perfectionnement.",
     chapeau:
@@ -807,7 +807,7 @@ export const reportages = [
       "/photos/ultra-tour-obiou-2026-05.jpg",
       "/photos/ultra-tour-obiou-2026-06.jpg",
     ],
-    accueil: false,
+    accueil: true,
     resume:
       "Aftermovie de l’Ultra Tour de l’Obiou 2026, un défi de trail au cœur des Alpes, autour du massif de l’Obiou. L’épreuve principale propose un parcours de 72 kilomètres et près de 4 300 mètres de dénivelé positif, majoritairement sur des sentiers, à parcourir en solo ou en relais à deux. Les coureurs traversent les paysages du Dévoluy, du Trièves et de la Matheysine. Intervention en tant que télépilote de drone pour les images aériennes.",
     chapeau:
