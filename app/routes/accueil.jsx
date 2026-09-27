@@ -24,6 +24,11 @@ export default function Accueil() {
     const [albanie] = selection.splice(indexAlbanie, 1);
     selection.splice(3, 0, albanie);
   }
+  const indexKitesurf = selection.findIndex((reportage) => reportage.slug === "kitesurf-merville-franceville");
+  const indexUtobi = selection.findIndex((reportage) => reportage.slug === "ultra-tour-obiou-2026");
+  if (indexKitesurf !== -1 && indexUtobi !== -1) {
+    [selection[indexKitesurf], selection[indexUtobi]] = [selection[indexUtobi], selection[indexKitesurf]];
+  }
 
   return (
     <>
