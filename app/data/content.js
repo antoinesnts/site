@@ -53,7 +53,7 @@ export const reportages = [
   {
     "slug": "albanie-revolution-flamants-roses",
     "titre": "Albanie : la révolution des flamants roses",
-    "lieu": "Tirana et la côte albanaise, Albanie",
+    "lieu": "Albanie : Tirana, Zvërnec et l'île de Sazan",
     "date": "septembre 2026",
     "mois": "09/26",
     "genre": "Reportage",
@@ -77,7 +77,7 @@ export const reportages = [
       "/photos/albanie-revolution-flamants-roses-2.jpg",
       "/photos/albanie-revolution-flamants-roses-3.jpg"
     ],
-    "resume": "En Albanie, les flamants roses sont devenus le symbole d’une contestation qui dure depuis fin mai 2026. À l’origine de la mobilisation : un vaste projet immobilier porté par Jared Kushner, gendre de Donald Trump, qui prévoit notamment la construction d’un complexe hôtelier dans une zone naturelle protégée où viennent se reproduire des flamants roses. Depuis, des manifestants se réunissent chaque soir dans la capitale albanaise de Tirana. Ils dénoncent notamment l’opacité entourant le projet et réclament une consultation publique. Nous sommes allés à leur rencontre pour comprendre les raisons de cette mobilisation, raconter cette « révolution des flamants roses » et nous avons également réalisé un entretien avec le Premier Ministre Edi Rama, dans son bureau.",
+    "resume": "En Albanie, les flamants roses sont devenus le symbole d’une contestation qui dure depuis fin mai 2026. À l’origine de la mobilisation : un vaste projet immobilier porté par Jared Kushner, gendre de Donald Trump, qui prévoit notamment la construction d’un complexe hôtelier dans une zone naturelle protégée où viennent se reproduire des flamants roses. Depuis, des manifestants se réunissent chaque soir dans la capitale albanaise de Tirana. Ils dénoncent notamment l’opacité entourant le projet et réclament une consultation publique. Nous sommes allés à leur rencontre pour comprendre les raisons de cette mobilisation et nous avons également réalisé un entretien avec le Premier Ministre Edi Rama, dans son bureau.",
     "chapeau": "En Albanie, rencontre avec les manifestants de la « révolution des flamants roses » et entretien avec le Premier ministre Edi Rama autour du projet immobilier de Jared Kushner.",
     "parution": "TF1 — Le 20H"
   },
