@@ -27,7 +27,7 @@ export default function Header() {
 
           <NavLink to="/contact" className={styles.disponibiliteMobile}>
             <span className={styles.indicateur} aria-hidden="true" />
-            Prochaine disponibilité en octobre
+            Prochaine disponibilité en novembre
           </NavLink>
         </div>
 
@@ -69,7 +69,7 @@ export default function Header() {
           <span>{site.ville}</span>
           <NavLink to="/contact" className={styles.disponibilite}>
             <span className={styles.indicateur} aria-hidden="true" />
-            Prochaine disponibilité en octobre
+            Prochaine disponibilité en novembre
           </NavLink>
         </div>
 
